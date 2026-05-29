@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <cctype>
 #include <cstddef>
+#include <cstdio>
 #include <string>
 
 namespace http_parser {
@@ -83,6 +84,114 @@ namespace http_parser {
     }
 
     std::size_t HttpParser::excute(const char* data,size_t len,HttpResponse& resp){
-        
+        std::size_t consumed = 0;
+
+        while(consumed<len && state_ !=State::Error && state_ !=State::Complete){
+
+            char ch = data[consumed++];
+
+            switch (state_) {
+                case State::StatusLine:
+                case State::Headers:
+                case State::ChunkSize:
+                case State::Trailer:{
+                    if(ch !='\n'){
+                        if(!buffer_.empty() && buffer_.back() =='\r'){
+                            buffer_.pop_back();
+                        }
+
+                        if(state_ == State::StatusLine){
+                            if(parserStatusLine(resp)){
+                                state_ = State::Headers;
+                            }else{
+                                state_ = State::Error;
+                            }
+                        }else if(state_==State::Headers){
+                            if(buffer_.empty()){
+                                if(resp.headers.find("transfer-encoding") != resp.headers.end() &&
+                                    resp.headers["transfer-encoding"].find("chunked") != std::string::npos){
+                                        state_ = State::ChunkSize;
+                                    }else if(resp.headers.find("content-length") !=resp.headers.end()){
+                                        if(contentLength_ ==0){
+                                            state_ = State::Complete;
+                                        }else{
+                                            state_ = State::Body;
+                                        }
+                                    }else{
+                                        state_ = State::Complete;
+                                    }
+                                }else{
+                                    if(!parserHeader(resp))state_ = State::Error;
+                                }
+                        }else if(state_ == State::ChunkSize){
+                            std::size_t semiPos = buffer_.find(';');
+                            std::string hexStr = (semiPos!=std::string::npos)? buffer_.substr(0,semiPos) : buffer_;
+                            trim(hexStr);
+
+                            if(hexStr.empty()){
+                                state_ = State::Error;
+                                break;
+                            }
+
+                            try{
+                                chunkSize_ = std::stoll(hexStr,nullptr,16);
+                            }catch(...){
+                                state_ = State::Error;
+                                break;
+                            }
+
+                            if(chunkSize_ == 0){
+                                state_ = State::Trailer;
+                            }else{
+                                chunkByteRead_ = 0;
+                                state_ = State::ChunkData;
+                            }
+                        }else if(state_ ==State::Trailer){
+                            if(buffer_.empty())state_ = State::Complete;
+                        }
+                        buffer_.clear();
+                    }else{
+                        buffer_.push_back(ch);
+                    }
+                    break;
+                }
+                case State::Body:{
+                    resp.body.push_back(ch);
+                    bodyByteRead_++;
+                    if(bodyByteRead_>=contentLength_){
+                        state_ = State::Complete;
+                    }
+                    break;
+                }
+
+                case State::ChunkData:{
+                    resp.body.push_back(ch);
+                    chunkByteRead_++;
+                    if(chunkByteRead_>=chunkSize_){
+                        state_ = State::ChunkCRLF;
+                    }
+                    break;
+                }
+
+                case State::ChunkCRLF:{
+                    if(ch =='\n'){
+                        if(!buffer_.empty() && buffer_.back() =='\r'){
+                            buffer_.pop_back();
+                        }
+                        state_ = State::ChunkSize;
+                        buffer_.clear();
+                    }else if(ch !='\r'){
+                        buffer_.push_back(ch);
+                    }
+                    break;
+                }
+
+                case State::Complete:
+                case State::Error:
+                case State::ChunkExtension:
+                     break;
+            }
+        }
+        return consumed;
     }
 }

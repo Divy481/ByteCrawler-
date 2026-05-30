@@ -95,7 +95,7 @@ namespace http_parser {
                 case State::Headers:
                 case State::ChunkSize:
                 case State::Trailer:{
-                    if(ch !='\n'){
+                    if(ch =='\n'){
                         if(!buffer_.empty() && buffer_.back() =='\r'){
                             buffer_.pop_back();
                         }

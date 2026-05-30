@@ -21,6 +21,7 @@ Repeat*/
 #include<sys/socket.h>
 #include <netdb.h>
 #include <unistd.h>
+#include <fstream>
 #include <cstring>
 
 
@@ -116,7 +117,7 @@ namespace crawler {
         std::vector<std::string> links;
         size_t pos = 0;
 
-        while((pos = html.find("href=\"")) !=std::string::npos){
+        while((pos = html.find("href=\"", pos)) !=std::string::npos){
             pos += 6;
             size_t endPos = html.find("\"",pos);
             if(endPos != std::string::npos){
@@ -133,9 +134,21 @@ namespace crawler {
 
     void WebCrawler::processUrl(const Url& url,int currDepth){
 
-        std::cout<<"Crawling at "<<maxDepth<<" "<<url.toString()<<std::endl;
+        std::cout<<"Crawling at "<<currDepth<<"/"<<maxDepth<<" "<<url.toString()<<std::endl;
         std::string html = fetch(url);
         if(html.empty())return;
+
+        std::string safeName = url.toString();
+        for(char &c : safeName) {
+            if(c == '/' || c == ':' || c == '?' || c == '&' || c == '=') c = '_';
+        }
+        std::string filename = "hello.html";
+        std::ofstream outFile(filename);
+        if(outFile.is_open()){
+            outFile << html;
+            outFile.close();
+            std::cout << "Saved to " << filename << std::endl;
+        }
 
         if(currDepth>=maxDepth)return;
 
@@ -154,7 +167,7 @@ namespace crawler {
                 std::string urlStr = resolved.toString();
                 if(visted.find(urlStr)==visted.end()){
                     visted.insert(urlStr);
-                    task.push({resolved,currDepth});
+                    task.push({resolved,currDepth + 1});
                 }
             }
         }

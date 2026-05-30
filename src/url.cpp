@@ -51,8 +51,8 @@ namespace crawler {
         if(portPos == std::string::npos){
             url.host = hostPath;
         }else{
-            url.host = s.substr(0,portPos);
-            url.port = s.substr(portPos+1);
+            url.host = hostPath.substr(0,portPos);
+            url.port = hostPath.substr(portPos+1);
         }
 
         size_t fragmentPos = url.path.find('#');
@@ -82,7 +82,7 @@ namespace crawler {
         size_t framentPos = tempLink.find('#');
 
         if(framentPos !=std::string::npos){
-            tempLink = tempLink.substr(framentPos);
+            tempLink = tempLink.substr(0, framentPos);
         }
 
         if(tempLink.empty())return std::nullopt;
@@ -90,7 +90,7 @@ namespace crawler {
         if(tempLink[0] == '/'){
             newUrl.path = tempLink;
         }else{
-            size_t lastSlash = tempLink.find_last_of('/');
+            size_t lastSlash = newUrl.path.find_last_of('/');
             if(lastSlash!=std::string::npos){
                 newUrl.path = newUrl.path.substr(0,lastSlash+1) + tempLink;
             }else{

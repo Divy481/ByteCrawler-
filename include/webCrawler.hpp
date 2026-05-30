@@ -25,6 +25,7 @@ namespace crawler {
             void processUrl(const Url& url,int currDepth);
             std::string fetch(const Url& url);
             std::vector<std::string> extractLink(const std::string& html);
+            bool isPage(const std::string& link);
             
     };
 }

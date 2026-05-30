@@ -30,11 +30,11 @@ namespace crawler {
 
         url.schema = s.substr(0,schemaEnd);
         toLower(url.schema);
-        if(url.schema !="http"){
+        if(url.schema !="http" && url.schema!="https"){
             return std::nullopt;
         }
 
-        url.port = "80";
+        url.port = (url.schema == "https") ? "443" : "80"; 
         size_t hostStart = schemaEnd + 3;
         size_t pathStart = s.find('/',hostStart);
 

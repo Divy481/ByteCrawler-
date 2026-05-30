@@ -17,12 +17,15 @@ Repeat*/
 #include <cstring>
 #include <iostream>
 #include "../include/webCrawler.hpp"
+#include <string>
 #include <sys/types.h>
 #include<sys/socket.h>
 #include <netdb.h>
 #include <unistd.h>
 #include <fstream>
 #include <cstring>
+#include <openssl/ssl.h>
+#include <openssl/err.h>
 
 
 namespace crawler {
@@ -73,14 +76,61 @@ namespace crawler {
             return "";
         }
 
+    SSL_CTX *ctx = nullptr;
+    SSL *ssl = nullptr;
+    bool is_https = (url.schema == "https");
+
+    if (is_https) {
+        const SSL_METHOD *method = TLS_client_method();
+        ctx = SSL_CTX_new(method);
+        if (!ctx) {
+            std::cerr << "Unable to create SSL context" << std::endl;
+            close(sockFd);
+            return "";
+        }
+        ssl = SSL_new(ctx);
+        SSL_set_fd(ssl, sockFd);
+        SSL_set_tlsext_host_name(ssl, url.host.c_str());
+
+        if (SSL_connect(ssl) <= 0) {
+            std::cerr << "SSL connect failed to " << url.host << std::endl;
+            SSL_free(ssl);
+            SSL_CTX_free(ctx);
+            close(sockFd);
+            return "";
+        }
+    }
         std::string request = "GET " + url.path + " HTTP/1.1\r\n" +
                           "Host: " + url.host + "\r\n" +
                           "Connection: close\r\n" +
                           "User-Agent: CppWebCrawler/1.0\r\n" +
                           "\r\n";
 
-        if(send(sockFd, request.c_str(), request.length(), 0)==-1){
-            std::cerr<<"Failed to Send the request\n";
+        // if(send(sockFd, request.c_str(), request.length(), 0)==-1){
+        //     std::cerr<<"Failed to Send the request\n";
+        //     close(sockFd);
+        //     return "";
+        // }
+
+        
+
+        bool send_failed = false;
+        if (is_https) {
+            if (SSL_write(ssl, request.c_str(), request.length()) <= 0) {
+                send_failed = true;
+            }
+        } else {
+            if (send(sockFd, request.c_str(), request.length(), 0) == -1) {
+                send_failed = true;
+            }
+        }
+
+        if (send_failed) {
+            std::cerr << "Failed to send request to " << url.host << std::endl;
+            if (is_https) {
+                SSL_free(ssl);
+                SSL_CTX_free(ctx);
+            }
             close(sockFd);
             return "";
         }
@@ -88,18 +138,33 @@ namespace crawler {
         http_parser::HttpParser parser;
         http_parser::HttpResponse resp;
         char buffer[4096];
-        size_t byteLen;
+        ssize_t bytes_received;
 
 
-        while((byteLen = recv(sockFd, buffer, sizeof(buffer), 0))>0){
-            size_t consumed = parser.excute(buffer, byteLen,  resp);
-            (void)consumed;
+        while (true) {
+        if (is_https) {
+            bytes_received = SSL_read(ssl, buffer, sizeof(buffer));
+        } else {
+            bytes_received = recv(sockFd, buffer, sizeof(buffer), 0);
+        }
+        
+        if (bytes_received <= 0) break;
 
-            if(parser.isError()){
-                std::cerr<<"Parser Error\n";
-                return "";
-            }
-            if(parser.isComplete())break;
+        size_t consumed = parser.excute(buffer, bytes_received, resp);
+        (void)consumed; // mark unused
+        if (parser.isError()) {
+            std::cerr << "HTTP Parse error on " << url.toString() << std::endl;
+            break;
+        }
+        if (parser.isComplete()) {
+            break;
+        }
+    }
+
+        if (is_https) {
+            SSL_shutdown(ssl);
+            SSL_free(ssl);
+            SSL_CTX_free(ctx);
         }
         close(sockFd);
         if(resp.statuscode != 200){
@@ -142,7 +207,7 @@ namespace crawler {
         for(char &c : safeName) {
             if(c == '/' || c == ':' || c == '?' || c == '&' || c == '=') c = '_';
         }
-        std::string filename = "hello.html";
+        std::string filename = std::to_string(currDepth) + ".html";
         std::ofstream outFile(filename);
         if(outFile.is_open()){
             outFile << html;
@@ -167,9 +232,25 @@ namespace crawler {
                 std::string urlStr = resolved.toString();
                 if(visted.find(urlStr)==visted.end()){
                     visted.insert(urlStr);
-                    task.push({resolved,currDepth + 1});
+                    if(isPage(urlStr)){
+                        task.push({resolved,currDepth + 1});
+                    }
                 }
             }
         }
+    }
+    bool WebCrawler::isPage(const std::string& link) {
+        static const std::vector<std::string> exts = {
+            ".css", ".js", ".png", ".jpg", ".jpeg",
+            ".gif", ".svg", ".ico", ".pdf",
+            ".zip", ".mp4", ".webm",".woff",".woff2"
+        };
+
+        for (const auto& ext : exts) {
+            if (link.size() >= ext.size() &&
+                link.substr(link.size() - ext.size()) == ext)
+                return false;
+        }
+        return true;
     }
 }

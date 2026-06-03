@@ -17,6 +17,7 @@ Repeat*/
 #include <cstring>
 #include <iostream>
 #include "../include/webCrawler.hpp"
+#include <mutex>
 #include <string>
 #include <sys/types.h>
 #include<sys/socket.h>
@@ -26,6 +27,7 @@ Repeat*/
 #include <cstring>
 #include <openssl/ssl.h>
 #include <openssl/err.h>
+#include "../include/threadpool.hpp"
 
 
 namespace crawler {
@@ -34,17 +36,18 @@ namespace crawler {
     void WebCrawler::start(const std::string& seedurl){
         auto parsed = Url::parse(seedurl);
         if(!parsed){
+            std::unique_lock<std::mutex> lock(printMutex);
             std::cerr<<"Invalid Seed Url \n";
             return ;
         }
         seedUrlObj = *parsed;
-        task.push({*parsed,0});
         visted.insert(parsed->toString());
-        while(!task.empty()){
-            auto t = task.front();
-            task.pop();
-            processUrl(t.url, t.depth);
-        }
+        ThreadPool pool(4);
+
+        pool.enqueue([this,url = *parsed,&pool](){
+            this->processUrl(url, 0,&pool);
+        });
+        pool.waitFinshedTask();
     }
 
     std::string WebCrawler::fetch(const Url& url){
@@ -197,9 +200,12 @@ namespace crawler {
         return links;
     }
 
-    void WebCrawler::processUrl(const Url& url,int currDepth){
+    void WebCrawler::processUrl(const Url& url,int currDepth,ThreadPool* pool){
 
-        std::cout<<"Crawling at "<<currDepth<<"/"<<maxDepth<<" "<<url.toString()<<std::endl;
+        {
+            std::unique_lock<std::mutex> lock(printMutex);
+            std::cout<<"Crawling at "<<currDepth<<"/"<<maxDepth<<" "<<url.toString()<<std::endl;
+        }
         std::string html = fetch(url);
         if(html.empty())return;
 
@@ -207,17 +213,20 @@ namespace crawler {
         for(char &c : safeName) {
             if(c == '/' || c == ':' || c == '?' || c == '&' || c == '=') c = '_';
         }
-        std::string filename = std::to_string(currDepth) + ".html";
-        std::ofstream outFile(filename);
-        if(outFile.is_open()){
-            outFile << html;
-            outFile.close();
-            std::cout << "Saved to " << filename << std::endl;
+        if(!html.empty()){
+            std::unique_lock<std::mutex> lock(fileMutex);
+            std::string filename = std::to_string(currDepth) + ".html";
+            std::ofstream outFile(filename);
+            if(outFile.is_open()){
+                outFile << html;
+                outFile.close();
+                std::cout << "Saved to " << filename << std::endl;
+            }
         }
-
         if(currDepth>=maxDepth)return;
 
         std::vector<std::string> links = extractLink(html);
+        std::vector<Url>newUrl;
 
         for(const auto& link:links){
             auto resolvedOpt = Url::resolve(url, link);
@@ -229,12 +238,20 @@ namespace crawler {
                     continue;
                 }
 
-                std::string urlStr = resolved.toString();
-                if(visted.find(urlStr)==visted.end()){
-                    visted.insert(urlStr);
-                    if(isPage(urlStr)){
-                        task.push({resolved,currDepth + 1});
-                    }
+                newUrl.push_back(resolved);
+            }
+        }
+
+        if(!newUrl.empty()){
+            std::unique_lock<std::mutex> lock(tempMutex);
+
+            for(auto const& resolved:newUrl){
+                std::string r = resolved.toString();
+                if(visted.find(r)==visted.end()){
+                    visted.insert(r);
+                    pool->enqueue([this,resolved,currDepth,pool]{
+                        this->processUrl(resolved, currDepth+1, pool);
+                    });
                 }
             }
         }

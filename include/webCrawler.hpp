@@ -1,5 +1,7 @@
 #pragma once
+#include "threadpool.hpp"
 #include "url.hpp"
+#include <mutex>
 #include <queue>
 #include <string>
 #include <unordered_set>
@@ -22,10 +24,13 @@ namespace crawler {
             std::unordered_set<std::string> visted;
             Url seedUrlObj;
 
-            void processUrl(const Url& url,int currDepth);
+            void processUrl(const Url& url,int currDepth,ThreadPool* pool);
             std::string fetch(const Url& url);
             std::vector<std::string> extractLink(const std::string& html);
             bool isPage(const std::string& link);
-            
+            std::mutex printMutex;
+            std::mutex tempMutex;
+            std::mutex fileMutex;
+                        
     };
 }

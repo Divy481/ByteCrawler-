@@ -1,12 +1,13 @@
 # ByteCache Web Crawler
 
-A high-performance, custom-built web crawler written in C++ using POSIX system calls and standard libraries. It features concurrent network requests via a custom ThreadPool, support for both HTTP and HTTPS using OpenSSL, and efficient handling of HTML fetching and link extraction.
+A high-performance, custom-built web crawler written in C++ using POSIX system calls and standard libraries. It features concurrent network requests via a custom ThreadPool, support for both HTTP and HTTPS using OpenSSL, and an integrated HTML-to-Markdown generator to cleanly extract content from the web.
 
 ## Features
 
 - **Concurrent Crawling**: Leverages a custom thread pool to crawl multiple URLs concurrently, greatly increasing throughput.
 - **HTTP/HTTPS Support**: Uses standard POSIX sockets and OpenSSL for secure (TLS/SSL) and non-secure communication.
 - **Custom HTTP Parser**: Employs a robust, lightweight HTTP parser specifically optimized for the crawler.
+- **HTML to Markdown Conversion**: Includes a custom Markdown generator that strips scripts/styles and cleanly converts HTML structural tags (like headers, links, lists, images) into readable Markdown.
 - **URL Resolution**: Correctly resolves relative links extracted from HTML pages against the parent URL.
 - **Domain Constraint**: Option to limit crawling strictly to the seed URL's domain.
 - **Depth Control**: Easily define the maximum depth to crawl to prevent infinite traversal.
@@ -51,11 +52,12 @@ Run the compiled executable with a seed URL and an optional maximum depth:
 ./run https://example.com 2
 ```
 
-This will start the crawler at `https://example.com`, following links up to a depth of 2. Downloaded HTML files will be saved in the current directory as `<depth>.html`.
+This will start the crawler at `https://example.com`, following links up to a depth of 2. 
+Pages are downloaded, converted to Markdown format, and saved in the current directory as `<counter>.txt` (e.g., `0.txt`, `1.txt`, etc.).
 
 ## Project Structure
 
-- `include/`: Contains all header files defining classes and interfaces (`webCrawler.hpp`, `http_parser.hpp`, `threadpool.hpp`, etc.).
+- `include/`: Contains all header files defining classes and interfaces (`webCrawler.hpp`, `http_parser.hpp`, `threadpool.hpp`, `markdown.hpp`, etc.).
 - `src/`: Contains the implementation files for the classes.
 - `tests/`: Contains test suites to ensure component functionality.
 - `main.cpp`: Entry point for the application.

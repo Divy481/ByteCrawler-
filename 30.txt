@@ -1,0 +1,428 @@
+Multithreading in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Multithreading in C++
+Last Updated : 15 May, 2026
+- 
+- 
+- 
+
+Multithreading is a programming technique in which a program is divided into multiple threads that can run concurrently. It helps improve performance and responsiveness by allowing multiple tasks to execute simultaneously while sharing the same memory space. 
+
+- Threads allow multiple tasks to run independently within the same program. 
+- Multithreading improves CPU utilization and application performance. 
+- The &lt;thread&gt; header provides functions to create, manage, and synchronize threads in C++.
+
+****Note:**** In C++, multithreading support was introduced in C++11 through the &lt;thread&gt; header file.
+
+## Create a Thread
+
+
+The std::thread class represents a thread. Creating an instance of this class starts a thread with the given callable as its task.
+
+
+thread thread_name(callable);
+
+
+where,
+
+- ****thread_name:**** It is an object of thread class.
+- ****callable: ****It is a callable object like function pointer, function object.
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+// Function to be run by the thread
+void func() {
+    cout &lt;&lt; &quot;Hello from the thread!&quot; &lt;&lt; endl;
+}
+
+int main() {
+    
+    // Create a thread that runs 
+    // the function func
+    thread t(func);
+    
+    // Main thread waits for &#39;t&#39; to finish
+    t.join();  
+    cout &lt;&lt; &quot;Main thread finished.&quot;;
+    return 0;
+}
+
+**Output**Hello from the thread!
+Main thread finished.
+
+****Explanation: ****In the above program we have created a thread t that prints "Hello from the thread!" and this thread is joined with the main thread so that the main thread waits for the completion of this thread and once the thread t is finished the main thread resumes its execution and prints " Main thread finished". 
+
+## Joining a Thread
+
+
+In C++, the join() function is used to wait for a thread to finish execution. Before calling join(), it is recommended to check whether the thread is joinable using the joinable() method.
+
+### Checking if a Thread is Joinable
+
+
+The joinable() function checks whether a thread object is associated with an active thread.
+
+
+thread_name.joinable();
+
+- Returns true if the thread can be joined. 
+- Returns false if the thread is not in a valid joinable state.
+### Using join() Function
+
+
+The join() function is used to wait for a thread to finish execution.
+
+
+thread_name.join();
+
+- The calling thread gets blocked until the specified thread completes. 
+- It is commonly used by the main thread to wait for worker threads. 
+- If join() is called on a non-joinable thread, it throws a std::system_error exception.
+
+****Note:**** Improper synchronization between multiple threads may lead to issues such as race conditions or logic errors.
+
+## Detaching a thread
+
+
+A joined thread can be detached from the calling thread using the detach() member function of the std::thread class. When a thread is detached, it runs independently in the background, and the other thread does not wait for it to finish.
+
+
+thread_name.detach();
+
+## Getting Thread ID
+
+
+In[ Multithreading in C++](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/) each thread has a unique ID which can be obtained by using the get_id() function.
+
+
+thread_name.get_id();
+
+
+The get_id() function returns an object representing the thread’s ID
+
+
+****Example:**** Program using the above operations altogether. 
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;thread&gt;
+#include &lt;chrono&gt;
+using namespace std;
+
+void task1() {
+    cout &lt;&lt; &quot;Thread 1 is running. ID: &quot; &lt;&lt; this_thread::get_id() &lt;&lt; &quot;\n&quot;;
+}
+
+void task2() {
+    cout &lt;&lt; &quot;Thread 2 is running. ID: &quot; &lt;&lt; this_thread::get_id() &lt;&lt; &quot;\n&quot;;
+}
+
+int main() {
+    thread t1(task1);
+    thread t2(task2);
+
+    // Get thread IDs
+    cout &lt;&lt; &quot;t1 ID: &quot; &lt;&lt; t1.get_id() &lt;&lt; &quot;\n&quot;;
+    cout &lt;&lt; &quot;t2 ID: &quot; &lt;&lt; t2.get_id() &lt;&lt; &quot;\n&quot;;
+
+    // Join t1 if joinable
+    if (t1.joinable()) {
+        t1.join();
+        cout &lt;&lt; &quot;t1 joined\n&quot;;
+    }
+
+    // Detach t2 if joinable
+    if (t2.joinable()) {
+        t2.detach();
+        cout &lt;&lt; &quot;t2 detached\n&quot;;
+    }
+
+    // Give detached thread time to complete
+    this_thread::sleep_for(chrono::milliseconds(100));
+
+    cout &lt;&lt; &quot;Main thread finished.\n&quot;;
+    return 0;
+}
+
+**Output**Thread 1 is running. ID: Thread 2 is running. ID: 140737213290176
+140737347512000
+t1 ID: 140737347512000
+t2 ID: 140737213290176
+t1 joined
+t2 detached
+Main thread finished.
+
+## Callables in Multithreading
+
+
+A callable object such as a function, lambda expression, or function object can be passed to a thread in C++. The thread starts executing the callable in parallel as soon as it is created.
+
+- thread t(func); creates a thread that executes the func function. 
+- Parameters can also be passed with the callable using thread t(func, param1, param2);.
+
+In C++, callable can be divided into 4 categories:
+
+### Function Pointer
+
+
+A function can be a callable object to pass to the thread constructor for initializing a thread.
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+// Function to be run 
+// by the thread
+void func(int n) {
+    cout &lt;&lt; n;
+}
+
+int main() {
+    
+    // Create a thread that runs 
+    // the function func
+    thread t(func, 4);
+    
+    // Wait for thread to finish
+    t.join();
+    return 0;
+}
+
+**Output**4
+### ****Lambda Expression****
+
+
+Thread object can also use a [****lambda expression****](https://www.geeksforgeeks.org/cpp/lambda-expression-in-c/) as a callable. Which can be passed directly inside the thread object.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;thread&gt;
+
+using namespace std;
+
+int main() {
+    int n = 3;
+    
+    // Create a thread that runs 
+    // a lambda expression
+    thread t([](int n){
+        cout &lt;&lt; n;
+    }, n);
+
+    // Wait for the thread to complete
+    t.join();
+    return 0;
+}
+
+
+
+****Output****
+3
+### ****Function Objects****
+
+
+Function Objects or [****Functors****](https://www.geeksforgeeks.org/cpp/functors-in-cpp/) can also be used for a thread as callable. To make functors callable, we need to overload the operator parentheses operator ****()****. 
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;thread&gt;
+using namespace std;
+
+// Define a function object (functor)
+class SumFunctor {
+public:
+    int n;
+    SumFunctor(int a) : n(a) {}
+
+    // Overload the operator() to 
+    // make it callable
+    void operator()() const {
+        cout &lt;&lt; n;
+    }
+};
+
+int main() {
+
+    // Create a thread using 
+    // the functor object
+    thread t(SumFunctor(3));
+
+    // Wait for the thread to 
+    // complete
+    t.join();
+    return 0;
+}
+
+
+
+****Output****
+3
+### ****Non-Static and Static Member Function****
+
+
+We can also use thread using the non-static or static member functions of a class. For non-static member function, we need to create an object of a class but it's not necessary with static member functions.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;thread&gt;
+
+using namespace std;
+
+class MyClass {
+public:
+    // Non-static member function
+    void f1(int num) {
+        cout &lt;&lt; num &lt;&lt; endl;
+    }
+
+    // Static member function that takes one parameter
+    static void f2(int num) {
+        cout &lt;&lt; num;
+    }
+};
+
+int main() {
+    
+    // Member functions 
+    // requires an object
+    MyClass obj;
+    
+    // Passing object and parameter
+    thread t1(&amp;MyClass::f1, &amp;obj, 3);
+    
+    t1.join(); 
+    
+    // Static member function can 
+    // be called without an object
+    thread t2(&amp;MyClass::f2, 7);
+    
+    // Wait for the thread to finish
+    t2.join();  
+
+    return 0;
+}
+
+
+
+****Output****
+3
+7
+## Thread Management
+
+
+In C++ thread library, various functions are defined to manage[ threads](https://www.geeksforgeeks.org/c/multithreading-in-c/) that can be reused to perform multiple tasks. Some of the are listed below:
+Classes/MethodsDescription[****join()****](https://www.geeksforgeeks.org/cpp/std-thread-join-in-cpp/)It ensures that the calling thread waits for the specified thread to complete its execution.[****detach()****](https://www.geeksforgeeks.org/cpp/how-to-detach-a-thread-in-cpp/)Allows the thread to run independently of the main thread, meaning the main thread does not need to wait.[****mutex****](https://www.geeksforgeeks.org/cpp/std-mutex-in-cpp/)A mutex is used to protect shared data between threads to prevent data races and ensure synchronization.[****lock_guard****](https://www.geeksforgeeks.org/cpp/stdunique_lock-or-stdlock_guard-which-is-better/)A wrapper for mutexes that automatically locks and unlocks the mutex in a scoped block.[****condition_variable****](https://www.geeksforgeeks.org/cpp/cpp-multithreading-condition-variables/)Used to synchronize threads, allowing one thread to wait for a condition before proceeding.[****atomic****](https://www.geeksforgeeks.org/cpp/cpp-11-atomic-header/)Manages shared variables between threads in a thread-safe manner without using locks.[****sleep_for()****](https://www.geeksforgeeks.org/cpp/use-stdthis_threadsleep_for-method-to-sleep-in-cpp/)Pauses the execution of the current thread for a specified duration.****sleep_until()****Pauses the execution of the current thread until a specified time point is reached.[****hardware_concurrency()****](https://www.geeksforgeeks.org/cpp/thread-hardware_concurrency-function-in-c/)Returns the number of hardware threads available for use, allowing you to optimize the use of system resources.[****get_id****](https://www.geeksforgeeks.org/cpp/thread-get_id-function-in-c/)Retrieves the unique ID of the current thread, useful for logging or debugging purposes.
+## Problems with Multithreading
+
+
+Multithreading improves the performance and utilization of CPU, but it also introduces various problems:
+
+- ****Deadlock:**** A [deadlock](https://www.geeksforgeeks.org/operating-systems/introduction-of-deadlock-in-operating-system/) occurs when two or more threads are blocked forever because they are each waiting for shared resources that the other threads hold. This creates a cycle of waiting, and none of the threads can proceed.
+- ****Race Condition:**** A [race condition](https://www.geeksforgeeks.org/operating-systems/race-condition-vulnerability/) occurs when multiple threads access shared data simultaneously and at least one thread modifies it, causing unpredictable or incorrect results.
+- ****Starvation:**** Starvation occurs when a thread is continuously unable to access shared resources because other threads keep getting priority, preventing it from executing and making progress.
+## Thread Synchronization
+
+
+[Thread synchronization](https://www.geeksforgeeks.org/cpp/thread-synchronization-in-cpp/) is the process of controlling multiple threads when accessing shared resources to avoid data inconsistency and race conditions. It ensures that only one thread accesses a critical resource at a time.
+
+- Synchronization helps maintain data accuracy and consistency in multithreaded programs. 
+- Common synchronization tools in C++ include mutexes, locks, and condition variables.
+## Context switch in multithreading
+
+
+A [context switch](https://www.geeksforgeeks.org/operating-systems/context-switch-in-operating-system/) occurs when the CPU stops executing one thread and starts executing another thread. The state of the current thread is saved so that execution can continue later from the same point.
+
+- It enables multiple threads to share CPU time efficiently. 
+- Frequent context switching may reduce performance due to overhead.CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-multithreading](https://www.geeksforgeeks.org/tag/cpp-multithreading/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

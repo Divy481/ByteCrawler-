@@ -1,0 +1,104 @@
+GfG 160 - 160 Days of Problem Solving[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs******
+- [All Courses](/courses)
+- [Self-Paced](/courses/category/all?courseType=online&amp;courseFeeType=all&amp;itm_source=geeksforgeeks&amp;itm_medium=course_landingpage&amp;itm_campaign=courses)
+# GfG 160 - 160 Days of Problem Solving
+Self-Paced Course![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2731%27%20height=%2730%27/%3e)![interested count](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![interested count](https://media.geeksforgeeks.org/img-practice/Interested(1)-1669185704.svg)515k+ interested Geeks
+
+Master one DSA problem daily with GfG 160!** **Join this free 160-Day program which will help you practice DSA problems in a structured and organized manner. Get in-depth articles, step-by-step video explanations and access to additional bonus problems with video solutions. Recommended for: Students &amp; Professionals.
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e)![level](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![level](https://media.geeksforgeeks.org/img-practice/level-1668679601.svg)Beginner to Advanced![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e)![course duration](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![course duration](https://media.geeksforgeeks.org/img-practice/time-1668679645.svg)22 WeeksComprehensive LearningBeginner FriendlyCourse CertificateIndustry Readiness
+## Course Overview
+
+
+**What is GfG 160: **Solve handpicked coding problems daily for the next 160 days and master DSA in a structured and organized manner. No need for random SDE sheets anymore! Practice topic-wise DSA Problems with this 160 Day roadmap that will help you improve your DSA skills with additional problems and teach you approaches in a structured manner. So for the next 160 days, just solve the problems in the order recommended in this course to enhance your DSA skills. (See the Detailed Course Syllabus PDF below to check out the flow in which problems will be solved). 
+
+
+
+**Recommended for**:&nbsp;Anyone looking to prepare for coding interviews, improve their DSA knowledge, or enhance their programming abilities.The additional Career workshops are a bonus for you to learn about the trending tech stacks and their career scopes.
+
+
+
+
+
+
+What else you are getting in this:
+
+
+- 160 Handpicked DSA Problems: Each problem comes with a detailed article and a video explanation for thorough understanding.
+- 90 Bonus Problems: Extra practice problems with video solutions which makes a **total of 250 Problems. **
+- **Completion Certificate:** Receive a certificate upon successfully finishing the course, validating your skills and knowledge in the field.
+
+- Concept Coverage: Includes problems on key topics like Arrays, Strings, Sorting, Searching, Matrix, Hashing, Two Pointer Technique, Prefix Sum, and more.
+
+- Perfect for Coding Interviews: Ideal for those preparing for interviews or looking to deepen their knowledge of DSA.
+
+- Assured Rewards: Get rewarded for your consistency.
+- Organized Learning: Solve in a structured manner created for best learning outcome.&nbsp;
+
+- Career Roadmap Sessions: Free extra workshops on trending techs such as DevOps, Software testing, Full Stack &amp; more for a complete guided experience.Read more ![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2714%27%20height=%2714%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/6/Web/Content/double%20arrow%20down_1712668255.svg)
+## Course Content
+01Arrays: Lay the Foundation (Days 1–13)02Strings: Master Text Processing (Days 14–20)03Sorting: Organize Data Efficiently (Days 21–27)04Searching: Find What You Need Fast (Days 28–35)Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2714%27%20height=%2714%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/6/Web/Content/double%20arrow%20down_1712668255.svg)[Login to view detailed syllabus]()![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27900%27%20height=%27500%27/%3e)![Unable to load](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Unable to load](https://media.geeksforgeeks.org/img-practice/Group5339-1618471344.svg)![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27350%27%20height=%27500%27/%3e)![Unable to load](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Unable to load](https://media.geeksforgeeks.org/img-practice/Group5443-1620806697.svg)
+
+Pricing
+
+
+ 
+
+## Frequently Asked Questions
+01
+###  What is GfG 160 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)02
+###  Who is this course for ? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)03
+###  Is DSA hard to learn? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)04
+###  Is GfG 160 Free? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)05
+###  What programming languages are best for learning DSA? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)06
+###  How does DSA help in coding interviews? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)07
+###  Is there a contact number available for inquiries? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

@@ -1,0 +1,120 @@
+Interview Corner - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Practice Problems](https://www.geeksforgeeks.org/explore)
+- [C ](https://www.geeksforgeeks.org/c/c-programming-language/)
+- [C++](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Java](https://www.geeksforgeeks.org/java/java/)
+- [Python](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/)
+- [JavaScript](https://www.geeksforgeeks.org/javascript/javascript-tutorial/)
+- [Data Science](https://www.geeksforgeeks.org/data-science/data-science-for-beginners/)
+- [Machine Learning](https://www.geeksforgeeks.org/machine-learning/machine-learning/)
+- [Courses](https://www.geeksforgeeks.org/courses)
+- [Linux](https://www.geeksforgeeks.org/linux-unix/linux-tutorial/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)[DSA Tutorial](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)[System Design Tutorial](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[Aptitude Questions and Answers](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)[Web Development Technologies](https://www.geeksforgeeks.org/web-technology/)[AI, ML and Data Science Tutorial](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)[DevOps Tutorial](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Interview Corner
+Last Updated : 15 Mar, 2026
+- 
+- 
+- 
+
+This article serves as your one-stop guide to interview preparation, designed to help you succeed across different experience levels and company expectations. Here is what you should expect in a Tech Interview, please remember the following points:
+
+- Tech Interview Preparation does not have any fixed syllabus. Different companies, roles, and hiring managers have their own approaches. However, a few patterns have become standard over the years.
+- Most of the companies take an online round first where they check your problem-solving skills using coding problems. Once you qualify the online coding round, you go to the next face-to-face technical rounds, that includes live coding and domain specific discussions.
+- ****For students****, the most important topics are Data Structures and Algorithms (DSA), Object Oriented Programming (OOP), DBMS, OS, SQL, Web Development basics, AI, ML, and Data Science basics. Some companies ask Aptitude, Puzzle, and Design (Low Level and High Level) as well for internship.
+- ****For early working professionals****, the process and topics are almost same as freshers, with addition of questions related to previous work experience and technologies they've previously used.
+- For more ****experienced working professionals****, the process varies a lot. Some top product-based companies like Google ask DSA for all levels. However, there is going to be a lot more focus on System Design and technologies used in the previous companies.
+
+Let us now explore different interview resources.
+
+### DSA 
+
+- [GFG 160](https://www.geeksforgeeks.org/courses/gfg-160-series) - A complete list of top 160 questions + 90 bonus questions with editorials and video explanations.
+### LLD and HLD
+
+- [System Design Tutorial](https://www.geeksforgeeks.org/system-design/system-design-tutorial/) 
+- [Design Patterns Interview Questions ](https://www.geeksforgeeks.org/system-design/top-design-patterns-interview-questions/) 
+### DevOps 
+
+
+Here are top resources to prepare for DevOps interviews, including cloud computing and AWS-specific roles
+
+- [DevOps Interview Questions ](https://www.geeksforgeeks.org/devops/devops-interview-questions/)
+- [AWS Interview Questions](https://www.geeksforgeeks.org/cloud-computing/aws-interview-questions/)
+- [Google Cloud Platform (GCP) Interview Questions](https://www.geeksforgeeks.org/devops/google-cloud-platform-interview-questions/)  
+### Interview Experiences
+
+- [Interview Experiences for all roles](https://www.geeksforgeeks.org/category/experiences/interview-experiences/)
+### Web Development
+
+- [Full Stack Interview Questions ](https://www.geeksforgeeks.org/html/full-stack-developer-interview-questions-and-answers/)
+### Aptitude &amp; Puzzles
+
+- [Aptitude Questions and Answers](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles for Interviews](https://www.geeksforgeeks.org/aptitude/puzzles/) 
+### Computer Subjects
+
+- [Commonly asked Computer Subject Interview Questions](https://www.geeksforgeeks.org/courses/cs-core-subjects-skill-up) 
+### Python
+
+- [Python Interview Questions](https://www.geeksforgeeks.org/python/python-interview-questions/) 
+###  Data Science and Machine Learning
+
+- [Data Science Interview Questions](https://www.geeksforgeeks.org/data-science/data-science-interview-questions-and-answers/)
+- [Data Science Coding Interview Questions](https://www.geeksforgeeks.org/data-science/data-science-coding-interview-questions/)
+- [Machine Learning Interview Questions](https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/) 
+### Data Analytics
+
+- [Data Analyst Interview Questions](https://www.geeksforgeeks.org/data-analysis/data-analyst-interview-questions-and-answers/) 
+### ****Software Testing****
+
+- [Software Testing Interview Questions ](https://www.geeksforgeeks.org/software-testing/software-testing-interview-questions/) 
+### ****Mobile App Development (Android Development)****
+
+- [Application Developer Interview Questions](https://www.geeksforgeeks.org/interview-experiences/application-developer-interview-questions/)
+- [Android Interview Questions for SDE I to SDE III](https://www.geeksforgeeks.org/android/top-50-android-interview-questions-answers-sde-i-to-sde-iii/) CommentArticle Tags:Article Tags:[Experiences](https://www.geeksforgeeks.org/category/experiences/)[Interview Preparation](https://www.geeksforgeeks.org/category/interview-preparation/)[Interview Prep](https://www.geeksforgeeks.org/category/interview-prep/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

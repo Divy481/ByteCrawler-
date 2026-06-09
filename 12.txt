@@ -1,0 +1,149 @@
+Standard Template Library (STL) in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Standard Template Library (STL) in C++
+Last Updated : 16 May, 2026
+- 
+- 
+- 
+
+STL (Standard Template Library) is a collection of pre-built classes and functions in C++ used for efficient data handling and programming. It provides ready-to-use data structures and algorithms that simplify development.
+
+- Includes containers like vectors, stacks, queues, and maps. 
+- Saves time and improves performance using reusable components.
+## Components of STL
+
+
+The components of STL are the features provided by STL in C++ that can be classified into 3 types:
+![components_of_stl](https://media.geeksforgeeks.org/wp-content/uploads/20250818102717729926/components_of_stl.webp) 
+
+These components are designed to be efficient, flexible, and reusable, making them an integral part of modern C++ programming. 
+
+## Containers
+
+
+[Containers](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/) are the data structures used to store objects and data according to the requirement. Each container is implemented as a template class that also contains the methods to perform basic operations on it. Every STL container is defined inside its own header file.
+
+
+Containers can be further classified into 4 types:
+
+- Sequence Containers :**** ****[Vector](https://www.geeksforgeeks.org/cpp/vector-in-cpp-stl/)****, ****[Deque](https://www.geeksforgeeks.org/cpp/deque-cpp-stl/)****, ****[List](https://www.geeksforgeeks.org/cpp/list-cpp-stl/)****, ****[Forward List](https://www.geeksforgeeks.org/cpp/forward-list-c-set-1-introduction-important-functions/)****, ****[Array](https://www.geeksforgeeks.org/cpp/stdarray-in-cpp/)
+- Container Adaptors :**** ****[Stack](https://www.geeksforgeeks.org/cpp/stack-in-cpp-stl/)****, ****[Queue](https://www.geeksforgeeks.org/cpp/queue-cpp-stl/)****, ****[Priority Queue](https://www.geeksforgeeks.org/cpp/priority-queue-in-cpp-stl/)
+- Associative Containers :**** ****[Set](https://www.geeksforgeeks.org/cpp/set-in-cpp-stl/)****, ****[Multiset](https://www.geeksforgeeks.org/cpp/multiset-in-cpp-stl/)****, ****[Map](https://www.geeksforgeeks.org/cpp/map-associative-containers-the-c-standard-template-library-stl/)****, ****[Multimap](https://www.geeksforgeeks.org/cpp/multimap-associative-containers-the-c-standard-template-library-stl/)
+- Unordered Associative Containers :**** ****[Unordered Set](https://www.geeksforgeeks.org/cpp/unordered_set-in-cpp-stl/)****, ****[Unordered Multiset](https://www.geeksforgeeks.org/cpp/cpp-unordered_multiset/)****, ****[Unordered Map](https://www.geeksforgeeks.org/cpp/cpp-unordered_multiset/)****, ****[Unordered Multimap](https://www.geeksforgeeks.org/cpp/unordered_multimap-and-its-application/)
+
+Instead of writing your own data structures (like linked lists or stacks), STL provides ready-made containers that are: Fast, Reliable, Easy-to-use and Type-Safe (work with any data type using templates).
+
+## Algorithms
+
+
+[STL algorithms](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/) offer a wide range of functions to perform common operations on data (mainly containers). These functions implement the most efficient version of the algorithm for tasks such as sorting, searching, modifying and manipulating data in containers, etc. Most STL algorithms are defined in &lt;algorithm&gt; and &lt;numeric&gt;, while some specialized algorithms and utilities are available in other headers like &lt;memory&gt;, &lt;functional&gt;, and &lt;iterator&gt;. Some of the most frequently used algorithms are: 
+
+- [Sort](https://www.geeksforgeeks.org/cpp/sort-algorithms-the-c-standard-template-library-stl/) : Arranges elements in ascending order (default).
+- [Binary Search](https://www.geeksforgeeks.org/cpp/binary-search-algorithms-the-c-standard-template-library-stl/) : Checks whether a value exists in a sorted range.
+- [Find](https://www.geeksforgeeks.org/cpp/std-find-in-cpp/) : Searches for the first occurrence of a given value.
+- [Count](https://www.geeksforgeeks.org/cpp/std-count-cpp-stl/) : Counts how many times a value appears in the given range.
+- [Reverse](https://www.geeksforgeeks.org/cpp/stdreverse-in-c/) : Reverses the order of elements in the given range.
+- [Accumulate](https://www.geeksforgeeks.org/cpp/accumulate-and-partial_sum-in-c-stl-numeric-header/) : Computes the sum of all elements in the range.
+- [Unique](https://www.geeksforgeeks.org/cpp/stdunique-in-cpp/) : Removes consecutive duplicate elements.
+- [Lower bound](https://www.geeksforgeeks.org/cpp/lower_bound-in-cpp/) : Returns iterator to the first element ≥ value in a sorted range.
+- [Upper bound](https://www.geeksforgeeks.org/cpp/upper_bound-in-cpp/) : Returns iterator to the first element &gt; value in a sorted range.
+- [Replace](https://www.geeksforgeeks.org/cpp/stdreplace-stdreplace_if-c/) : Replaces all occurrences of old value with new value in the given range.
+## ****Iterators****
+
+
+[Iterators](https://www.geeksforgeeks.org/cpp/introduction-iterators-c/) are the pointer like objects that are used to point to the memory addresses of STL containers. They are one of the most important components that contributes the most in connecting the STL algorithms with the containers. Iterators are defined inside the ****&lt;iterator&gt; ****header file.
+
+## Benefits of C++ Standard Template Library (STL)
+
+
+The key benefits of the STL is :
+
+- Reliable and Tested
+- Fast and Efficient
+- Reusability
+- Built-in AlgorithmsCommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[STL](https://www.geeksforgeeks.org/tag/stl/)[Tutorials](https://www.geeksforgeeks.org/tag/tutorials/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

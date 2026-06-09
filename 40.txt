@@ -1,0 +1,150 @@
+DSA &amp; System Design Course: The Complete SDE Interview Program[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs******
+- [All Courses](/courses)
+- [Live](/courses/category/all?courseType=live&amp;courseFeeType=all&amp;itm_source=geeksforgeeks&amp;itm_medium=course_landingpage&amp;itm_campaign=courses)
+# DSA &amp; System Design Course: The Complete SDE Interview Program
+Live Course![course-thumbnail](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![course-thumbnail](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fwp-content%2Fuploads%2F20260523175121705831%2F426154831.png&amp;w=3840&amp;q=75)![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2731%27%20height=%2730%27/%3e)![interested count](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![interested count](https://media.geeksforgeeks.org/img-practice/Interested(1)-1669185704.svg)437k+ interested Geeks
+
+**Master DSA and System Design** with this complete SDE Interview Program to crack top tech interviews and secure high-paying roles.
+
+- LIVE mentor-led classes with structured learning.&nbsp;
+- Learn DSA, coding patterns, and problem-solving skills.
+- Master High-Level System Design concepts.
+- Practice real interview questions** **and build projects for your portfolio.
+- Prepare for top companies like Google, Amazon, and Microsoft&nbsp;with Mock Interviews.![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e)![level](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![level](https://media.geeksforgeeks.org/img-practice/level-1668679601.svg)Beginner to Advanced![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e)![course duration](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![course duration](https://media.geeksforgeeks.org/img-practice/time-1668679645.svg)12 Weeks![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e)![seats-left](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![seats-left](https://media.geeksforgeeks.org/img-practice/seatsleft-1669094948.svg)5 Seats LeftComprehensive LearningCourse CertificateIndustry ReadinessDoubt Solving![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2720%27%20height=%2720%27/%3e)![warning](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![warning](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FGroup5631-1621599978.png&amp;w=48&amp;q=75)
+
+**Registrations Closing on 13th June...Hurry Just 5 Seats Left!!**
+Facing Difficulty? Call Now For Instant Enrollment:+91- 9217990450
+
+## Course Overview
+![Document Model](https://media.geeksforgeeks.org/wp-content/uploads/20260105155935478652/DSA-Core.png)**Data Structures &amp; Advanced Algorithms**
+Interview-ready problem solving with algorithmic thinking to identify patterns in complex problems.![Document Model](https://media.geeksforgeeks.org/wp-content/uploads/20260105155935460596/Code-Structure.png)**Optimised Problem Solving Approaches**
+Learn clean coding standards, professional debugging, and writing production-ready optimized solutions.![Document Model](https://media.geeksforgeeks.org/wp-content/uploads/20260105155935494226/System-Architecture.png)**System Architecture &amp; Scalability**
+Design scalable systems using load balancing, sharding, caching, and smart distributed trade-offs.![Document Model](https://media.geeksforgeeks.org/wp-content/uploads/20251223143236006454/Designing-scalable-systems-using-load-balancers_-caching_-queues_-and-databases.png)**Production-Grade Design**
+Solve MAANG and startup interview design cases with optimized, production-grade code and design thinking.![Document Model](https://media.geeksforgeeks.org/wp-content/uploads/20260105155935487095/Interview-ready-problem-solving.png)**Industrial System Thinking**
+Solve real-world system designs like Uber and Netflix by mastering scalability, trade-offs, and availability.Read more ![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2714%27%20height=%2714%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/6/Web/Content/double%20arrow%20down_1712668255.svg)
+## What Sets Us Apart
+![Doubt Support &amp; Assistance](https://media.geeksforgeeks.org/wp-content/uploads/20251118165851822547/support_10247124-1.png)
+### Doubt Support &amp; Assistance
+AI chat support with a dedicated batch teaching assistant to solve your doubts instantly for 6 months.![Recognised Certification](https://media.geeksforgeeks.org/wp-content/uploads/20251118165735627318/award_5362845-1.png)
+### Recognised Certification
+Earn an industry-recognized GeeksforGeeks Training Certificate for credible validation, career advancement, and lifetime![Interview Preparation](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230929112855/Placement-Assistance-4-31.png)
+### Interview Preparation
+Expert interview prep with selected questions, mock contests and clear process guidance to secure your dream job.![Course Benefits](https://media.geeksforgeeks.org/wp-content/uploads/20251118102819113990/Complimentary-Course-Access.png)
+### Course Benefits
+1-year Access to the online Course materials and Premium Recorded videos
+### Course Syllabus
+DSA LiveSystem Design Live
+### Class 1: Time &amp; Space Complexity
+
+- Introduction to algorithm analysis, efficiency, and Big-O notation for time complexity
+- Bitwise Operators with practical examples (swapping numbers, checking even/odd)
+- Number System basics: binary, decimal, octal, hexadecimal, and base conversions
+### Class 2: Mathematics
+
+- Prime numbers and efficient checking methods
+- Sieve of Eratosthenes for generating primes
+- GCD &amp; LCM using Euclidean Algorithm with array-based applications
+- Examples: fractions, modular arithmetic, and related practice problems
+### Class 3: Array I
+
+- Array basics, traversal, insertion, deletion, Second Max, Leaders
+- Kadanes Algorithm for Maximum Subarray Sum, Buy-Sell Stock problem
+- Array rotations using Juggling Algorithm, Reversal method, and examples
+### Class 4: Array II
+
+- Majority Element using Boyer Moore Voting Algorithm
+- Subarrays and Subsequences with Prefix &amp; Suffix arrays
+- Practice problems for sum, product, and sliding window subarraysRead more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2714%27%20height=%2714%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/6/Web/Content/double%20arrow%20down_1712668255.svg)
+### Module 1: System Design Foundations
+
+- What is HLD - scope, goals, functional vs non-functional requirements
+- PEDALS / RESHADED interview frameworks
+- Capacity estimation - DAU, QPS, storage back-of-envelope
+- Latency numbers every developer should know
+- Client-server model, stateless vs stateful services
+- Trade-off decision framework (CAP, latency vs consistency)
+### Module 2: Scalability Fundamentals
+
+- Vertical vs horizontal scaling - trade-offs
+- Load balancing - round-robin, least connections, IP hash
+- Sticky sessions - failure modes and alternatives
+- Stateless architecture for horizontal scalability
+- Read replicas, auto-scaling, geographic distribution
+- Cost vs performance trade-offs; connection draining &amp; graceful scale-in
+### Module 3: Databases at Scale - Part 1
+
+- RDBMS vs NoSQL - when to choose which
+- ACID properties &amp; BASE model (eventual consistency)
+- CAP theorem &amp; PACELC theorem
+- Database indexing strategies - B-tree, hash, composite
+- Schema migration strategies - zero-downtime migrations
+- NewSQL (CockroachDB, Spanner) &amp; time-series databases
+### Module 4: Databases at Scale - Part 2
+
+- Database sharding - horizontal partitioning strategies
+- Consistent hashing for shard routing
+- Read/write separation - primary-replica pattern
+- Multi-leader replication &amp; conflict resolution
+- Connection pooling
+- Vector databases (Pinecone, pgvector) &amp; graph databases (Neo4j)Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2714%27%20height=%2714%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/6/Web/Content/double%20arrow%20down_1712668255.svg)
+## Upcoming Batches
+BatchMentorSTARTING FROM TIMINGS
+## Testimonials
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)Live classes of DSA for Working Professional are very good and they covered all the important topics for placement in good MNC. This course helped me ...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![NISHI KANT RANJAN](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![NISHI KANT RANJAN](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FTestimonial%2Ff12eb9f592a47fc40a8f11c0610c5308bacc52f9.jpg&amp;w=128&amp;q=75)NISHI KANT RANJANPlaced in Globallogic a Hitachi group company ![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)I really enjoyed the course and felt the challenge. It built confidence. I look forward to taking another course in the future. This course helped a l...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![Shaik Avaies](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Shaik Avaies](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FTestimonial%2F7ddfe865c512010acb51b022fa6bb95f0f7e68cd.jpg&amp;w=128&amp;q=75)Shaik AvaiesPlaced at Amazon![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)Completing the "DSA to System Design for Working Professionals" course, anchored by the "Mastery in DSA," was a game-changer. From refining my coding ...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![Neeraj Kumar](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Neeraj Kumar](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FTestimonial%2F5836882b76cc1fb858ce0cd9c2f198ba98df5de4.jpg&amp;w=128&amp;q=75)Neeraj KumarPlaced at Montbleu Technologies![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)Once I had basic knowledge of Data Structures, I started using the questions to practice questions based on topic and difficulty levels. Whenever I fe...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![Adesh](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Adesh](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FTestimonial%2F7ddfe865c512010acb51b022fa6bb95f0f7e68cd.jpg&amp;w=128&amp;q=75)AdeshPlaced at Volante Systems![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)I was able to develop my coding skills through this course. The training had industry oriented problems that required extremely sound logic, but the m...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![Taranjeet Singh](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Taranjeet Singh](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FTestimonial%2F2933d9d92c914dd5f44195f86b09d9a6e8e265fc.jpg&amp;w=128&amp;q=75)Taranjeet SinghPlaced at NEC![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)I have joined the Geeks Classes batch for DSA to get placed in a good product-based company. This course helped me a lot to understand Data structures...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![Nikhil Kumar](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Nikhil Kumar](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FTestimonial%2Fc6af0fd2a7a970a9214981cb4ae279cd7fe28ac6.jpeg&amp;w=128&amp;q=75)Nikhil KumarPlaced in DateTheRampView More Testimonials
+## Frequently Asked Questions
+01
+###   Is there any number to contact for query? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)02
+###  How will my doubts be addressed throughout the course? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)03
+###  Is there a refund option if I am not satisfied with the course? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)04
+###  What if I miss a class? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)05
+###  How long will I have access to the course? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)06
+###   Can I make the payment through PayPal? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

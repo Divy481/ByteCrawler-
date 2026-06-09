@@ -1,0 +1,436 @@
+Loops in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Loops in C++
+Last Updated : 25 Apr, 2026
+- 
+- 
+- 
+
+In C++, there are situations where a task needs to be repeated multiple times. For example, to print "Hello World" 5 times, we would have to write the cout statement 5 times if done manually.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  
+    cout &lt;&lt; &quot;Hello World\n&quot;;
+    cout &lt;&lt; &quot;Hello World\n&quot;;
+    cout &lt;&lt; &quot;Hello World\n&quot;;
+    cout &lt;&lt; &quot;Hello World\n&quot;;
+    cout &lt;&lt; &quot;Hello World&quot;;
+    return 0;
+}
+
+**Output**Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+
+Writing it 20 times would take more effort, and writing it 100 times would be even more tedious, as the same statement must be repeated again and again.
+
+
+In such cases, loops come into play, allowing users to repeatedly execute a block of statements any number of times.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  
+  	for (int i = 0; i &lt; 5; i++) {
+    	cout &lt;&lt; &quot;Hello World\n&quot;;
+    }
+    return 0;
+}
+
+**Output**Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+
+
+In the above program, we have used one of the loops to write "Hello World" 5 times. You can see how much code is reduced. The same line of code can write "Hello World" 20 or even 100 times.
+
+## Different Types of Loops
+
+
+C++ provides ****three types of loops**** that work the same, but are preferred in different use cases:
+
+## for Loop
+
+
+The [****for loop****](https://www.geeksforgeeks.org/cpp/cpp-for-loop/) is an ****entry-controlled loop,**** which means that it checks whether the test condition is true before executing the statements inside it.
+
+### Syntax
+
+            C++
+
+    for (initialization; condition; updation) { 
+     // body of for loop
+}
+
+
+
+The various ****parts of the for loop**** are:
+
+- ****Initialization****: Initialize the variable to some initial value.
+- ****Test Condition****: This specifies the test condition. If the condition evaluates to true, then body of the loop is executed. If it  evaluated to false, the loop is terminated.
+- ****Update Expression****: After the execution loop's body, this expression increments/decrements the loop variable by some value.
+
+All these together are used to create a logic and flow of the loop.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  
+  	// For loop that starts with i = 1 and ends
+  	// when i is greater than 5.
+    for (int i = 1; i &lt;= 5; i++) {
+        cout &lt;&lt; i &lt;&lt; &quot; &quot;;
+    }
+    return 0;
+}
+
+**Output**1 2 3 4 5 
+
+There is a type of for loop that does not need the condition and the updating statement. It is called [****range-based for loop****](https://www.geeksforgeeks.org/cpp/range-based-loop-c/) and it can only be used for iterable objects such as vector, set, etc.
+
+
+****Flowchart of for Loop:****
+![Forloop](https://media.geeksforgeeks.org/wp-content/uploads/20250719173109620611/Forloop.webp) 
+## while Loop
+
+
+The**** ****[****while loop****](https://www.geeksforgeeks.org/cpp/cpp-while-loop/) is also an ****entry-controlled loop**** which is used in situations where we do not know the exact number of iterations of the loop beforehand.
+
+
+In for loop, we have seen that the number of iterations is ****known beforehand****, i.e. the number of times the loop body is needed to be executed is known to us and we create the condition on the basis of it. But while loops execution is solely based on the condition.
+
+
+****Syntax****
+
+            C++
+
+    while (condition) {
+    // Body of the loop
+    // update expression
+}
+
+
+
+Only the ****condition ****is part of the while loop syntax, we have to ****initialize ****and ****update loop ****variable manually.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  
+  	// Initialization
+  	int i = 1;
+  
+  	// while loop that starts with i = 1 and ends
+  	// when i is greater than 5.
+    while (i &lt;= 5) {
+        cout &lt;&lt; i &lt;&lt; &quot; &quot;;
+      
+      	// Updation
+      	i++;
+    }
+    return 0;
+}
+
+**Output**1 2 3 4 5 
+
+****Flowchart for While Loop :****
+![While-loop](https://media.geeksforgeeks.org/wp-content/uploads/20250719173109511150/While-loop.webp) 
+## do while Loop
+
+
+The [****do-while loop****](https://www.geeksforgeeks.org/cpp/cpp-do-while-loop/) is an ****exit-controlled loop ****which means the condition is checked after executing the body of the loop. So, in a do-while loop, the loop body will ****execute at least once**** irrespective of the test condition.
+
+### ****Syntax****
+
+            C++
+
+    do {
+    // Body of the loop
+    // Update expression
+} while (condition);
+
+
+
+Like while loop, only the ****condition ****is the part of do while loop syntax, we have to do the ****initialization ****and ****updation ****of loop variable**** ****manually.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  
+  	// Initialization
+  	int i = 1;
+  
+  	// while loop that starts with i = 1 and ends
+  	// when i is greater than 5.
+     do {
+        cout &lt;&lt; i &lt;&lt; &quot; &quot;;
+      
+      	// Updation
+      	i++;
+    }while (i &lt;= 5);
+
+    return 0;
+}
+
+**Output**1 2 3 4 5 
+
+Remember the last semicolon at the end of the loop.
+
+
+****Flowchart for do while Loop:****
+![Do-while-loop](https://media.geeksforgeeks.org/wp-content/uploads/20250719173109396294/Do-while-loop.webp) 
+## ****For Each Loop****
+
+
+The for-each loop in C++ is a range-based for loop. It automatically iterates over each element of a container or array using the container's begin() and end() functions internally.
+
+### Use of Reference vs Value :
+
+- By Value: for(auto it : arr), works on a copy, modifications won't affect the original.
+- By Reference: for(auto &amp;it : arr), you can modify elements directly.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main() {
+  
+  int arr[] = {1, 2, 3, 4, 5};
+    
+    // By value
+    cout &lt;&lt; &quot;Iterating by value&quot; &lt;&lt; endl;
+    for(auto it : arr){
+        cout &lt;&lt; it &lt;&lt;&quot; &quot;;
+    }
+    cout&lt;&lt; endl;
+    
+    // By reference
+    cout &lt;&lt; &quot;Iterating with reference&quot; &lt;&lt; endl;
+    for(auto &amp;it : arr){
+        cout &lt;&lt; it &lt;&lt; &quot; &quot;;
+    }
+    cout&lt;&lt;endl;
+    return 0;
+}
+
+**Output**Iterating by value
+1 2 3 4 5 
+Iterating with reference
+1 2 3 4 5 
+
+## Infinite Loops
+
+
+An ****infinite loop**** (sometimes called an endless loop) is a piece of code that lacks a**** functional exit**** so that it repeats indefinitely. An infinite loop occurs when a condition is always evaluated to be true. Usually, this is an error. We can manually create an infinite loop using all three loops:
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+    // This is an infinite for loop as the condition
+    // expression is blank
+    for (;;) {
+        cout &lt;&lt; &quot;This loop will run forever.\n&quot;;
+    }
+	return 0;
+}
+
+
+
+****Output****
+This loop will run forever.This loop will run forever....................
+## Nesting of Loops
+
+
+[****Nesting of loops****](https://www.geeksforgeeks.org/cpp/nested-loops-in-c-with-examples-2/) refers to placing one loop inside another. The inner loop is executed completely for each iteration of the outer loop. This is useful when you need to perform multiple iterations within each iteration of a larger loop, such as iterating over a two-dimensional array or performing operations that require more than one level of iteration.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    
+    for (int i = 0; i &lt; 3; i++) {
+        
+        // Outer loop runs 3 times
+        for (int j = 0; j &lt; 2; j++) {
+            
+            // Inner loop runs 2 times for each
+            // outer loop iteration
+            cout &lt;&lt; &quot;i = &quot; &lt;&lt; i &lt;&lt; &quot;, j = &quot; &lt;&lt; j &lt;&lt; endl;
+        }
+    }
+    return 0;
+}
+
+**Output**i = 0, j = 0
+i = 0, j = 1
+i = 1, j = 0
+i = 1, j = 1
+i = 2, j = 0
+i = 2, j = 1
+
+## Loop Control Statements
+
+
+Generally, the normal flow of any loop is that it will repeat till its test condition is true. In each repetition, it will execute the given set of statements. But C++ provides ways to modify this normal flow. This can be done by using loop control statements shown below: 
+
+### Break out of the Loop
+
+
+The [****break ****](https://www.geeksforgeeks.org/cpp/cpp-break-statement/)statement when encountered, terminates the loop regardless of its test condition. This is useful when the execution of loop is dependent on multiple conditions.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    for (int i = 0; i &lt; 5; i++) {
+        
+        // Terminating before reaching i = 4
+        if (i == 2) break;
+        cout &lt;&lt; &quot;Hi&quot; &lt;&lt; endl; 
+    }
+    return 0;
+}
+
+**Output**Hi
+Hi
+
+### Skip a Particular Iteration
+
+
+The [****continue****](https://www.geeksforgeeks.org/cpp/continue-statement-cpp/) statement, when encountered, skips the remaining code inside the current iteration of the loop and proceeds to the next iteration. This is useful when you want to skip specific iterations based on certain conditions but still want to continue the loop execution.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    for (int i = 0; i &lt; 5; i++) {
+        
+        // Skipping when i equals 2
+        if (i == 2) continue;
+        cout &lt;&lt; &quot;Hi&quot; &lt;&lt; endl; 
+    }
+    return 0;
+}
+
+**Output**Hi
+Hi
+Hi
+Hi
+CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[C Basics](https://www.geeksforgeeks.org/tag/c-basics/)[CPP-Basics](https://www.geeksforgeeks.org/tag/cpp-basics/)[school-programming](https://www.geeksforgeeks.org/tag/school-programming/)[CBSE - Class 11](https://www.geeksforgeeks.org/tag/cbse-class-11/)[+1 More]()[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

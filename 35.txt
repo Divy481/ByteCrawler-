@@ -1,0 +1,512 @@
+Iterators in C++ STL - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Iterators in C++ STL
+Last Updated : 14 Apr, 2026
+- 
+- 
+- 
+
+An iterator is an object that behaves like a pointer to traverse and access elements of a container.
+
+- They allow container traversal without exposing internal structure.
+- Support container-independent algorithms like sort(), count(), and find().
+- Types include Input, Output, Forward, Bidirectional, and Random Access.
+- They are declared as container_type::iterator it; or auto it = container.begin();.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; v = {10, 20, 30, 40};
+
+    // Using iterator to traverse the vector
+    for (vector&lt;int&gt;::iterator it = v.begin(); it != v.end(); ++it)
+        cout &lt;&lt; *it &lt;&lt; &quot; &quot;; 
+
+    return 0;
+}
+
+**Output**10 20 30 40 
+## Container Iterator Functions
+
+- [STL ](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)containers provide member functions that return iterators.
+- These iterators usually point to the first and last elements of the container.
+- Most STL containers support these functions; exceptions include containers with limited access like stack and queue.
+- The functions have consistent names across containers for uniformity.
+#### List of all methods that returns the iterator to the containers:
+
+- [begin()](https://www.geeksforgeeks.org/cpp/vector-begin-in-cpp-stl/): Returns an iterator to the beginning of container.
+- end(): Returns an iterator to the theoretical element just after the last element of the container.
+- [cbegin()](https://www.geeksforgeeks.org/cpp/set-cbegin-and-cend-function-in-c-stl/): Returns a constant iterator to the beginning of container. A constant iterator cannot modify the value of the element it is pointing to.
+- [cend()](https://www.geeksforgeeks.org/cpp/set-cbegin-and-cend-function-in-c-stl/): Returns a constant iterator to the theoretical element just after the last element of the container.
+- [rbegin()](https://www.geeksforgeeks.org/cpp/vector-rbegin-and-rend-function-in-c-stl/): Returns a reverse iterator to the beginning of container.
+- [rend()](https://www.geeksforgeeks.org/cpp/vector-rbegin-and-rend-function-in-c-stl/): Returns a reverse iterator to the theoretical element just after the last element of the container.
+- [crbegin()](https://www.geeksforgeeks.org/cpp/set-crbegin-and-crend-function-in-c-stl/): Returns a constant reverse iterator to the beginning of container.
+- [crend()](https://www.geeksforgeeks.org/cpp/set-crbegin-and-crend-function-in-c-stl/): Returns a constant reverse iterator to the theoretical element just after the last element of the container.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; vec = {10, 20, 30, 40, 50};
+
+    // Normal iterator
+    cout &lt;&lt; &quot;Forward iteration: &quot;;
+    for (auto it = vec.begin(); it != vec.end(); ++it)
+    {
+        cout &lt;&lt; *it &lt;&lt; &quot; &quot;;
+    }
+    cout &lt;&lt; endl;
+
+    // Constant iterator
+    cout &lt;&lt; &quot;Forward (read-only) iteration: &quot;;
+    for (auto it = vec.cbegin(); it != vec.cend(); ++it)
+    {
+        cout &lt;&lt; *it &lt;&lt; &quot; &quot;;
+    }
+    cout &lt;&lt; endl;
+
+    // Reverse iterator
+    cout &lt;&lt; &quot;Reverse iteration: &quot;;
+    for (auto it = vec.rbegin(); it != vec.rend(); ++it)
+    {
+        cout &lt;&lt; *it &lt;&lt; &quot; &quot;;
+    }
+    cout &lt;&lt; endl;
+
+    return 0;
+}
+
+**Output**Forward iteration: 10 20 30 40 50 
+Forward (read-only) iteration: 10 20 30 40 50 
+Reverse iteration: 50 40 30 20 10 
+
+## Iterators Operations
+
+
+Just like pointer arithmetic, there are some operations that are allowed on C++ iterators. They are used to provide different functionalities that increases the importance of iterators. There are 5 valid [iterator operations in C++](https://www.geeksforgeeks.org/cpp/iterators-operations-in-cpp/):
+
+### Dereferencing Iterators
+
+- Dereferencing operation allows the users to access or update the value of the element pointed by the iterator. 
+- We use the [(*)](https://www.geeksforgeeks.org/cpp/cpp-dereferencing/) indirection operator to dereference iterators just like pointers.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; v = {10, 20, 30, 40};
+
+    // Iterator pointing to the first element
+    auto it = v.begin();
+
+    // Dereferencing iterator to access value
+    cout &lt;&lt; &quot;First element: &quot; &lt;&lt; *it &lt;&lt; endl;
+
+    // Dereferencing iterator to update value
+    *it = 100;
+
+    // Printing updated first element
+    cout &lt;&lt; &quot;Updated first element: &quot; &lt;&lt; *it &lt;&lt; endl;
+
+    return 0;
+}
+
+**Output**First element: 10
+Updated first element: 100
+
+### Incrementing/Decrementing Iterators
+
+- We can increment or decrement the iterator by 1 using [(++) or (--) operators](https://www.geeksforgeeks.org/cpp/cpp-increment-and-decrement-operators/) respectively.
+-  Increment operation moves the iterator to the next element in the container while the decrement operation moves the iterator to the previous element.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; v = {10, 20, 30, 40, 50};
+
+    // Iterator pointing to the beginning
+    auto it = v.begin();
+
+    // Incrementing iterator to move to the next element
+    ++it;
+    cout &lt;&lt; &quot;After increment: &quot; &lt;&lt; *it &lt;&lt; endl;
+
+    // Decrementing iterator to move back to the previous element
+    --it;
+    cout &lt;&lt; &quot;After decrement: &quot; &lt;&lt; *it &lt;&lt; endl;
+
+    return 0;
+}
+
+**Output**After increment: 20
+After decrement: 10
+
+### Adding/Subtracting Integer to Iterators
+
+- Adding or subtracting an integer to an iterator moves it forward or backward, but only for random access iterators like vector and deque.
+- Other iterators, like those in list, set, or map, do not support arithmetic.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; v = {10, 20, 30, 40, 50};
+
+    // Iterator pointing to the beginning
+    auto it = v.begin();
+
+    // Moving iterator forward by 2 positions
+    it = it + 2;
+    cout &lt;&lt; &quot;Element after moving forward by 2: &quot; &lt;&lt; *it &lt;&lt; endl;
+
+    // Moving iterator backward by 1 position
+    it = it - 1;
+    cout &lt;&lt; &quot;Element after moving backward by 1: &quot; &lt;&lt; *it &lt;&lt; endl;
+
+    return 0;
+}
+
+**Output**Element after moving forward by 2: 30
+Element after moving backward by 1: 20
+
+### Subtracting Another Iterator
+
+
+We can subtract one iterator from another to find the distance (or the number of elements) between the memory they are pointing to.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; v = {10, 20, 30, 40, 50};
+
+    // Defining two iterators
+    auto it1 = v.begin();
+    auto it2 = v.begin() + 3;
+
+    // Finding the distance between iterators
+    cout &lt;&lt; &quot;Distance between it1 and it2: &quot; &lt;&lt; it2 - it1 &lt;&lt; endl;
+
+    return 0;
+}
+
+**Output**Distance between it1 and it2: 3
+
+### Comparing Iterators
+
+- We can compare two iterators of the same container to see their relationship.
+- Relational operators like ==, !=, &lt;, &gt;, &lt;=, and &gt;= can be used for comparison.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; v = {10, 20, 30, 40};
+
+    // Defining two iterators
+    auto it1 = v.begin();
+    auto it2 = v.begin() + 2;
+
+    // Comparing iterators
+    if (it1 != it2)
+    {
+        cout &lt;&lt; &quot;Iterators point to different elements.&quot; &lt;&lt; endl;
+    }
+
+    if (it1 &lt; it2)
+    {
+        cout &lt;&lt; &quot;it1 comes before it2 in the vector.&quot; &lt;&lt; endl;
+    }
+
+    return 0;
+}
+
+**Output**Iterators point to different elements.
+it1 comes before it2 in the vector.
+
+## Types of Iterators in C++
+
+
+STL iterators can be divided on the basis of the operations that can be performed on them. 
+
+### 1. Input Iterator
+
+- [Input Iterator ](https://www.geeksforgeeks.org/cpp/input-iterators-in-cpp/)can read elements from a container sequentially (one pass).
+- Supported in containers like istream_iterator, single-pass algorithms; supports *, ++, ==, !=.
+### 2. Output Iterator
+
+- [Output Iterator ](https://www.geeksforgeeks.org/cpp/output-iterators-cpp/)can write elements to a container sequentially (one pass).
+- Supported in containers like ostream_iterator, single-pass algorithms; supports *, ++.
+### 3. Forward Iterator 
+
+- Can read and write, allows multiple passes through the container.
+- Supported in containers like forward_list, unordered_set, unordered_map; supports *, ++, ==, !=.
+### 4. Bidirectional Iterator
+
+- Can move forward and backward in a container.
+- Supported in list, set, map, multiset, multimap; supports *, ++, --, ==, !=.
+### 5. Random Access Iterator 
+
+- Can move freely to any position using arithmetic operations.
+- Supported in vector, deque, array; supports *, ++, --, +, -, [], &lt;, &gt;, &lt;=, &gt;=.
+### Iterator Adaptors
+
+
+Iterator adaptors in C++ are the special type of iterators that are built over traditional iterators to provide specialized functionality. There are many iterator adaptors in C++ some of which are given below:
+
+
+Iterator Adaptors Type
+
+
+Description
+
+
+[Reverse Iterator](https://www.geeksforgeeks.org/cpp/reverse-iterate-vector-in-cpp/)
+
+
+The reverse iterator is built over bidirectional or above type of operator and allows users to traverse the container in the reverse direction.
+
+
+[Stream Iterators](https://www.geeksforgeeks.org/cpp/stdistream_iterator-stdostream_iterator-c-stl/)
+
+
+The stream iterators namely, istream and ostream iterators are built on the input and output iterators respectively. These iterators allow the users to use the streams as containers.
+
+
+[Move Iterators](https://www.geeksforgeeks.org/cpp/std-move_iterator-in-cpp-11/)
+
+
+Move iterators are used to introduce the move semantics in STL algorithms. The move iterators move the ownership of the copied container data to the copying container without creating the extra copies.
+
+
+[Inserter Iterator](https://www.geeksforgeeks.org/cpp/stdinserter-in-cpp/)
+
+
+The insertor iterators allows you to insert the given elements at some position in the container. There are three insertor iterators in C++:
+
+- ****back_insert_iterator:**** Inserts at the back of the container.
+- ****front_insert_iterator:**** Inserts at the front of the container.
+- ****insert_iterator:**** Inserts at anywhere in the container.
+
+These iterators can be created using [back_inserter()](https://www.geeksforgeeks.org/cpp/stdback_inserter-in-cpp/), [front_inserter()](https://www.geeksforgeeks.org/cpp/stdfront_inserter-in-cpp/), [inserter()](https://www.geeksforgeeks.org/cpp/stdinserter-in-cpp/) functions in C++.
+
+## Iterator Utility Functions in C++
+
+
+C++ STL provide the various function to simplify the working with iterators. They are listed in the below table:
+****Function********Description********Syntax****[std::advance](https://www.geeksforgeeks.org/cpp/stdadvance-in-cpp/)Advances an iterator by a specific number of positions.****advance****(**it, n**)[std::next](https://www.geeksforgeeks.org/cpp/stdnext-in-cpp/)Returns the iterator that is a specified number of positions ahead of the given iterator.****next****(**it, n**)[std::prev](https://www.geeksforgeeks.org/cpp/stdprev-in-cpp/)Returns the iterator that is a specified number of positions behind the given iterator.****prev****(**it, n**)[std::distance](https://www.geeksforgeeks.org/cpp/stddistance-in-c/)Returns the number of elements between two iterators.****distance****(**it1, it2**)std::beginReturns an iterator to the first element of the given container.****begin****(**container**)std::endReturns an iterator to the element following the last element of the given container.****end****(**container**)std::rbeginReturns a reverse iterator to the last element of the given container.****rbegin****(**container**)std::rendReturns a reverse iterator to the element preceding the first element of the given container.****rend****(**container**)[std::inserter](https://www.geeksforgeeks.org/cpp/stdinserter-in-cpp/)Creates an insert iterator that inserts elements into a container at a specified position.****inserter****(**container, position**)[std::back_inserter](https://www.geeksforgeeks.org/cpp/stdback_inserter-in-cpp/)Creates a back insert iterator that appends elements to the end of a container.****back_inserter****(**container**)[std::front_inserter](https://www.geeksforgeeks.org/cpp/stdfront_inserter-in-cpp/)Creates a front insert iterator that inserts elements at the front of a container.****front_inserter****(**container**)
+## Applications of Iterators with Examples
+
+
+Iterators are extensively used in C++ for many different purposes while working with STL containers and algorithms. Following are some primary applications of iterators in C++ which their code examples:
+
+### Traversing Containers
+
+
+Traversing STL containers is the most basic application of iterators. In this, we use the begin() and end() functions to get the begin and end iterators to traverse the whole container. Basically, we keep incrementing the begin iterator till it is not equal to the end.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;set&gt;
+using namespace std;
+
+int main()
+{
+    set&lt;int&gt; s = {10, 20, 30, 40, 50};
+
+    // Iterator to the beginning of the set
+    auto it = s.begin();
+
+    // Iterating through the set
+    while (it != s.end())
+    {
+
+        // Accessing value via iterator
+        cout &lt;&lt; *it &lt;&lt; &quot; &quot;;
+
+        // Moving to the next element
+        ++it;
+    }
+
+    return 0;
+}
+
+**Output**10 20 30 40 50 
+
+****Explanation:**** As shown in the code above, we traverse the set container. Similarly, we can use the same approach to traverse any container.
+
+### Reversing a Container
+
+
+Reverse iterators allow you to traverse a container from the end to the beginning without needing to manually handling the reversal.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; vec = {10, 20, 30, 40, 50};
+
+    // Defining a reverse iterator pointing to the last element
+    auto it = vec.rbegin();
+
+    // Iterating the vector in reverse
+    while (it != vec.rend())
+    {
+        cout &lt;&lt; *it &lt;&lt; &quot; &quot;;
+        ++it;
+    }
+
+    return 0;
+}
+
+**Output**50 40 30 20 10 
+### Container-Independent Algorithms
+
+
+Iterators allow algorithms to work with any container type, making functions like std::sort(), std::find(), and std::for_each() more flexible. You can pass iterators instead of the actual container.
+
+            C++
+
+    #include &lt;algorithm&gt;
+#include &lt;iostream&gt;
+#include &lt;set&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; vec = {30, 10, 40, 10, 50};
+    multiset&lt;int&gt; ms = {10, 30, 10, 20, 40, 10};
+
+    // Count the number of occurrences of 10 in vector and multiset
+    cout &lt;&lt; &quot;10s in Vector: &quot; &lt;&lt; count(vec.begin(), vec.end(), 10) &lt;&lt; endl;
+    cout &lt;&lt; &quot;10s in Multiset: &quot; &lt;&lt; count(ms.begin(), ms.end(), 10);
+
+    return 0;
+}
+
+**Output**10s in Vector: 2
+10s in Multiset: 3
+### Additional Applications of Iterators
+
+- ****Distance Calculation:**** std::distance() computes the number of elements between two iterators.
+- ****Stream Iteration:**** Stream iterators let you treat input/output streams like containers for easier reading and writing.
+- ****Move Semantics:**** Move iterators improve efficiency by transferring data without unnecessary copying.
+- ****Custom Iterators:**** Can be implemented for non-STL structures (e.g., trees, graphs) to support STL-like operations.
+
+****Note:**** Most iterator operations like ++, --, *, and comparison take O(1) time, while operations like distance() and advance() take O(n) for non-random iterators and O(1) for random access iterators.
+CommentArticle Tags:Article Tags:[Misc](https://www.geeksforgeeks.org/category/misc/)[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-iterator](https://www.geeksforgeeks.org/tag/cpp-iterator/)[STL](https://www.geeksforgeeks.org/tag/stl/)[CPP-Library](https://www.geeksforgeeks.org/tag/cpp-library/)[+1 More]()[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

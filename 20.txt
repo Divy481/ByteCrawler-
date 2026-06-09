@@ -1,0 +1,196 @@
+Basic Input / Output in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Basic Input / Output in C++
+Last Updated : 25 Apr, 2026
+- 
+- 
+- 
+
+In C++, data is read and written using streams, which are sequences of bytes.
+
+- ****Input stream:**** Data flows from a device (like the keyboard) to the computer’s memory.
+- ****Output stream:**** Data flows from memory to an output device (like the screen).
+- These streams are defined in the ****&lt;iostream&gt;**** header file.
+- The most common stream objects are - "****cin****": for taking input and "****cout****": for displaying output. 
+## Standard Output Stream - cout
+
+- cout is an instance of the ostream class used to display output on the screen.
+- Data is sent to cout using the insertion operator &lt;&lt;.
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    cout &lt;&lt; &quot;GeeksforGeeks&quot;;
+    return 0;
+}
+
+**Output**GeeksforGeeks
+## Standard Input Stream - cin
+
+- cin is an instance of the istream class used to read input from the keyboard.
+- The extraction operator &gt;&gt; is used with cin to get data from the input stream and store it in a variable.
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    int age;
+    // Taking input from user and store it in variable
+    cin &gt;&gt; age;
+    
+    // Output the entered age
+    cout &lt;&lt; &quot;Age entered: &quot; &lt;&lt; age;
+    return 0;
+}
+
+
+
+****Output****
+
+
+18 **(Enter by user)**Age entered: 18
+
+## Un-buffered Standard Error Stream - cerr
+
+- cerr is the standard error stream used to display error messages. It is an instance of the ostream class.
+- It is an unbuffered output stream used to display error or warning messages immediately, ensuring they appear instantly without any buffering delays like cout
+
+****Note: ****cerr is unbuffered, so its output appears immediately, while cout is buffered and may be delayed. Both can be redirected to files unbuffered does not prevent file output.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    cerr &lt;&lt; &quot;An error occurred&quot;;
+    return 0;
+}
+
+
+
+****Error****
+
+
+An error occurred
+
+## Buffered Standard Error Stream - clog
+
+- clog is the standard logging stream used to display error or log messages. It is an instance of the ostream class, like cerr.
+- Messages are first stored in a buffer and displayed only when the buffer is full or explicitly flushed using flush() (Buffered output)
+- Useful for logging messages that don’t need to appear immediately on the screen.
+- Unlike cerr, output from clog may be delayed due to buffering.
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    clog &lt;&lt; &quot;An error occurred&quot;;
+    return 0;
+}
+
+[Try It Yourself![redirect icon](https://media.geeksforgeeks.org/auth-dashboard-uploads/Group-arrow.svg)](https://www.geeksforgeeks.org/problems/c-input-output2432/1)
+
+****Error****
+
+
+An error occurred
+
+### ****Related Articles****
+
+
+[Difference between cerr and clog](https://www.geeksforgeeks.org/cpp/difference-between-cerr-and-clog/)
+CommentArticle Tags:Article Tags:[Misc](https://www.geeksforgeeks.org/category/misc/)[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-input-output](https://www.geeksforgeeks.org/tag/cpp-input-output/)[CPP-Basics](https://www.geeksforgeeks.org/tag/cpp-basics/)[school-programming](https://www.geeksforgeeks.org/tag/school-programming/)[CBSE - Class 11](https://www.geeksforgeeks.org/tag/cbse-class-11/)[+2 More]()[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

@@ -1,0 +1,395 @@
+Object Oriented Programming in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Object Oriented Programming in C++
+Last Updated : 5 Jun, 2026
+- 
+- 
+- 
+
+Object-Oriented Programming (OOP) is a programming paradigm that organizes programs using classes and objects. It helps developers create modular, reusable, and maintainable applications by modeling real-world entities in code.
+
+- Organizes large programs into logical classes and objects
+- Improves code reusability, scalability, and maintainability
+- Supports important concepts like inheritance, encapsulation, abstraction, and polymorphism
+## Need for Object-Oriented Programming
+
+
+Before Object-Oriented Programming (OOP), most programs followed a procedural approach where the focus was mainly on functions and step-by-step instructions. As programs became larger, managing and reusing code became difficult.
+
+
+OOP in C++ was introduced to solve this problem by organizing programs into classes and objects, making applications easier to understand, reuse, and maintain.
+
+- Structures programs into logical units using classes and objects
+- Keeps related data and functions together through encapsulation
+- Makes code modular, reusable, and scalable
+- Prevents unauthorized access to data using access specifiers
+- Supports the DRY (Don't Repeat Yourself) principle
+## Basic Concepts of Object-Oriented Programming
+
+
+Object-Oriented Programming in C++ is built on concepts like classes, objects, inheritance, encapsulation, abstraction, and polymorphism that help in designing modular and reusable programs.
+![object_oriented_programming](https://media.geeksforgeeks.org/wp-content/uploads/20260605122642225920/object_oriented_programming.webp)Object-Oriented Programming
+### Class
+
+
+A [class](https://www.geeksforgeeks.org/cpp/c-classes-and-objects/) is a user-defined blueprint used to create objects. It defines the data members and member functions that objects of the class will have. Using classes, multiple objects with similar properties and behavior can be created without rewriting code repeatedly.
+
+
+****Components of a Class****
+
+- ****Access Specifiers:**** Control accessibility using public, private, and protected
+- ****Class Name:**** The name used to identify the class
+- ****Data Members:**** Variables declared inside the class
+- ****Member Functions: ****Functions that define object behavior
+
+
+![Class_Object_example](https://media.geeksforgeeks.org/wp-content/uploads/20250805190315437489/Class_Object_example.webp)
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int age;
+
+    void display() {
+        cout &lt;&lt; name &lt;&lt; endl;
+    }
+};
+
+int main() {
+    // Create object
+    Student s1;
+
+    // Assign values
+    s1.name = &quot;Geeksforgeeks&quot;;
+
+    // Call function
+    s1.display();
+
+    return 0;
+}
+
+**Output**Geeksforgeeks
+
+
+****Explanation:**** In this example, Student is a class and s1 is an object of that class. The object accesses the data member name and calls the member function display().
+
+### Object
+
+
+An [Object](https://www.geeksforgeeks.org/cpp/c-classes-and-objects/) is a basic unit of Object-Oriented Programming that represents real-life entities. A typical C++ program creates many objects, which interact with each other by invoking methods.  The objects are what perform your code, they are the part of your code visible to the user. An object mainly consists of:
+
+- ****State: ****It is represented by the data members (attributes) of an object. It also reflects the properties of an object.
+- ****Member Function: ****A member function is a collection of statements that perform some specific task and may return the result to the caller.
+- ****Behavior: ****It is represented by the member functions of an object. It also reflects the response of an object to other objects.
+- ****Identity: ****It is a unique name or reference given to an object that enables it to interact with other objects.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+class Employee {
+    
+    // Instance variables 
+private:
+    string name;
+    float salary;
+
+public:
+    // Constructor
+    Employee(string name, float salary) {
+        this-&gt;name = name;
+        this-&gt;salary = salary;
+    }
+
+    // getters method
+    string getName() { return name; }
+    float getSalary() { return salary; }
+
+    // setters method
+    void setName(string name) { this-&gt;name = name; }
+    void setSalary(float salary) { this-&gt;salary = salary; }
+
+    // Instance method
+    void displayDetails() {
+        cout &lt;&lt; &quot;Employee: &quot; &lt;&lt; name &lt;&lt; endl;
+        cout &lt;&lt; &quot;Salary: &quot; &lt;&lt; salary &lt;&lt; endl;
+    }
+};
+
+
+int main() {
+    Employee emp(&quot;Geek&quot;, 10000.0f);
+    emp.displayDetails();
+    return 0;
+}
+
+**Output**Employee: Geek
+Salary: 10000
+
+
+****Explanation****: Here, emp is an object of the Employee class. The constructor initializes object data, and the member function displays employee details.
+
+## Four Pillars of OOP in C++:
+
+### Abstraction
+
+
+[Abstraction in C++](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/) is the process of hiding the implementation details and only showing the essential details or features to the user. It allows to focus on what an object does rather than how it does it. In C++ abstraction is achieved using abstract classes (classes that have at least one pure virtual function).
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+class Shape {
+
+public:
+    // Pure virtual function
+    virtual void draw() = 0;
+};
+
+class Circle : public Shape {
+
+public:
+    void draw() {
+        cout &lt;&lt; &quot;Drawing Circle&quot;;
+    }
+};
+
+int main() {
+
+    Circle c;
+
+    c.draw();
+
+    return 0;
+}
+
+**Output**Drawing Circle
+
+****Explanation****
+
+- Shape is an abstract class because it contains a pure virtual function draw().
+- The pure virtual function hides implementation details from the user.
+- Circle inherits the Shape class and provides implementation for draw().
+- The user only interacts with the essential functionality without knowing internal details.
+### Encapsulation
+
+
+[Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/) is the process of bundling data and methods into a single unit (class) and restricting direct access to some of its components. It acts as a protective shield for the data.
+
+- Data is hidden from other classes and accessed only through public methods.
+- Achieved by declaring class variables as private and providing public getter/setter methods.
+- Ensures data integrity and controlled access.![Encapsulation](https://media.geeksforgeeks.org/wp-content/uploads/20250912100853761779/Encapsulation.webp)Encapsulation in C++
+            C++
+
+    #include &lt;iostream&gt; 
+using namespace std; 
+
+class Student { 
+    private: 
+        int marks; 
+    public: 
+        void setMarks(int m) { 
+            marks = m; 
+            
+        } 
+        int getMarks() { 
+            return marks; 
+            
+        } 
+    
+}; 
+
+int main() { 
+    Student s; 
+    s.setMarks(90); 
+    cout &lt;&lt; s.getMarks(); 
+    return 0; 
+    
+}
+
+**Output**90
+
+****Explanation: ****The data member marks is private and can only be accessed using public member functions.
+
+### Inheritance
+
+
+[Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/) is a mechanism in C++ where a class (derived) acquires the properties and behaviors of another class (base), forming an "is-a" relationship.
+
+- Enables code reusability by inheriting data members and methods from the base class.
+- Achieved using : followed by an access specifier (public, private, protected).
+- Example: Dog, Cat, Cow can be derived classes of the Animal base class.![inheritance-660x454](https://media.geeksforgeeks.org/wp-content/uploads/20250722182112048071/inheritance-660x454.png)Inheritance
+            C++
+
+    #include &lt;iostream&gt; 
+using namespace std; 
+class Animal { 
+    public: 
+        void sound() { 
+            cout &lt;&lt; &quot;Animal makes sound&quot;; 
+            
+        } 
+    
+}; 
+class Dog : public Animal { 
+    
+}; 
+int main() { 
+    Dog d; 
+    d.sound(); 
+    return 0; 
+    
+}
+
+**Output**Animal makes sound
+
+****Explanation:**** The Dog class inherits the sound() function from the Animal class.
+
+### Polymorphism
+
+
+The word [polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/) means having many forms, and it comes from the Greek words poly (many) and morph (forms), this means one entity can take many forms. In C++, polymorphism allows the same method or object to behave differently based on the context, specially on the project's actual runtime class. 
+![1](https://media.geeksforgeeks.org/wp-content/uploads/20250915180740956733/1.webp)Polymorphism in C++
+            C++
+
+    #include &lt;iostream&gt; 
+using namespace std; 
+class Shape { 
+    public: 
+        virtual void draw() { 
+            cout &lt;&lt; &quot;Drawing Shape&quot;; 
+            
+        } 
+    
+}; 
+class Circle : public Shape { 
+    public: 
+        void draw() override { 
+            cout &lt;&lt; &quot;Drawing Circle&quot;; 
+            
+        } 
+    
+}; 
+int main() { 
+    Shape* s; 
+    Circle c; 
+    s = &amp;c; 
+    s-&gt;draw(); 
+    return 0; 
+    
+}
+
+**Output**Drawing Circle
+
+****Explanation:**** The same function draw() behaves differently depending on the object type.
+
+## Advantages of OOP over Procedural Programming
+
+
+Object-Oriented Programming provides several advantages compared to procedural programming.
+
+- By using objects and classes, you can create reusable components, leading to less duplication and more efficient development.
+- It provides a clear and logical structure, making the code easier to understand, maintain, and debug.
+- OOP support the DRY (Don't Repeat Yourself) principle. This principle encourages minimizing code repetition, leading to cleaner, more maintainable code.
+- By reusing existing code and creating modular components, OOP allows for quicker and more efficient application development.
+## Situations Where OOP May Not Be Suitable
+
+
+Object-Oriented Programming may not be ideal in the following situations:
+
+- The program is very small and simple.
+- Minimizing code size is more important than modularity.
+- Extremely low memory usage is required.
+- High-performance low-level systems are being developed.CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[CPP-Basics](https://www.geeksforgeeks.org/tag/cpp-basics/)[cpp-class](https://www.geeksforgeeks.org/tag/cpp-class/)[cpp-inheritance](https://www.geeksforgeeks.org/tag/cpp-inheritance/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

@@ -1,0 +1,454 @@
+Operators in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Operators in C++
+Last Updated : 25 Apr, 2026
+- 
+- 
+- 
+
+C++ operators are the symbols that operate on values to perform specific mathematical or logical computations on given values. They are the foundation of any programming language.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+int main() {
+  
+	int a = 10 + 20;
+  
+    cout &lt;&lt; a;
+    return 0;
+}
+
+**Output**30
+
+Explanation: Here, '****+****' is an ****addition operator**** and does the addition of 10 and 20 operands and return value 30 as a result.
+
+## C++ Operator Types
+
+
+C++ operators are classified into ****6 types**** on the basis of type of operation they perform:
+
+## Arithmetic Operators
+
+
+[Arithmetic operators](https://www.geeksforgeeks.org/cpp/cpp-arithmetic-operators/) are used to perform arithmetic or mathematical operations on the operands. For example, '****+****' is used for addition.
+
+- ****Addition****, +, Adds two operands
+- ****Subtraction****, -, Subtracts second operand from the first
+- ****Multiplication****, *, Multiplies two operands
+- ****Division****, /, Divides first operand by the second operand
+- ****Modulo Operation****, %, Returns the remainder of an integer division
+- ****Increment****, ++, Increases the value of operand by 1
+- ****Decrement****, --, Decreases the value of operand by 1
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 8, b = 3;
+
+    // Addition
+    cout &lt;&lt; &quot;a + b = &quot; &lt;&lt; (a + b) &lt;&lt; endl;
+  
+    // Subtraction
+    cout &lt;&lt; &quot;a - b = &quot; &lt;&lt; (a - b) &lt;&lt; endl;
+  
+    // Multiplication
+    cout &lt;&lt; &quot;a * b = &quot; &lt;&lt; (a * b) &lt;&lt; endl;
+  
+    // Division
+    cout &lt;&lt; &quot;a / b = &quot; &lt;&lt; (a / b) &lt;&lt; endl;
+  
+    // Modulo
+    cout &lt;&lt; &quot;a % b = &quot; &lt;&lt; (a % b) &lt;&lt; endl;
+  
+    // Increament
+    cout &lt;&lt; &quot;++a = &quot; &lt;&lt; ++a &lt;&lt; endl;
+  
+    // Decrement
+    cout &lt;&lt; &quot;b-- = &quot; &lt;&lt; b--;
+    
+    return 0;
+}
+
+**Output**a + b = 11
+a - b = 5
+a * b = 24
+a / b = 2
+a % b = 2
+++a = 9
+--b = 2
+### Important Points:
+
+- The [Modulo operator](https://www.geeksforgeeks.org/cpp/modulo-operator-in-c-cpp-with-examples/) (%) operator should only be used with integers. Other operators can also be used with floating point values.
+- ****++a ****and ****a++****, both are increment operators, however, both are slightly different. In ****++a****, the value of the variable is incremented first and then it is used in the program. In**** a++****, the value of the variable is assigned first and then it is incremented. Similarly happens for the decrement operator.
+
+You may have noticed that some operator works on two operands while other work on one. On the basis of this operators are also classified as:
+
+- [Unary](https://www.geeksforgeeks.org/cpp/cpp-unary-operators/): Works on single operand.
+- Binary: Works on two operands.
+- Ternary: Works on three operands.
+## Relational Operators
+
+
+[Relational operators](https://www.geeksforgeeks.org/c/relational-operators-in-c/) are used for the comparison of the values of two operands. For example, '&gt;' check right operand is greater.
+
+- ****Is Equal To****, ==, Checks if both operands are equal
+- ****Greater Than****, &gt;, Checks if the first operand is greater than the second operand
+- ****Greater Than or Equal To****, &gt;=, Checks if the first operand is greater than or equal to the second operand
+- ****Less Than****, &lt;, Checks if the first operand is lesser than the second operand
+- ****Less Than or Equal To****, &lt;=, Checks if the first operand is lesser than or equal to the second operand
+- ****Not Equal To****, !=, Checks if both operands are not equal
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 6, b = 4;
+
+    // Equal operator
+    cout &lt;&lt; &quot;a == b is &quot; &lt;&lt; (a == b) &lt;&lt; endl;
+  
+    // Greater than operator
+    cout &lt;&lt; &quot;a &gt; b is &quot; &lt;&lt; (a &gt; b) &lt;&lt; endl;
+  
+    // Greater than Equal to operator
+    cout &lt;&lt; &quot;a &gt;= b is &quot; &lt;&lt; (a &gt;= b) &lt;&lt; endl;
+  
+    //  Lesser than operator
+    cout &lt;&lt; &quot;a &lt; b is &quot; &lt;&lt; (a &lt; b) &lt;&lt; endl;
+  
+    // Lesser than Equal to operator
+    cout &lt;&lt; &quot;a &lt;= b is &quot; &lt;&lt; (a &lt;= b) &lt;&lt; endl;
+  
+    // Not equal to operator
+    cout &lt;&lt; &quot;a != b is &quot; &lt;&lt; (a != b);
+
+    return 0;
+}
+
+**Output**a == b is 0
+a &gt; b is 1
+a &gt;= b is 1
+a &lt; b is 0
+a &lt;= b is 0
+a != b is 1
+
+Note: 0 denotes false and 1 denotes true.
+
+## Logical Operators
+
+
+[Logical operators](https://www.geeksforgeeks.org/c/relational-operators-in-c/) are used to combine two or more conditions or constraints or to complement the evaluation of the original condition in consideration. The result returns a Boolean value, i.e., true or false.
+
+- ****Logical AND****, &amp;&amp;, Returns true only if all the operands are true or non-zero
+- ****Logical OR****, ||, Returns true if either of the operands is true or non-zero
+- ****Logical NOT****, !, Returns true if the operand is false or zero
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 6, b = 4;
+
+    // Logical AND operator
+    cout &lt;&lt; &quot;a &amp;&amp; b is &quot; &lt;&lt; (a &amp;&amp; b) &lt;&lt; endl;
+  
+    // Logical OR operator
+    cout &lt;&lt; &quot;a || b is &quot; &lt;&lt; (a || b) &lt;&lt; endl;
+  
+    // Logical NOT operator
+    cout &lt;&lt; &quot;!b is &quot; &lt;&lt; (!b);
+
+    return 0;
+}
+
+**Output**a &amp;&amp; b is 1
+a || b is 1
+!b is 0
+## ****Bitwise Operators****
+
+
+[Bitwise operators](https://www.geeksforgeeks.org/cpp/cpp-bitwise-operators/) are works on bit-level. So, compiler first converted to bit-level and then the calculation is performed on the operands.
+
+- ****Binary AND****, &amp;, Copies a bit to the result if it exists in both operands
+- ****Binary OR****, |, Copies a bit to the result if it exists in any of the operands
+- ****Binary XOR****, ^, Copies the bit to the result if it is present in either of the operands but not both
+- ****Left Shift****, &lt;&lt;, Shifts the value to the left by the number of bits specified by the right operand
+- ****Right Shift****, &gt;&gt;, Shifts the value to the right by the number of bits specified by the right operand
+- ****One's Complement****, ~, Changes binary digits 1 to 0 and 0 to 1
+
+****Note:**** Only char and int data types can be used with Bitwise Operators.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 6, b = 4;
+
+    // Binary AND operator
+    cout &lt;&lt; &quot;a &amp; b is &quot; &lt;&lt; (a &amp; b) &lt;&lt; endl;
+
+    // Binary OR operator
+    cout &lt;&lt; &quot;a | b is &quot; &lt;&lt; (a | b) &lt;&lt; endl;
+
+    // Binary XOR operator
+    cout &lt;&lt; &quot;a ^ b is &quot; &lt;&lt; (a ^ b) &lt;&lt; endl;
+
+    // Left Shift operator
+    cout &lt;&lt; &quot;a &lt;&lt; 1 is &quot; &lt;&lt; (a &lt;&lt; 1) &lt;&lt; endl;
+
+    // Right Shift operator
+    cout &lt;&lt; &quot;a &gt;&gt; 1 is &quot; &lt;&lt; (a &gt;&gt; 1) &lt;&lt; endl;
+
+    // One’s Complement operator
+    cout &lt;&lt; &quot;~(a) is &quot; &lt;&lt; ~(a);
+
+    return 0;
+}
+
+**Output**a &amp; b is 4
+a | b is 6
+a ^ b is 2
+a&lt;&lt;1 is 12
+a&gt;&gt;1 is 3
+~(a) is -7
+## Assignment Operators
+
+
+[Assignment operators](https://www.geeksforgeeks.org/cpp/cpp-assignment-operators/) are used to assign value to a variable. We assign the value of right operand into left operand according to which assignment operator we use.  
+
+- ****Assignment****, =, Assigns the value on the right to the variable on the left
+- ****Add and Assignment****, +=, Adds the right operand to the left operand and assigns the result to the left operand
+- ****Subtract and Assignment****, -=, Subtracts the right operand from the left operand and assigns the result to the left operand
+- ****Multiply and Assignment****, *=, Multiplies the left operand by the right operand and assigns the result to the left operand
+- ****Divide and Assignment****, /=, Divides the left operand by the right operand and assigns the result to the left operand
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 6, b = 4;
+
+    // Assignment Operator.
+    cout &lt;&lt; &quot;a = &quot; &lt;&lt; a &lt;&lt; endl;
+  
+    //  Add and Assignment Operator.
+    cout &lt;&lt; &quot;a += b is &quot; &lt;&lt; (a += b) &lt;&lt; endl;
+  
+    // Subtract and Assignment Operator.
+    cout &lt;&lt; &quot;a -= b is &quot; &lt;&lt; (a -= b) &lt;&lt; endl;
+  
+    //  Multiply and Assignment Operator.
+    cout &lt;&lt; &quot;a *= b is &quot; &lt;&lt; (a *= b) &lt;&lt; endl;
+  
+    //  Divide and Assignment Operator.
+    cout &lt;&lt; &quot;a /= b is &quot; &lt;&lt; (a /= b);
+
+    return 0;
+}
+
+**Output**a = 6
+a += b is 10
+a -= b is 6
+a *= b is 24
+a /= b is 6
+## Ternary or Conditional Operators
+
+
+[Conditional operator ](https://www.geeksforgeeks.org/cpp/cpp-ternary-or-conditional-operator/)returns the value, based on the condition. This operator takes ****three operands****, therefore it is known as a ****Ternary Operator****.
+
+
+****Syntax:****
+
+            C++
+
+    Expression1 ? Expression2 : Expression3
+
+
+
+In the above statement:
+
+- The ternary operator ****?**** determines the answer on the basis of the evaluation of ****Expression1****.
+- If ****Expression1 ****is true, then ****Expression2 ****gets evaluated.
+- If ****Expression1 ****is false, then ****Expression3 ****gets evaluated.
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 3, b = 4;
+
+    // Conditional Operator
+    int result = (a &lt; b) ? b : a;
+    cout &lt;&lt; &quot;The greatest number &quot;
+          &quot;is &quot; &lt;&lt; result;
+
+    return 0;
+}
+
+**Output**The greatest number is 4
+## Miscellaneous Operators
+
+
+Apart from these operators, there are a few operators that do not fit in any of the above categories. These are:
+
+### ****sizeof Operator****
+
+
+[sizeof operator](https://www.geeksforgeeks.org/cpp/cpp-sizeof-operator/) is a unary operator used to compute the size of its operand or variable in bytes. For example,
+
+            C++
+
+    sizeof (char);
+sizeof (var_name);
+
+
+### ****Comma Operator (,)****
+
+
+[Comma operator](https://www.geeksforgeeks.org/cpp/comma-in-cpp/) is a binary operator that is used for multiple purposes. It is used as a separator or used to evaluate its first operand and discards the result; it then evaluates the second operand and returns this value (and type).
+
+            C++
+
+    int n = (m+1, m-2, m+5);
+int a, b, c;
+
+
+### ****Addressof Operator (&amp;)****
+
+
+[Addressof operator](https://www.geeksforgeeks.org/cpp/cpp-pointer-operators/) is used to find the memory address in which a particular variable is stored. In C++, it is also used to create a [reference](https://www.geeksforgeeks.org/cpp/references-in-cpp/).
+
+            C++
+
+    &amp;var_name;
+
+
+### ****Dot Operator(.)****
+
+
+[Dot operator ](https://www.geeksforgeeks.org/c/dot-operator-in-c/)is used to access members of structure variables or class objects using their object names.
+
+            C++
+
+    obj . member;
+
+
+### ****Arrow Operator****
+
+
+[Arrow operator](https://www.geeksforgeeks.org/c/arrow-operator-in-c-c-with-examples/) is used to access the variables of classes or structures through its pointer.
+
+            C++
+
+    sptr -&gt; member;
+
+
+### ****Casting Operators****
+
+
+[Casting operators](https://www.geeksforgeeks.org/cpp/casting-operators-in-cpp/) are used to convert the value of one data type to another data type. For example, for an integer value x:
+
+            C++
+
+    (float)x
+static_cast&lt;float&gt;(x)
+
+
+
+When there are multiple operators in a single expression, [operator precedence and associativity](https://www.geeksforgeeks.org/cpp/operator-precedence-and-associativity-in-cpp/) decide in which order and which part of expression are calculate. Precedency tells which part of expression should be calculate first and associativity tells which direction to solve when same precedency operators are in expression.
+CommentArticle Tags:Article Tags:[Misc](https://www.geeksforgeeks.org/category/misc/)[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-operator](https://www.geeksforgeeks.org/tag/cpp-operator/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

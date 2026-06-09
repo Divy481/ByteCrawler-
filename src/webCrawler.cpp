@@ -28,6 +28,7 @@ Repeat*/
 #include <openssl/ssl.h>
 #include <openssl/err.h>
 #include "../include/threadpool.hpp"
+#include "../include/markdown.hpp"
 
 
 namespace crawler {
@@ -215,13 +216,17 @@ namespace crawler {
         }
         if(!html.empty()){
             std::unique_lock<std::mutex> lock(fileMutex);
-            std::string filename = std::to_string(currDepth) + ".html";
+            std::string filename = std::to_string(counter) + ".txt";
             std::ofstream outFile(filename);
+            MarkDown MD;
+            MD.convert(html);
             if(outFile.is_open()){
-                outFile << html;
+
+                outFile << MD.markdown;
                 outFile.close();
                 std::cout << "Saved to " << filename << std::endl;
             }
+            counter++;
         }
         if(currDepth>=maxDepth)return;
 

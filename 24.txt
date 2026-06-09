@@ -1,0 +1,283 @@
+new and delete Operators in C++ For Dynamic Memory - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# new and delete Operators in C++ For Dynamic Memory
+Last Updated : 6 May, 2026
+- 
+- 
+- 
+
+In C++, memory for local variables is allocated on the stack at runtime, which has limited size. For greater control and flexibility, dynamic memory allocation is performed on the heap using new for allocation and delete for deallocation.
+
+-  Allows programs to request memory at runtime and release it when no longer needed. 
+-  Useful when the required memory size is not known at compile time (e.g., variable-sized arrays, linked lists, trees). 
+-  The new operator allocates memory from the free store (a part of the heap) and returns the address of the allocated memory and delete operator deletes the memory allocated using new.
+
+****Example:****
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;memory&gt;
+using namespace std;
+
+int main() {
+
+    // Declared a pointer to store
+    // the address of the allocated memory
+    int *nptr;
+    
+    // Allocate and initialize memory
+    nptr = new int(6);
+
+    // Print the value
+    cout &lt;&lt; *nptr &lt;&lt; endl;
+
+    // Print the address of memory
+    // block
+    cout &lt;&lt; nptr;
+    return 0;
+}
+
+**Output**6
+0xb52dc20
+### Allocate Block of Memory (Array)
+
+
+A ****new**** operator is also used to dynamically allocate a block (an [****array****](https://www.geeksforgeeks.org/cpp/cpp-arrays/)) of memory of given data type as shown below:
+
+            C++
+
+    new data_type[n];
+
+
+
+This statement dynamically allocates memory for ****n ****elements of given ****data_type****. Arrays can also be initialized during allocation.
+
+
+****Example****:
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;memory&gt;
+using namespace std;
+
+int main() {
+
+    // Declared a pointer to store
+    // the address of the allocated memory
+    int *nptr;
+    
+    // Allocate and initialize array of
+    // integer with 5 elements
+    nptr = new int[5]{1, 2, 3, 4, 5};
+
+    // Print array
+    for (int i = 0; i &lt; 5; i++)
+        cout &lt;&lt; nptr[i] &lt;&lt; &quot; &quot;;
+    return 0;
+}
+
+**Output**1 2 3 4 5 
+### ****What if enough memory is not available during runtime?****
+
+
+If enough memory is not available in the heap to allocate, the new request indicates failure by throwing an exception of type std::[bad_alloc](https://www.geeksforgeeks.org/cpp/bad_alloc-in-cpp/), unless "nothrow" is used with the new operator, in which case it returns a [****nullptr ****](https://www.geeksforgeeks.org/cpp/understanding-nullptr-c/)pointer. Therefore, it may be a good idea to check for the pointer variable produced by the new before using its program. 
+
+            C++
+
+    int *p = new (nothrow) int;
+if (!p) {
+    cout &lt;&lt; &quot;Memory allocation failed\n&quot;;
+}
+
+
+## delete Operator
+
+
+In C++, [****delete****](https://www.geeksforgeeks.org/cpp/delete-in-c/) operator is used to release dynamically allocated memory. It deallocates memory that was previously allocated with new.
+
+### Syntax
+
+            C++
+
+    delete ptr;
+
+
+
+where, ****ptr**** is the pointer to the dynamically allocated memory.
+
+
+To free the dynamically allocated array pointed by pointer variable, use the following form of delete:
+
+            C++
+
+    delete[] arr;
+
+
+
+****Example:****
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+using namespace std;
+
+int main() {
+    int *ptr = NULL;
+
+    // Request memory for integer variable
+    // using new operator
+    ptr = new int(10);
+    if (!ptr) {
+        cout &lt;&lt; &quot;allocation of memory failed&quot;;
+        exit(0);
+    }
+
+    cout &lt;&lt; &quot;Value of *p: &quot; &lt;&lt; *ptr &lt;&lt; endl;
+
+    // Free the value once it is used
+    delete ptr;
+    
+    // Allocate an array
+    ptr = new int[3];
+    ptr[2] = 11;
+    ptr[1] = 22;
+    ptr[0] = 33;
+    cout &lt;&lt; &quot;Array: &quot;;
+    for (int i = 0; i &lt; 3; i++)
+        cout &lt;&lt; ptr[i] &lt;&lt; &quot; &quot;;
+
+    // Deallocate when done
+    delete[] ptr;
+    
+    return 0;
+}
+
+**Output**Value of *p: 10
+Array: 33 22 11 
+## Errors Associated with Dynamic Memory
+
+
+As powerful as dynamic memory allocation is it is also prone to one of the worst errors in C++. Major ones are:
+
+### ****Memory Leaks****
+
+
+[Memory leak](https://www.geeksforgeeks.org/cpp/memory-leak-in-c-and-how-to-avoid-it/) is a situation where the memory allocated for a particular task remains allocated even after it is no longer needed. Moreover, if the address to the memory is lost, then it will remain allocated till the program runs.
+
+
+****Solution****: Use [smart pointers](https://www.geeksforgeeks.org/cpp/smart-pointers-cpp/) whenever possible. They automatically deallocate when goes out of scope.
+
+### ****Dangling Pointers****
+
+
+[Dangling pointers](https://www.geeksforgeeks.org/cpp/dangling-pointers-in-cpp/) are created when the memory pointed by the pointer is accessed after it is deallocated, leading to undefined behaviour (crashes, garbage data, etc.).
+
+
+****Solution****: Initialize pointers with nullptr and assign nullptr again when deallocated.
+
+### ****Double Deletion****
+
+
+When delete is called on the same memory twice, leading to crash or corrupted program.
+
+
+****Solution****: assign nullptr**** ****to the memory pointer**** ****when deallocated.
+
+### ****Mixing new/delete with malloc()/free()****
+
+
+C++ supports the C style dynamic memory allocation using [malloc(), calloc(), free(), etc](https://www.geeksforgeeks.org/c/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/). But these functions are not compatible. It means that we cannot allocate memory using new and delete it using free(). Same for malloc() and delete.
+
+## Placement new
+
+
+[****Placement new****](https://www.geeksforgeeks.org/cpp/placement-new-operator-cpp/) is a variant of ****new**** operator. Normal ****new**** operator both allocates memory and constructs an object in that memory. On the other hand, the placement new separates these actions. It allows the programmer to pass a pre-allocated memory block and construct an object in that specific memory.
+CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-pointer](https://www.geeksforgeeks.org/tag/cpp-pointer/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

@@ -1,0 +1,235 @@
+Stack Unwinding in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Stack Unwinding in C++
+Last Updated : 17 Jan, 2026
+- 
+- 
+- 
+
+Stack unwinding is the process of removing function call frames from the call stack at runtime. During this process, local objects are destroyed in the reverse order of their creation.
+
+
+Stack unwinding happens:
+
+- Normally, when a function returns.
+- During exception handling, when an exception is thrown and control transfers to a matching catch block.
+
+When an exception is not handled in the current function, the runtime:
+
+- Exits the function.
+- Destroys all local objects.
+- Moves up the call stack searching for a matching catch block.
+- Terminates the program if no handler is found.
+
+****Example****: Stack Unwinding with Exception Handling
+
+            CPP
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+// Function f1() that throws an exception
+void f1() {
+    cout &lt;&lt; &quot;f1() Start\n&quot;;
+    throw 100;
+    cout &lt;&lt; &quot;f1() End\n&quot;;   // Not executed
+}
+
+// Function f2() that calls f1()
+void f2() {
+    cout &lt;&lt; &quot;f2() Start\n&quot;;
+    f1();
+    cout &lt;&lt; &quot;f2() End\n&quot;;   // Not executed
+}
+
+// Function f3() that handles the exception
+void f3() {
+    cout &lt;&lt; &quot;f3() Start\n&quot;;
+    try {
+        f2();
+    }
+    catch (int i) {
+        cout &lt;&lt; &quot;Caught Exception: &quot; &lt;&lt; i &lt;&lt; &quot;\n&quot;;
+    }
+    cout &lt;&lt; &quot;f3() End\n&quot;;
+}
+
+int main() {
+    f3();
+    return 0;
+}
+
+**Output**f3() Start
+f2() Start
+f1() Start
+Caught Exception: 100
+f3() End
+
+
+****Explanation****:
+
+- f1() throws an exception and exits immediately.
+- Since f1() has no catch, its stack frame is removed.
+- Control moves to f2(), which also has no handler, so it is removed.
+- The exception is finally caught in f3().
+- Statements after throw in f1() and f2() are never executed.
+- Any local objects in f1() and f2() would have their destructors called during unwinding.
+## Destructors and Stack Unwinding
+
+- All local (automatic) objects are destroyed during stack unwinding.
+- Destructors are called in reverse order of construction.
+- This guarantees cleanup of stack-based resources.
+
+Note that the following lines inside f1() and f2() are not executed at all.
+
+
+cout&lt;&lt;"f1() End \n";  // inside f1()cout&lt;&lt;"f2() End \n";  // inside f2()
+
+
+If there were some local class objects inside f1() and f2(), destructors for those local objects would have been called in the Stack Unwinding process.
+
+## Dynamic Resources and Stack Unwinding
+
+
+Stack unwinding does not automatically free heap memory allocated using new unless it is managed by an object whose destructor handles cleanup.
+
+
+****Example:****
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+void func() {
+    
+    // Create a unique_ptr that manages dynamic memory
+    unique_ptr&lt;int&gt; data(new int(10));
+    
+    cout &lt;&lt; &quot;Resource allocated: &quot; &lt;&lt; *data &lt;&lt; endl;
+
+    // Throw the exception 
+    throw runtime_error(&quot;An error occurred&quot;);
+}
+
+int main() {
+    try {
+        
+        // Call the function that may throw an exception
+        func();
+    }
+    catch (const exception&amp; e) {
+        cout &lt;&lt; e.what();
+    }
+    return 0;
+}
+
+**Output**Resource allocated: 10
+An error occurred
+
+****Explanation:****
+
+- unique_ptr manages heap memory.
+- When the exception is thrown, stack unwinding destroys unique_ptr.
+- The destructor of unique_ptr automatically frees the allocated memory.
+- This prevents memory leaks.
+## How to Safely Handle Resources During Stack Unwinding
+
+### Recommended Best Practices
+
+- Use [RAII (Resource Acquisition Is Initialization)](https://www.geeksforgeeks.org/cpp/resource-acquisition-is-initialization/).
+- Prefer smart pointers (unique_ptr, shared_ptr) over raw pointers.
+- Use standard containers (vector, map, set) instead of manual memory management.
+- Avoid new and delete in exception-prone code.
+- Let destructors handle cleanup automatically.
+### Key Takeaways
+
+- Stack unwinding removes stack frames when exceptions propagate.
+- Local objects are always cleaned up safely.
+- Heap memory must be managed using RAII techniques.
+- Smart pointers make exception-safe code easier and more reliable.CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[C++-Exception Handling](https://www.geeksforgeeks.org/tag/c-exception-handling/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

@@ -1,0 +1,508 @@
+Quiz about C++ Advanced Skill Assessment Practice Test[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Practice Problems](https://www.geeksforgeeks.org/explore)
+- [C ](https://www.geeksforgeeks.org/c/c-programming-language/)
+- [C++](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Java](https://www.geeksforgeeks.org/java/java/)
+- [Python](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/)
+- [JavaScript](https://www.geeksforgeeks.org/javascript/javascript-tutorial/)
+- [Data Science](https://www.geeksforgeeks.org/data-science/data-science-for-beginners/)
+- [Machine Learning](https://www.geeksforgeeks.org/machine-learning/machine-learning/)
+- [Courses](https://www.geeksforgeeks.org/courses)
+- [Linux](https://www.geeksforgeeks.org/linux-unix/linux-tutorial/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# C++ Advanced Skill Assessment Practice Test
+Last Updated : DiscussComments
+
+Question 1
+
+
+Given the following class definition, which of the following statements is true regarding object construction and destruction?
+
+        C++
+        
+        #include &lt;iostream&gt;
+using namespace std;
+
+class MyClass {
+    MyClass() { cout &lt;&lt; &quot;Constructor\n&quot;; }
+    ~MyClass() { cout &lt;&lt; &quot;Destructor\n&quot;; }
+};
+
+void createObject() {
+    MyClass obj;
+}
+
+int main() {
+    createObject();
+    return 0;
+}
+
+        
+    
+- 
+
+Constructor and Destructor will be called once.
+
+- 
+
+Constructor will be called twice, Destructor once.
+
+- 
+
+Constructor and Destructor will be called twice.
+
+- 
+
+Constructor will be called once, Destructor twice.
+
+
+Question 2
+
+
+How to implement a class in C++ to prevent it from being inherited?
+
+- 
+
+By making all constructors private.
+
+- 
+
+By declaring the class as sealed.
+
+- 
+
+By using the final keyword.
+
+- 
+
+By making all methods private.
+
+
+Question 3
+
+
+What will be the output of the following code?
+
+        C++
+        
+        #include &lt;iostream&gt;
+using namespace std;
+
+class Base{
+  public:
+    Base(){
+        cout &lt;&lt; &quot;Base Constructor\n&quot;;
+    }
+    virtual ~Base(){
+        cout &lt;&lt; &quot;Base Destructor\n&quot;;
+    }
+};
+
+class Derived : public Base{
+  public:
+    Derived(){
+        cout &lt;&lt; &quot;Derived Constructor\n&quot;;
+    }
+    ~Derived(){
+        cout &lt;&lt; &quot;Derived Destructor\n&quot;;
+    }
+};
+
+int main(){
+    Base *obj = new Derived();
+    delete obj;
+    return 0;
+}
+
+        
+    
+- 
+
+Only Base Destructor is called
+
+- 
+
+Base Constructor, Derived Constructor, and Base Destructor are called.
+
+- 
+
+Base Constructor, Derived Constructor, Derived Destructor, and Base Destructor are called.
+
+- 
+
+Base Constructor, Derived Constructor, and Derived Destructor are called.
+
+
+Question 4
+
+
+What would be the outcome if the following setter method were used to modify a private member without validation?
+
+        C++
+        
+        class Account {
+private:
+    double balance;
+public:
+    void setBalance(double b) { balance = b; }
+};
+
+        
+    
+
+
+
+
+- 
+
+It prevents setting invalid values by default.
+
+- 
+
+It allows for any value to be set, including invalid states.
+
+- 
+
+It automatically rounds off the value to the nearest integer.
+
+- 
+
+It throws a runtime exception if the value is negative.
+
+
+Question 5
+
+
+Consider the following code. What will happen if the getter method is not declared as const? 
+
+        C++
+        
+        class MyClass {
+private:
+    int value;
+public:
+    int getValue() const { return value; }
+};
+
+        
+    
+- 
+
+The method can modify the class's internal state.
+
+- 
+
+The method will automatically become a const method.
+
+- 
+
+The method will return a reference to the internal state.
+
+- 
+
+The method cannot be called on const instances of MyClass.
+
+
+Question 6
+
+
+What will be the output of the following code, considering the presence of slicing?
+
+        C++
+        
+        #include &lt;iostream&gt;
+using namespace std;
+
+class Base {
+public:
+    virtual void print() const { cout &lt;&lt; &quot;Base\n&quot;; }
+};
+
+class Derived : public Base {
+public:
+    void print() const override { cout &lt;&lt; &quot;Derived\n&quot;; }
+};
+
+void show(Base b) {
+    b.print();
+}
+
+int main() {
+    Derived d;
+    show(d);
+    return 0;
+}
+
+        
+    
+
+
+
+
+- 
+
+Base
+
+- 
+
+Derived
+
+- 
+
+Base followed by Derived
+
+- 
+
+Compilation error
+
+
+Question 7
+
+
+What will be the output of the following code?
+
+        C++
+        
+        #include &lt;iostream&gt;
+using namespace std;
+class Base{
+  public:
+    Base(){
+        cout &lt;&lt; &quot;Base Constructor\n&quot;;
+    }
+    virtual ~Base(){
+        cout &lt;&lt; &quot;Base Destructor\n&quot;;
+    }
+};
+
+class Derived : public Base{
+  public:
+    Derived(){
+        cout &lt;&lt; &quot;Derived Constructor\n&quot;;
+    }
+    ~Derived(){
+        cout &lt;&lt; &quot;Derived Destructor\n&quot;;
+    }
+};
+
+int main(){
+    Derived d;
+    Base *b = &amp;d;
+    return 0;
+}
+
+        
+    
+- 
+
+Base Constructor, Derived Constructor, Base Destructor
+
+- 
+
+Derived Constructor, Base Destructor, Derived Destructor
+
+- 
+
+Base Constructor, Derived Constructor, Derived Destructor, Base Destructor
+
+- 
+
+Compilation error
+
+
+Question 8
+
+
+What will be the output of the following code?
+
+        C++
+        
+        #include &lt;iostream&gt;
+using namespace std;
+class Base{
+  public:
+    virtual void display() const{
+        cout &lt;&lt; &quot;Base Display&quot; &lt;&lt; endl;
+    }
+};
+
+class Derived : public Base{
+  public:
+    void display() const override{
+        cout &lt;&lt; &quot;Derived Display&quot; &lt;&lt; endl;
+    }
+};
+
+void show(const Base &amp;b){
+    b.display();
+}
+
+int main(){
+    Derived d;
+    show(d);
+    return 0;
+}
+
+        
+    
+
+
+
+
+- 
+
+Base Display
+
+- 
+
+Derived Display
+
+- 
+
+Base Display followed by Derived Display
+
+- 
+
+Compilation error
+
+
+Question 9
+
+
+Which among the following is the correct way to implement an abstract class in C++?
+
+- 
+
+By declaring a class as abstract
+
+- 
+
+By marking all member functions as virtual
+
+- 
+
+By inheriting from another abstract class
+
+- 
+
+By having at least one pure virtual function
+
+
+Question 10
+
+
+What will be the output of the following code?
+
+        C++
+        
+        #include &lt;iostream&gt;
+using namespace std;
+
+template &lt;typename T&gt; T custom_max(T a, T b){
+    return (a &gt; b) ? a : b;
+}
+
+int main(){
+    cout &lt;&lt; custom_max&lt;int&gt;(3, 7) &lt;&lt; endl;
+    cout &lt;&lt; custom_max(3.5, 2.1) &lt;&lt; endl;
+    return 0;
+}
+
+        
+    
+- 
+
+7 and 2.1
+
+- 
+
+Compilation error
+
+- 
+
+7 and 3.5
+
+- 
+
+Undefined behavior
+Tags:[C++](https://www.geeksforgeeks.org/quizzes/?category=cpp)[C++ Quiz](https://www.geeksforgeeks.org/quizzes/?category=cpp-gq)
+
+There are 37 questions to complete.
+Take a part in the ongoing discussionView All Discussion[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

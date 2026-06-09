@@ -1,0 +1,137 @@
+C++ Programming Course- Self Paced[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs******
+- [All Courses](/courses)
+- [Self-Paced](/courses/category/all?courseType=online&amp;courseFeeType=all&amp;itm_source=geeksforgeeks&amp;itm_medium=course_landingpage&amp;itm_campaign=courses)
+# C++ Programming Course- Self Paced
+Self-Paced Course![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2731%27%20height=%2730%27/%3e)![interested count](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![interested count](https://media.geeksforgeeks.org/img-practice/Interested(1)-1669185704.svg)326k+ interested Geeks
+
+Become an ace in C++ Programming Language and master the C++ programming skills from basics to advanced. This**&nbsp;**C++ course** **is a complete package of videos, notes &amp; contests from basics to STL libraries &amp; algorithms. This CPP course is perfect for beginners as well as professionals. Enrol now to learn and master C++.
+
+
+
+
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e)![level](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![level](https://media.geeksforgeeks.org/img-practice/level-1668679601.svg)Beginner to Advanced![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e)![course duration](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![course duration](https://media.geeksforgeeks.org/img-practice/time-1668679645.svg)8 WeeksComprehensive LearningCourse CertificateAssessment TestsFlexible Learning![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2720%27%20height=%2720%27/%3e)![warning](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![warning](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FGroup5631-1621599978.png&amp;w=48&amp;q=75)
+
+The** Most Affordable** Basic Course — Backed by Proven Results!
+
+## Course Overview
+
+- Start your C++ journey with GfG CEO Sandeep Jain and industry experts.
+- Benefit from 15+ hours of Basic content and 20+ hours of Advanced content.
+- Practice with 150+ industry-oriented coding problems.
+- Test your knowledge with 300+ MCQs &amp; output-based questions.
+- Engage in coding contests for self-assessment.
+- Utilize short notes for quick revisions.
+- Receive 24x7 AI doubt assistance in every topic and problem.
+- Covers basic C++ Data Types, Loops, Arrays, and OOPS.
+- Explore C++ STL libraries like stack, queue, set, map, and more.
+- Give your engineering career the head start it deserves
+Read more ![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2714%27%20height=%2714%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/6/Web/Content/double%20arrow%20down_1712668255.svg)
+## Course Content
+01C++ Basics
+- Background of Programming
+- C++ Introduction
+- First C++ Program
+- Comments in C++, etc02Variables and Data Types
+- Variables in C++ &amp; Naming Rules
+- Data Types and Range of Data Types in C++
+- Static, Const &amp; Auto in C++
+- Type Conversion C++, etc03Input Output in C++
+- Input &amp; Output in C++
+- Buffering &amp; Escape Sequence
+- IO Manipulation
+- Floating Point, etc04Operators
+- Arithmetic Operators, Assignment Operators
+- Comparison Operators, Logical Operators
+- Bitwise Operators, Operator Precedence and Associativity
+- Problem Solving on Operators, etcRead more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2714%27%20height=%2714%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/6/Web/Content/double%20arrow%20down_1712668255.svg)[Login to View Brochure]()
+## What Sets Us Apart
+![Recognised Certification](https://media.geeksforgeeks.org/wp-content/uploads/20251118165735627318/award_5362845-1.png)
+### Recognised Certification
+Earn an industry-recognized GeeksforGeeks Training Certificate for credible validation, career advancement, and lifetime![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27900%27%20height=%27500%27/%3e)![Unable to load](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Unable to load](https://media.geeksforgeeks.org/img-practice/Group5339-1618471344.svg)![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27350%27%20height=%27500%27/%3e)![Unable to load](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Unable to load](https://media.geeksforgeeks.org/img-practice/Group5443-1620806697.svg)
+
+Pricing
+
+
+ 
+
+## Testimonials
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)The course content is very good and informative. I have gained in-depth knowledge about C++ STL, the coding practice problems have also helped me to l...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![Chitturi Raja Rajeswari](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Chitturi Raja Rajeswari](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FTestimonial%2F6502b348649aa5b023f372bac027e230817dd4eb.jpg&amp;w=128&amp;q=75)Chitturi Raja RajeswariPlaced in TCS Digital as a Systems Engineer ![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)The course includes all the in-depth concepts for C++ STL. Especially the lecture videos by Sandeep Jain Sir really helped me to learn C++ concepts. T...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![Ritik Bansal](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Ritik Bansal](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FTestimonial%2Fa3fbc5a6be66467afd007cd26f6f1d5b478663f4.jpg&amp;w=128&amp;q=75)Ritik BansalPlaced in Cerner Corporation as a Software Engineer Intern![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)The course is structured in a very great way along with a thorough explanation of the STL. This course helped me to write efficient codes for particul...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![Kunwar Pratap](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Kunwar Pratap](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FTestimonial%2Fa61a511c772e8f04b0df19dbb2f88854886ec2fa.jpg&amp;w=128&amp;q=75)Kunwar PratapPlaced in Axtria as a Data Analyst![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)The courses were structured in such a beautiful way that even with a little knowledge of programming, there were no difficulties in the learning. I ha...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![Rajat Sharma](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Rajat Sharma](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2FTestimonial%2F6441e0ef619427fa8504686530aea4fe125eca77.jpg&amp;w=128&amp;q=75)Rajat SharmaSWE Internship at Microsoft ![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)The C++ STL course has been extremely helpful in enhancing my understanding of the Standard Template Library. It covered all essential topics comprehe...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![Vaishnavi Wayal](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![Vaishnavi Wayal](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fauth%2Favatar.png&amp;w=128&amp;q=75)Vaishnavi WayalPlaced in Emerson ![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2728%27%20height=%2720%27/%3e)![quote](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![quote](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fprod%2Fcourses%2F4324%2FWeb%2FContent%2Fimage_1757306997.png&amp;w=64&amp;q=75)"This course provided valuable insights into the various containers of the Standard Template Library (STL) in C++. It covered a wide range of containe...Read more![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e)![ARGHYA](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![ARGHYA](/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fauth%2Fprofile%2Faihgbfj5tjcr42msucv2&amp;w=128&amp;q=75)ARGHYAPlaced in Cybertech Systems and SoftwareView More Testimonials
+## Frequently Asked Questions
+01
+###  Is there any number to contact for query? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)02
+###  How can I register for the course? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)03
+###  Can I make the payment through PayPal? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)04
+###  Is this a language specific course? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)05
+###  Is there a sample video to see how are the course videos? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)06
+###  What is the difference between the C++ content covered here and the one covered in the Complete Interview Preparation Course? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)07
+###  What type of certificate will be offered in this program 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)08
+###  How long will the course content be available for? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)09
+###  Do we have doubt support in this program? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)10
+###  What features does Doubt Support have? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)11
+###  What is C++? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)12
+###  Why should I learn C++? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)13
+###  Can I use C++ for web development? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)14
+###  Do I need to know C before learning C++? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)15
+###  Is C++ still relevant today? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)16
+###  What are the career growth opportunities with C++? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)17
+###  What kind of jobs can I get with C++ skills? 
+![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2710%27%20height=%2710%27/%3e)![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)![](https://media.geeksforgeeks.org/img-practice/prod/courses/5/Web/Content/Vector_1712648997.svg)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

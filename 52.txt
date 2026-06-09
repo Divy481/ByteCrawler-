@@ -1,0 +1,267 @@
+C++ Recursion - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# C++ Recursion
+Last Updated : 27 May, 2026
+- 
+- 
+- 
+
+Recursion is a programming technique where a function calls itself repeatedly to solve a problem.The recursive calls continue until a specific base condition is met, which stops the recursion.
+
+- A function that calls itself is known as a recursive function
+- Each self-call of the function is called a recursive call
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+void printHello(int n) {
+    
+    // Base Case
+    if (n == 0) return;
+    
+    cout &lt;&lt; &quot;Hello&quot; &lt;&lt; endl;
+    
+    printHello(n - 1);
+}
+
+int main() {
+    printHello(5);
+    return 0;
+}
+
+**Output**Hello
+Hello
+Hello
+Hello
+Hello
+
+
+****Explanation:****
+
+- Demonstrates a simple recursive function that prints "Hello" multiple times 
+- The function calls itself with a smaller value of n until the base case n == 0 is reached 
+- Each recursive call prints "Hello" once, resulting in the message being printed five times
+## Recursive Function
+
+
+A function that calls itself is called a recursive function. When a recursive function is called, it executes a set of instructions and then calls itself to execute the same set of instructions with a smaller input. A recursive function should contain,
+
+- ****Recursive Case****: Recursive case is the way in which the recursive call is present in the function.
+- ****Base Condition:**** The base condition terminates the recursion.
+            C++
+
+    returntype function(parameters) {
+    
+    // base case
+    if (base condition) {
+        return base value;
+    }
+
+    // recursive case
+    return recursive expression involving function(modified parameters);
+}
+
+
+
+This structure allows problems to be broken down into simpler versions of themselves, making recursion a powerful tool for solving problems that can be defined in terms of smaller instances.
+
+
+According to this, from the first example, we can deduce that:
+
+
+****Base Condition****
+
+
+if (n == 0) return;
+
+
+****Recursive Case****
+
+
+printHello(n - 1);
+
+## Working 
+
+
+To understand how recursion works internally, it is important to understand the behavior of the call stack during recursive function calls.Whenever a function calls itself, the current function state is stored in the stack, and new recursive calls continue until the base case is reached.
+
+- The descending phase represents recursive calls going deeper into the function 
+- The ascending phase begins after reaching the base case, where functions return one by one from the stack
+
+The following example demonstrates both the descending phase (going deeper into recursion) and the ascending phase (returning back from recursion):
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+void f(int n) {
+    
+    cout &lt;&lt; &quot;F(&quot; &lt;&lt; n &lt;&lt; &quot;)&#39;s Stack Frame Pushed\n&quot;;
+    if (n &gt; 1) {
+        f(n - 1);
+        f(n - 1);
+    }
+    cout &lt;&lt; &quot;F(&quot; &lt;&lt; n &lt;&lt; &quot;)&#39;s Stack Frame Removed\n&quot;;
+}
+
+int main() {
+    f(3);
+    return 0;
+} 
+
+**Output**F(3)'s Stack Frame Pushed
+F(2)'s Stack Frame Pushed
+F(1)'s Stack Frame Pushed
+F(1)'s Stack Frame Removed
+F(1)'s Stack Frame Pushed
+F(1)'s Stack Frame Removed
+F(2)'s Stack Frame Removed
+F(2)'s Stack Fr...
+
+In this program, the function f(int n) prints messages when a recursive call is added to the stack (Stack Frame Pushed) and when it is removed (Stack Frame Removed). This helps visualize how the call stack behaves during recursion.
+
+
+****Descending Phase: ****The function keeps calling itself with n - 1 while n &gt; 1, causing new stack frames to be pushed onto the call stack and increasing its size.
+
+
+****Ascending Phase:**** Once the base case is reached, the function starts returning back. Each completed call removes its stack frame, and control moves to the previous function call, showing the stack unwinding process clearly.
+
+
+For f(3), the recursive calls form a tree-like pattern, and the output clearly shows when each function call starts and ends during recursion.
+
+
+****Illustrations:****
+
+
+This example follows a tree recursion pattern, where each function call makes multiple recursive calls (in this case, two). It’s one of the common forms of recursion. 
+
+
+To explore more patterns like **linear recursion**, **tail recursion**, and **indirect recursion**, check out our detailed article on [Types of Recursion.](https://www.geeksforgeeks.org/cpp/types-of-recursion-in-cpp/)
+
+## Memory Management in Recursion
+
+
+Like other functions, the data of a recursive function is stored in stack memory as a stack frame. This stack frame is removed once the function returns a value. In recursion,
+
+- The function call occurs before returning a value, so the stack frames for each recursive call are placed on top of the existing stack frames in memory.
+- Once the topmost function returns a value, its stack frame is removed, and control is passed back to the function just before it, resuming execution after the point where the recursive call was made.
+- The compiler uses an instruction pointer to keep track of the location to return to after the function execution is complete.
+- Unlike iteration, recursion relies on the call stack, making memory management a key differentiator between the two.
+
+Refer these article to know more about [Function Call Stack](https://www.geeksforgeeks.org/cpp/function-call-stack-in-cpp/), [Difference between recursion and iteration](https://www.geeksforgeeks.org/dsa/difference-between-recursion-and-iteration/)
+
+## Stack Overflow
+
+
+Stack Overflow is an error that occurs when a program uses more stack memory than the system allows, usually because of too many recursive function calls.It commonly happens when recursion does not stop due to a missing or incorrect base condition.
+
+- Each recursive call creates a new stack frame and uses additional stack memory 
+- Infinite recursion or excessive recursive calls can exhaust stack memory and terminate the program 
+## Applications of Recursion
+
+
+Recursion is widely used in computer science and programming. Common applications include:
+
+- ****Problem Solving****: Many problems are inherently recursive like Tower of Hanoi.  Recursion also works as a foundation for Divide and Conquer, Backtracking and Dynamic Programming.
+- ****Searching and Sorting****: Algorithms like binary search, Merge Sort and Quick Sort are recursive in nature. 
+- ****Tree and Graph Traversal****: Used in traversals such as depth-first search.
+
+Overall, recursion is a powerful and versatile technique for solving a wide range of problems.
+
+## Limitations of Recursion
+
+
+Recursion is a powerful programming technique, but it also has some limitations that can affect performance and memory usage in certain situations.
+
+- ****Performance:**** Can be less efficient than iteration, especially for large data or deep recursion. 
+- ****Memory Usage:**** Each recursive call creates a new stack frame, increasing memory usage and potentially becoming significant for deep recursion. 
+- ****Code Complexity:**** Recursive solutions can be harder to understand than iterative ones. 
+- ****Debugging:**** More difficult to debug, particularly with deep or multiple recursive calls. 
+- ****Stack Overflow:**** Excessive recursion depth can cause a stack overflow, leading to program crashes. CommentArticle Tags:Article Tags:[Recursion](https://www.geeksforgeeks.org/category/dsa/algorithm/recursion/)[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

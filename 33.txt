@@ -1,0 +1,317 @@
+Polymorphism in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Polymorphism in C++
+Last Updated : 27 May, 2026
+- 
+- 
+- 
+
+The word polymorphism means having many forms. In C++, polymorphism concept can be applied to functions and operators. A single function name can work differently in different situations. Similarly, an operator works different when used in different context.
+
+- Same function or operator can behave differently depending on the context or object it is used with. 
+- Achieved through function overloading and function overriding, improving code reusability and flexibility.
+## Types of Polymorphism
+
+
+In C++, polymorphism is mainly divided into two types
+
+- ****Compile-Time Polymorphism:**** The function or operator is decided at the time of compilation based on how it is called. 
+- ****Run-Time Polymorphism:**** The function is decided while the program is running based on the object being used.![Poly](https://media.geeksforgeeks.org/wp-content/uploads/20251015124336512847/Poly.webp)Types of Polymorphism
+## Compile-Time Polymorphism
+
+
+Compile-time polymorphism is also known as static polymorphism or early binding. In this type of polymorphism, the compiler decides which function or operator to call during compilation. It is achieved using:
+
+### 1. Function Overloading
+
+
+[Function Overloading](https://www.geeksforgeeks.org/cpp/function-overloading-c/) allows multiple functions to have the same name but different parameters. The difference can be in:
+
+- Number of parameters 
+- Type of parameters
+
+****Explanation:**** An add() function is used to perform addition of two numbers, and it works differently for integers and floating-point values. The compiler selects the correct function based on the arguments passed during the function call.
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+class Geeks {
+public:
+    
+    // Function to add two integers
+    void add(int a, int b) {
+        cout &lt;&lt; &quot;Integer Sum = &quot; &lt;&lt; a + b
+        &lt;&lt; endl;
+    }
+    
+    // Function to add two floating point values
+    void add(double a, double b) {
+        cout &lt;&lt; &quot;Float Sum = &quot; &lt;&lt; a + b
+        &lt;&lt; endl ;
+    }
+};
+
+int main() {
+    Geeks gfg;
+    
+    // add() called with int values
+    gfg.add(10, 2);
+
+    // add() called with double value
+    gfg.add(5.3, 6.2);
+
+    return 0;
+}
+
+**Output**Integer Sum = 12
+Float Sum = 11.5
+
+- The class Geeks contains two overloaded functions named add(), one for integers and one for double values. 
+-  When add(10, 2) is called, the integer version is executed; when add(5.3, 6.2) is called, the double version is executed. 
+-  The compiler decides which function to call at compile time based on the argument types, demonstrating function overloading.
+### 2. Operator Overloading
+
+
+[Operator overloading](https://www.geeksforgeeks.org/cpp/operator-overloading-cpp/) allows operators like +, -, and * to work with user-defined data types such as classes. It lets us define how an operator should behave when used with custom objects.
+
+
+For example:
+
+- The + operator adds two integers. 
+- The same + operator can concatenate two strings. 
+- We can also define how + should behave for custom classes.
+
+This makes code more readable and natural.
+
+
+****Note: ****Most operators in C++ can be overloaded, but operators such as ::, ., .*, ?:, and sizeof cannot be overloaded because they are essential to the core functionality of the language.
+
+
+****Example: ****A Complex number class is used to represent numbers having real and imaginary parts. The + operator is overloaded to add two complex numbers directly.
+
+            CPP
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+class Complex {
+public:
+    int real, imag;
+    
+    Complex(int r, int i) :
+    real(r), imag(i) {}
+
+    // Overloading the &#39;+&#39; operator
+    Complex operator+(const Complex&amp; obj) {
+        return Complex(real + obj.real, imag + obj.imag);
+    }
+};
+
+int main() {
+    Complex c1(10, 5), c2(2, 4);
+    
+    // Adding c1 and c2 using + operator
+    Complex c3 = c1 + c2;  
+    cout &lt;&lt; c3.real &lt;&lt; &quot; + i&quot; &lt;&lt; c3.imag;
+    return 0;
+}
+
+**Output**12 + i9
+
+- The class Complex stores real and imaginary parts and defines an overloaded + operator to add two Complex objects. 
+- When c1 + c2 is used, the overloaded + function is automatically called and adds both real and imaginary values separately. 
+- The result is stored in c3, which represents the sum of the two complex numbers and is then printed.
+## 2. Runtime Polymorphism
+
+
+Runtime polymorphism is also known as dynamic polymorphism or late binding. In this type, the function call is resolved during program execution instead of compilation. It is achieved using:
+
+### Real-Life Illustration of Polymorphism
+
+
+Different animals represent polymorphism, where the same method speak() produces different outputs such as Bark, Meow, and Moo depending on the object calling the method.
+![Polymorphysm](https://media.geeksforgeeks.org/wp-content/uploads/20260507143340973816/Polymorphysm.webp)Polymorphism
+
+In above Diagram:
+
+- A Dog object says Bark
+- A Cat object says Meow
+- A Cow object says Moo
+
+Even though all animals use the same function name speak(), the behavior changes according to the object.
+
+### 1. Function Overriding
+
+
+[Function Overriding](https://www.geeksforgeeks.org/cpp/function-overriding-in-cpp/) occurs when a derived class defines one or more member functions of the base class. That base function is said to be overridden. The base class function must be declared as[ virtual function](https://www.geeksforgeeks.org/cpp/virtual-function-cpp/) for runtime polymorphism to happen.
+
+
+**** Example:**** A base class pointer is used to point to a derived class object. The display() function is overridden in the derived class to demonstrate runtime polymorphism using a virtual function.
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+class Base {
+public:
+
+    // Virtual function
+    virtual void display() {
+        cout &lt;&lt; &quot;Base class function&quot;;
+    }
+};
+
+class Derived : public Base {
+public:
+
+    // Overriding the base class function
+    void display() override {
+        cout &lt;&lt; &quot;Derived class function&quot;;
+    }
+};
+
+int main() {
+    
+    // Creating a pointer of type Base
+    Base* basePtr;
+    
+    // Creating an object of Derived class
+    Derived derivedObj;
+
+    // Pointing base class pointer to 
+    // derived class object
+    basePtr = &amp;derivedObj;
+    
+    // Calling the display function 
+    // using base class pointer
+    basePtr-&gt;display();
+    return 0;
+}
+
+**Output**Derived class function
+- A virtual function display() is defined in the base class and is overridden in the derived class.
+- A base class pointer is used to point to a derived class object.
+- When display() is called using the base pointer, the derived class version is executed at runtime due to dynamic binding.
+## Runtime Vs Compiler Time Polymorphism
+
+
+The major [difference between the compile-time and runtime polymorphism](https://www.geeksforgeeks.org/cpp/compile-time-vs-run-time-polymorphism-difference-in-cpp/) is:
+
+
+Compile Time Polymorphism
+
+
+Run time Polymorphism
+
+
+Also called static binding
+
+
+Also called dynamic binding
+
+
+Achieved using function overloading and operator overloading
+
+
+Achieved using virtual functions and function overriding
+
+
+Decision made by the compiler at compile time
+
+
+Decision made at runtime using vtables
+
+
+ Faster due to early binding
+
+
+More flexible but slightly slower
+CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[CPP-OOPs](https://www.geeksforgeeks.org/tag/cpp-oops/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

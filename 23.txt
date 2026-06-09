@@ -1,0 +1,225 @@
+Pointers and References in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Pointers and References in C++
+Last Updated : 1 Jun, 2026
+- 
+- 
+- 
+
+Pointers and references are important C++ features used to access and manipulate data efficiently. A pointer stores the memory address of a variable, while a reference acts as an alias for an existing variable.
+
+- Pointers store memory addresses and provide indirect access to data.
+- References create an alternative name for an existing variable.
+- Both are commonly used for efficient parameter passing and data manipulation.
+## Pointers in C++
+
+
+[****Pointers****](https://www.geeksforgeeks.org/cpp/cpp-pointers/)**** ****are variables that store the memory address of another variable. They provide direct access to memory locations and are commonly used for dynamic memory allocation, efficient parameter passing, and implementing complex data structures.
+
+- Store the address of a variable or memory location. 
+- Can be reassigned to point to different variables. 
+- Can store a nullptr value when not pointing to any valid memory location. 
+- Require the dereference operator (*) to access the value stored at the address. 
+- Have their own memory address independent of the variable they point to.
+### Syntax
+
+
+datatype *var_name; 
+
+
+or 
+
+
+datatype* var_name;
+
+
+****where:****
+
+- datatype represents the type of data being pointed to 
+- var_name is the name of the pointer variable
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main(){
+    int x = 10; // variable declared
+    int* myptr; // pointer variable
+
+    // storing address of x in pointer myptr
+    myptr = &amp;x;
+
+    cout &lt;&lt; &quot;Value of x is: &quot;;
+    cout &lt;&lt; x &lt;&lt; endl;
+
+    // print the address stored in myptr pointer variable
+    cout &lt;&lt; &quot;Address stored in myptr is: &quot;;
+    cout &lt;&lt; myptr &lt;&lt; endl;
+
+    // printing value of x using pointer myptr
+    cout &lt;&lt; &quot;Value of x using *myptr is: &quot;;
+    cout &lt;&lt; *myptr &lt;&lt; endl;
+
+    return 0;
+}
+
+**Output**Value of x is: 10
+Address stored in myptr is: 0x7ffd2b32c7f4
+Value of x using *myptr is: 10
+
+****Explanation****
+
+- An integer variable x is initialized with the value 10.
+- The pointer variable myptr stores the address of x using the address-of operator (&amp;). 
+- Printing myptr displays the memory address of x.
+- Dereferencing the pointer using *myptr accesses the value stored at that address. 
+- Since myptr points to x, *myptr prints the value 10.
+## References in C++
+
+
+A [reference](https://www.geeksforgeeks.org/cpp/references-in-cpp/) is an alias or alternative name for an existing variable. Once a reference is initialized, it refers to the same memory location as the original variable, allowing both names to access the same data.
+
+- Act as an alias for an existing variable 
+- Must be initialized at the time of declaration 
+- Cannot be reassigned to refer to another variable 
+- Do not require dereferencing to access the value 
+- Share the same memory location as the original variable 
+### Uses of References
+
+
+References are commonly used for passing arguments to functions efficiently. In C++, arguments can be passed in the following ways:
+
+- Call by Value: A copy of the argument is passed to the function 
+- Call by Reference using Pointer: The address of the argument is passed using a pointer 
+- Call by Reference using Reference: The argument is passed using a reference variable 
+### Syntax
+
+
+datatype&amp; ref_name = variable;
+
+
+****where:****
+
+- ****datatype ****represents the type of the referenced variable 
+- ****ref_name**** is the name of the reference variable 
+- ****variable ****is the existing variable being referenced
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main(){
+    int y = 10;
+
+    // myref is a reference to y.
+    int&amp; myref = y;
+
+    // changing value of y to 20
+    y = 30;
+    cout &lt;&lt; &quot;value of y is &quot; &lt;&lt; y &lt;&lt; endl;
+    cout &lt;&lt; &quot;value of myref after change in value of y is: &quot;
+         &lt;&lt; myref &lt;&lt; &#39;\n&#39;;
+
+    return 0;
+}
+
+**Output**value of y is 30
+value of myref after change in value of y is: 30
+
+****Explanation****
+
+- An integer variable y is initialized with the value 10
+- myref is declared as a reference to y
+- Both y and myref refer to the same memory location 
+- When the value of y is changed to 30, the value accessed through myref also becomes 30
+- Printing either y or myref displays the same value because they refer to the same variable
+## Pointers Vs References
+
+
+[Pointers and references](https://www.geeksforgeeks.org/cpp/pointers-vs-references-cpp/) are both used to access and manipulate data indirectly, but they differ in how they store and refer to memory. The following table highlights the key differences between pointers and references in C++.
+FeaturePointerReferenceDefinitionA pointer stores the memory address of another variableA reference is an alias (another name) for an existing variableDeclarationUses * symbolUses &amp; symbolInitializationCan be declared without initializationMust be initialized at the time of declarationNull ValueCan be NULL or nullptrCannot be nullReassignmentCan point to another variableCannot be reassigned to refer to another variableMemory AddressHas its own memory addressShares the same memory address as the referenced variableDereferencingRequires dereferencing using *No dereferencing neededUsageUseful for dynamic memory, arrays, and data structuresUseful for function parameters and operator overloadingSafetyLess safe (can cause dangling pointers)Safer compared to pointersCommentArticle Tags:Article Tags:[Misc](https://www.geeksforgeeks.org/category/misc/)[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-references](https://www.geeksforgeeks.org/tag/cpp-references/)[cpp-pointer](https://www.geeksforgeeks.org/tag/cpp-pointer/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

@@ -1,0 +1,807 @@
+C++ DSA  -  Data Structure and Algorithm in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# C++ DSA  -  Data Structure and Algorithm in C++
+Last Updated : 10 Oct, 2025
+- 
+- 
+- 
+
+This beginner-friendly guide covers DSA in C++, including built-in structures like arrays, strings, vectors, sets, and maps, as well as user-defined structures such as linked lists, stacks, queues, trees, heaps, and graphs, along with an introduction to analyzing algorithm efficiency using time and space complexity.  
+
+
+It is recommended to familiarize yourself with the [Analysis of Algorithms ](https://www.geeksforgeeks.org/dsa/analysis-of-algorithms/)before starting this tutorial .            
+
+## 1. Array
+
+
+In C++, there are mainly two types of arrays.  
+
+- [Array](https://www.geeksforgeeks.org/cpp/cpp-arrays/): Fixed-size and ideal when the number of elements is known.
+- [Vector](https://www.geeksforgeeks.org/cpp/vector-in-cpp-stl/): Dynamic in nature and can grow or shrink as needed. It is part of the C++ Standard Template Library (STL), suitable when the number of elements varies.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    // Array example
+    int arr[] = {10, 20, 30, 40, 50};
+    
+    int n = sizeof(arr) / sizeof(arr[0]);
+    cout &lt;&lt; &quot;Array elements: &quot;;
+    for (int i = 0; i &lt; n; i++)
+        cout &lt;&lt; arr[i] &lt;&lt; &quot; &quot;;
+    cout &lt;&lt; endl;
+
+    // Vector Example
+    vector&lt;int&gt; list;
+    
+    list.push_back(10);
+    list.push_back(20);
+    list.push_back(30);
+    cout &lt;&lt; &quot;Vector elements: &quot;;
+    for (int i = 0; i &lt; list.size(); i++)
+        cout &lt;&lt; list[i] &lt;&lt; &quot; &quot;;
+
+    return 0;
+}
+
+
+**Output**Array elements: 10 20 30 40 50 
+Vector elements: 10 20 30 
+
+****Related Posts:****
+
+- [C++ Arrays Quiz](https://www.geeksforgeeks.org/quizzes/quiz-cpp-arrays/)
+
+****Recommended DSA Problems:****
+
+- [Print Alternates in Array](https://www.geeksforgeeks.org/problems/print-alternate-elements-of-an-array/1)
+- [Search in a Array](https://www.geeksforgeeks.org/problems/search-an-element-in-an-array-1587115621/1)
+- [Largest Element](https://www.geeksforgeeks.org/problems/largest-element-in-array4009/1)
+- [Reverse Array](https://www.geeksforgeeks.org/problems/reverse-an-array/1)
+- [Check for Sorted Array](https://www.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1)
+## 2. Searching Algorithms
+
+
+Searching algorithms help locate an element in data structures like arrays or vectors. C++ provides both linear search and binary search (using functions like std::find and std::binary_search from the &lt;algorithm&gt; library).
+
+            C++
+
+    #include &lt;algorithm&gt;
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main() {
+    vector&lt;int&gt; vec = {2, 4, 6, 6, 8, 10};
+    int key = 6;
+
+    // Linear search (works on unsorted too)
+    bool found = (find(vec.begin(), vec.end(), key) != vec.end());
+    cout &lt;&lt; &quot;Found (linear): &quot; &lt;&lt; found &lt;&lt; &quot;\n&quot;;
+
+    // Binary search (requires sorted)
+    bool binaryFound = binary_search(vec.begin(), vec.end(), key);
+    cout &lt;&lt; &quot;Found (binary): &quot; &lt;&lt; binaryFound &lt;&lt; &quot;\n&quot;;
+
+    // lower_bound: first position not less than key (i.e. first ≥ key)
+    int firstIndex = lower_bound(vec.begin(), vec.end(), key) - vec.begin();
+    cout &lt;&lt; &quot;First ≥ key at index: &quot; &lt;&lt; firstIndex &lt;&lt; &quot;\n&quot;;
+
+    // upper_bound: first position greater than key
+    int afterIndex = upper_bound(vec.begin(), vec.end(), key) - vec.begin();
+    cout &lt;&lt; &quot;First &gt; key at index: &quot; &lt;&lt; afterIndex &lt;&lt; &quot;\n&quot;;
+
+    return 0;
+}
+
+
+**Output**Found (linear): 1
+Found (binary): 1
+First ≥ key at index: 2
+First &gt; key at index: 4
+
+### Related Posts: 
+
+- [Searching Algorithms Guide](https://www.geeksforgeeks.org/dsa/searching-algorithms/)
+- [Quiz on Searching](https://www.geeksforgeeks.org/quizzes/top-mcqs-on-searching-algorithm-with-answers/)
+### Recommended DSA Problems: 
+
+- [Second Largest in an Array](https://www.geeksforgeeks.org/problems/second-largest3735/1?selectedLang=python3)
+- [First Repeating Element](https://www.geeksforgeeks.org/problems/first-repeating-element4018/1?selectedLang=python3)
+- [Count Zeros in Sorted Binary Array](https://www.geeksforgeeks.org/problems/count-the-zeros2550/1?selectedLang=python3)
+- [Floor in a Sorted Array](https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/0?selectedLang=python3)
+- [Maximum in Bitonic Array](https://www.geeksforgeeks.org/problems/maximum-value-in-a-bitonic-array3001/1?selectedLang=python3)
+## 3. Sorting Algorithms
+
+
+Sorting arranges elements in ascending or descending order. C++ provides built-in sorting using std::sort() from the &lt;algorithm&gt; library, but you can also implement algorithms like Bubble Sort, QuickSort, and MergeSort.
+
+            C++
+
+    #include &lt;algorithm&gt;
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    // Array example
+    int nums[] = {5, 3, 8, 1};
+
+    int n = sizeof(nums) / sizeof(nums[0]);
+    sort(nums, nums + n);
+    cout &lt;&lt; &quot;Sorted array: &quot;;
+    for (int i = 0; i &lt; n; i++)
+        cout &lt;&lt; nums[i] &lt;&lt; &quot; &quot;;
+    cout &lt;&lt; endl;
+
+    // Vector example
+    vector&lt;int&gt; list = {5, 3, 8, 1};
+
+    sort(list.begin(), list.end());
+    cout &lt;&lt; &quot;Sorted vector: &quot;;
+    for (int num : list)
+        cout &lt;&lt; num &lt;&lt; &quot; &quot;;
+
+    return 0;
+}
+
+
+**Output**Sorted array: 1 3 5 8 
+Sorted vector: 1 3 5 8 
+### Related Posts:
+
+- [Sorting Algorithms Guide](https://www.geeksforgeeks.org/dsa/sorting-algorithms/)
+- [Quiz on Sorting](https://www.geeksforgeeks.org/quizzes/top-mcqs-on-sorting-algorithms-with-answers/)
+### Recommended DSA Problems:
+
+- [Check for Sorted Array](https://www.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1?selectedLang=python3)
+- [Segregate 0s and 1s](https://www.geeksforgeeks.org/problems/segregate-0s-and-1s5106/1?selectedLang=python3)
+- [Wave Array](https://www.geeksforgeeks.org/problems/wave-array-1587115621/1?selectedLang=python3)
+- [Merge two Sorted Arrays](https://www.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1?selectedLang=python3)
+- [Intersection of two Sorted Arrays](https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-arrays-with-duplicate-elements/1?selectedLang=python3)
+## 4. String 
+
+
+In C++, there are mainly two commonly used ways to handle text:
+
+- [String](https://www.geeksforgeeks.org/cpp/strings-in-cpp/): A mutable sequence of characters used to store and manipulate text. 
+- [Stringstream](https://www.geeksforgeeks.org/cpp/stringstream-c-applications/): A mutable sequence of characters used for efficient text construction and modification.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;sstream&gt; // for stringstream
+using namespace std;
+
+int main()
+{
+    // Mutable string
+    string s = &quot;Hello Geeks&quot;;
+    cout &lt;&lt; s &lt;&lt; endl;
+
+    // Using stringstream for efficient string modification
+    stringstream ss;
+    ss &lt;&lt; &quot;Hello&quot;;
+    ss &lt;&lt; &quot; Geeks&quot;;
+    cout &lt;&lt; ss.str() &lt;&lt; endl;
+
+    return 0;
+}
+
+
+**Output**Hello Geeks
+Hello Geeks
+
+### Related Posts: 
+
+- [C++ String Guide](https://www.geeksforgeeks.org/cpp/strings-in-cpp/)
+- [C++ String Quiz](https://www.geeksforgeeks.org/quizzes/quiz-cpp-strings/)
+### Recommended DSA Problems: 
+
+- [Reverse a String](https://www.geeksforgeeks.org/problems/reverse-a-string/1?selectedLang=python3)
+- [Check for Binary](https://www.geeksforgeeks.org/problems/check-for-binary/1?selectedLang=python3)
+- [Camel Case Conversion](https://www.geeksforgeeks.org/problems/check-for-binary/1?selectedLang=python3)
+- [Check for Panagram](https://www.geeksforgeeks.org/problems/pangram-checking-1587115620/1?selectedLang=python3)
+- [Check for Palindrome](https://www.geeksforgeeks.org/problems/palindrome-string0817/1?selectedLang=python3)
+## 5. Set
+
+
+A Set in C++ is a collection that does not allow duplicate elements. Implementations include unordered_set, set, and multiset.
+
+- [Unordered_set](https://www.geeksforgeeks.org/cpp/unordered_set-in-cpp-stl/): Implements hashing where elements are stored without any specific order. Provides fast search, insert, and delete operations.
+- [Set](https://www.geeksforgeeks.org/cpp/set-in-cpp-stl/): Implements a self-balancing binary search tree (usually Red-Black Tree). Maintains elements in sorted order and allows moderate time for insertion, search, and deletion.
+- [Multiset](https://www.geeksforgeeks.org/cpp/multiset-in-cpp-stl/): Similar to set but allows duplicate elements.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;set&gt;
+#include &lt;unordered_set&gt;
+using namespace std;
+
+int main()
+{
+    // set (sorted, unique elements)
+    set&lt;int&gt; s{10, 20, 20, 30};
+    cout &lt;&lt; &quot;set: &quot;;
+    for (auto &amp;x : s)
+        cout &lt;&lt; x &lt;&lt; &quot; &quot;;
+    cout &lt;&lt; endl;
+
+    // unordered_set (no order, unique elements)
+    unordered_set&lt;int&gt; us{10, 20, 20, 30};
+    cout &lt;&lt; &quot;unordered_set: &quot;;
+    for (auto &amp;x : us)
+        cout &lt;&lt; x &lt;&lt; &quot; &quot;;
+    cout &lt;&lt; endl;
+
+    // multiset (sorted, allows duplicates)
+    multiset&lt;int&gt; ms{10, 20, 20, 30};
+    cout &lt;&lt; &quot;multiset: &quot;;
+    for (auto &amp;x : ms)
+        cout &lt;&lt; x &lt;&lt; &quot; &quot;;
+    cout &lt;&lt; endl;
+
+    return 0;
+}
+
+
+**Output**set: 10 20 30 
+unordered_set: 30 20 10 
+multiset: 10 20 20 30 
+
+### Related Posts: 
+
+- [C++ Set Guide](https://www.geeksforgeeks.org/cpp/set-in-cpp-stl/)
+- [C++ Set Quiz](https://www.geeksforgeeks.org/quizzes/cpp-set-and-multiset/)
+### Recommended DSA Problems: 
+
+- [Check for Subset](https://www.geeksforgeeks.org/problems/array-subset-of-another-array2317/1)
+- [Check for Disjoint](https://www.geeksforgeeks.org/problems/check-for-disjoint-sets-or-arrays/1)
+- [Union of Two Arrays](https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1)
+- [Intersection of two Arrays](https://www.geeksforgeeks.org/problems/intersection-of-two-arrays-with-duplicate-elements/1)
+- [Pair with given Sum](https://www.geeksforgeeks.org/problems/intersection-of-two-arrays-with-duplicate-elements/1)
+## 6. Map
+
+
+A Map in C++ is a collection of key-value pairs that associates unique keys with values. Implementations include unordered_map, map, and multimap.
+
+- [Map](https://www.geeksforgeeks.org/cpp/map-associative-containers-the-c-standard-template-library-stl/): Implements a self-balancing binary search tree (usually Red-Black Tree). Maintains elements in sorted order by key.
+- [Unordered Map](https://www.geeksforgeeks.org/cpp/unordered_map-in-cpp-stl/): Implements hashing where elements are stored without any specific order. Provides fast average-case search, insertion, and deletion operations .
+- [Multimap](https://www.geeksforgeeks.org/cpp/multimap-associative-containers-the-c-standard-template-library-stl/): Similar to map, but allows duplicate keys and maintains elements in sorted order by key.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;map&gt;
+#include &lt;unordered_map&gt;
+using namespace std;
+
+int main()
+{
+    // map (sorted by keys)
+    map&lt;int, string&gt; m{{1, &quot;apple&quot;}, {3, &quot;banana&quot;}, {2, &quot;cherry&quot;}};
+    cout &lt;&lt; &quot;map: &quot;;
+    for (auto &amp;p : m)
+        cout &lt;&lt; p.first &lt;&lt; &quot;-&gt;&quot; &lt;&lt; p.second &lt;&lt; &quot; &quot;;
+    cout &lt;&lt; endl;
+
+    // unordered_map (no specific order)
+    unordered_map&lt;int, string&gt; um{{1, &quot;red&quot;}, {2, &quot;green&quot;}, {3, &quot;blue&quot;}};
+    cout &lt;&lt; &quot;unordered_map: &quot;;
+    for (auto &amp;p : um)
+        cout &lt;&lt; p.first &lt;&lt; &quot;-&gt;&quot; &lt;&lt; p.second &lt;&lt; &quot; &quot;;
+    cout &lt;&lt; endl;
+
+    // multimap (allows duplicate keys)
+    multimap&lt;int, string&gt; mm{{1, &quot;cat&quot;}, {1, &quot;dog&quot;}, {2, &quot;bird&quot;}};
+    cout &lt;&lt; &quot;multimap: &quot;;
+    for (auto &amp;p : mm)
+        cout &lt;&lt; p.first &lt;&lt; &quot;-&gt;&quot; &lt;&lt; p.second &lt;&lt; &quot; &quot;;
+    cout &lt;&lt; endl;
+
+    return 0;
+}
+
+
+**Output**map: 1-&gt;apple 2-&gt;cherry 3-&gt;banana 
+unordered_map: 3-&gt;blue 2-&gt;green 1-&gt;red 
+multimap: 1-&gt;cat 1-&gt;dog 2-&gt;bird 
+
+### Related Posts: 
+
+- [C++ Map Guide](https://www.geeksforgeeks.org/cpp/map-associative-containers-the-c-standard-template-library-stl/)
+- [Map Quiz](https://www.geeksforgeeks.org/quizzes/cpp-map-and-multimap/)
+### Recommended DSA Problems: 
+
+- [Max Distance Between Two Occurrences](https://www.geeksforgeeks.org/problems/max-distance-between-same-elements/1?selectedLang=python3)
+- [Intersection of Two Arrays](https://www.geeksforgeeks.org/problems/intersection-of-two-arrays-with-duplicate-elements/1?selectedLang=python3)
+- [2 Sum – Count pairs with given sum](https://www.geeksforgeeks.org/problems/count-pairs-with-given-sum--150253/1?selectedLang=python3)
+- [Count pairs with given difference](https://www.geeksforgeeks.org/problems/pairs-with-difference-k1713/1?selectedLang=python3)
+- [Minimum Removals for no common](https://www.geeksforgeeks.org/problems/remove-minimum-number-of-elements4032/1?selectedLang=python3)
+## 7. Recursion
+
+
+Recursion is a technique where a method calls itself to solve smaller subproblems.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int fact(int n)
+{
+    if (n == 0)
+        return 1;
+    return n * fact(n - 1);
+}
+
+int main()
+{
+    cout &lt;&lt; fact(5); 
+    return 0;
+}
+
+
+**Output**120
+### Related Posts: 
+
+- [C++ Recursion Guide](https://www.geeksforgeeks.org/cpp/cpp-recursion/)
+- [C++ Recursion Quiz](https://www.geeksforgeeks.org/quizzes/top-mcqs-on-recursion-algorithm-with-answers/)
+### ****Recommended DSA Problems:****
+
+- [Print N to 1 without loop](https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1?selectedLang=python3)
+- [Print N Fibonacci Numbers](https://www.geeksforgeeks.org/problems/print-first-n-fibonacci-numbers1002/1?selectedLang=python3)
+- [Factorial of a Number](https://www.geeksforgeeks.org/problems/factorial5739/1?selectedLang=python3)
+- [Tower of Hanoi](https://www.geeksforgeeks.org/problems/tower-of-hanoi-1587115621/1?selectedLang=python3)
+- [Generate Parentheses](https://www.geeksforgeeks.org/problems/generate-all-possible-parentheses/1?selectedLang=python3)
+## 8. Queue
+
+
+A queue follows the FIFO (First In First Out) principle. C++ provides the queue container in the &lt;queue&gt; header, and you can also use priority queues using [priority_queue](https://www.geeksforgeeks.org/cpp/priority-queue-in-cpp-stl/).
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main()
+{
+    queue&lt;int&gt; q;
+
+    // Add elements to the queue
+    q.push(10);
+    q.push(20);
+    q.push(30);
+
+    // Remove elements from the queue (FIFO)
+    while (!q.empty())
+    {
+        cout &lt;&lt; q.front() &lt;&lt; &quot; &quot;;
+        q.pop();
+    }
+
+    return 0;
+}
+
+
+**Output**10 20 30 
+### Related Posts: 
+
+- [C++ Queue Guide](https://www.geeksforgeeks.org/cpp/queue-cpp-stl/)
+- [C++ Queue Quiz](https://www.geeksforgeeks.org/quizzes/cpp-queue/)
+### ****Recommended DSA Problems:****
+
+- [Stack using Two Queues](https://www.geeksforgeeks.org/problems/stack-using-two-queues/1?selectedLang=python3)
+- [Sliding Window Maximum](https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1?selectedLang=python3)
+- [BFS of Graph](https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1?selectedLang=python3)
+- [Maximum score from at most K jumps](https://www.geeksforgeeks.org/problems/maximum-score-from-at-most-k-jumps/1?selectedLang=python3)
+- [Rotten Oranges](https://www.geeksforgeeks.org/problems/rotten-oranges2536/1?selectedLang=python3)
+## 9. Stack
+
+
+A stack follows the LIFO (Last In First Out) principle. In C++, you can use the [stack ](https://www.geeksforgeeks.org/cpp/stack-in-cpp-stl/)container provided in the &lt;stack&gt; header. It is a simple and efficient implementation for typical stack operations. For more flexibility, you can also use vector or deque as underlying containers, since stack by default uses deque.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;stack&gt;
+using namespace std;
+
+int main()
+{
+    stack&lt;string&gt; st;
+
+    // Push elements onto the stack
+    st.push(&quot;g&quot;);
+    st.push(&quot;f&quot;);
+    st.push(&quot;h&quot;);
+
+    // Print the initial stack by popping elements
+    cout &lt;&lt; &quot;Stack Content (top to bottom): &quot;;
+    while (!st.empty())
+    {
+        cout &lt;&lt; st.top() &lt;&lt; &quot; &quot;;
+        st.pop();
+    }
+
+    return 0;
+}
+
+
+**Output**Stack Content (top to bottom): h f g 
+### Related Posts:
+
+- [Stack in C++ ](https://www.geeksforgeeks.org/cpp/stack-in-cpp-stl/)
+- [C++ Stack Quiz](https://www.geeksforgeeks.org/quizzes/cpp-stack/)
+### ****Recommended DSA Problems:****
+
+- [Parenthesis Checker](https://www.geeksforgeeks.org/problems/parenthesis-checker2744/1?selectedLang=python3)
+- [Evaluation of Postfix Expression](https://www.geeksforgeeks.org/problems/evaluation-of-postfix-expression1735/1?selectedLang=python3)
+- [Next Greater Element](https://www.geeksforgeeks.org/problems/next-larger-element-1587115620/1?selectedLang=python3)
+- [Buildings Facing The Sun](https://www.geeksforgeeks.org/problems/buildings-receiving-sunlight3032/1?selectedLang=python3)
+- [Stock Span Problem](https://www.geeksforgeeks.org/problems/stock-span-problem-1587115621/1?selectedLang=python3)
+## 10. Linked List
+
+
+A Linked List is a linear data structure where each element (node) contains data and a reference to the next node.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+class Node
+{
+  public:
+    int data;
+    Node *next;
+
+    Node(int d)
+    {
+        data = d;
+        next = nullptr;
+    }
+};
+
+int main()
+{
+    // Create nodes
+    Node *head = new Node(10);
+    head-&gt;next = new Node(20);
+    head-&gt;next-&gt;next = new Node(30);
+
+    // Traverse and print the linked list
+    Node *temp = head;
+    while (temp != nullptr)
+    {
+        cout &lt;&lt; temp-&gt;data &lt;&lt; &quot; &quot;;
+        temp = temp-&gt;next;
+    }
+
+    return 0;
+}
+
+
+**Output**10 20 30 
+### Related Posts: 
+
+- [Linked List Guide](https://www.geeksforgeeks.org/cpp/cpp-linked-list/)
+- [Quiz on Linked List](https://www.geeksforgeeks.org/quizzes/top-mcqs-on-linked-list-data-structure-with-answers/)
+### ****Recommended DSA Problems:****
+
+- [Length of Linked List](https://www.geeksforgeeks.org/problems/count-nodes-of-linked-list/1?selectedLang=python3)
+- [Search in Linked List](https://www.geeksforgeeks.org/problems/search-in-linked-list-1664434326/1?selectedLang=python3)
+- [Nth Node from End](https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1?selectedLang=python3)
+- [Middle of Linked List](https://www.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1?selecedLang=python3)
+- [Reverse Linked List](https://www.geeksforgeeks.org/problems/reverse-a-linked-list/1?selectedLang=python3)
+## 11. Tree
+
+
+A[ Tree](https://www.geeksforgeeks.org/dsa/tree-data-structure/) is a hierarchical data structure with nodes connected by edges. The top node is the root.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+class Node
+{
+  public:
+    int data;
+    Node *left;
+    Node *right;
+
+    Node(int val)
+    {
+        data = val;
+        left = nullptr;
+        right = nullptr;
+    }
+};
+
+// Inorder traversal
+void inorder(Node *root)
+{
+    if (root == nullptr)
+        return;
+    inorder(root-&gt;left);
+    cout &lt;&lt; root-&gt;data &lt;&lt; &quot; &quot;;
+    inorder(root-&gt;right);
+}
+
+int main()
+{
+    // Create tree nodes
+    Node *root = new Node(1);
+    root-&gt;left = new Node(2);
+    root-&gt;right = new Node(3);
+    root-&gt;left-&gt;left = new Node(4);
+
+    // Print inorder traversal
+    inorder(root);
+
+    return 0;
+}
+
+
+**Output**4 2 1 3 
+### Related Posts: 
+
+- [Trees in C++ ](https://www.geeksforgeeks.org/dsa/tree-data-structure/)
+### ****Recommended DSA Problems:****
+
+- [Inorder Traversal](https://www.geeksforgeeks.org/problems/inorder-traversal/1?selectedLang=python3)
+- [Preorder Traversal](https://www.geeksforgeeks.org/problems/preorder-traversal/1?selectedLang=python3)
+- [Postorder Traversal](https://www.geeksforgeeks.org/problems/postorder-traversal/1?selectedLang=python3)
+- [Level Order Traversal](https://www.geeksforgeeks.org/problems/level-order-traversal/1?selectedLang=python3)
+- [Height of Binary Tree](https://www.geeksforgeeks.org/problems/height-of-binary-tree/1?selectedLang=python3)
+- [Search a node in BST](https://www.geeksforgeeks.org/problems/search-a-node-in-bst/1?selectedLang=python3)
+- [Minimum in BST](https://www.geeksforgeeks.org/problems/minimum-element-in-bst/1?selectedLang=python3)
+- [Floor in BST](https://www.geeksforgeeks.org/problems/floor-in-bst/0?selectedLang=python3)
+- [Inorder Successor in BST](https://www.geeksforgeeks.org/problems/inorder-successor-in-bst/1?selectedLang=python3)
+- [Check for BST](https://www.geeksforgeeks.org/problems/check-for-bst/1?selectedLang=python3)
+## 12. Heap
+
+
+A Heap is a special tree-based structure that satisfies the heap property (Min-Heap or Max-Heap). In C++, we can use [priority_queue](https://www.geeksforgeeks.org/cpp/priority-queue-in-cpp-stl/).
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;queue&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; pq; // Min-Heap
+
+    pq.push(10);
+    pq.push(30);
+    pq.push(20);
+
+    cout &lt;&lt; &quot;Min-Heap elements: &quot;;
+    while (!pq.empty())
+    {
+        cout &lt;&lt; pq.top() &lt;&lt; &quot; &quot;; 
+        pq.pop();
+    }
+
+    return 0;
+}
+
+
+**Output**Min-Heap elements: 10 20 30 
+### Related Posts: 
+
+- [C++ Heap Guide](https://www.geeksforgeeks.org/cpp/priority-queue-in-cpp-stl/)
+### ****Recommended DSA Problems:****
+
+- [Check if Binary Tree is Heap](https://www.geeksforgeeks.org/problems/is-binary-tree-heap/1?selectedLang=python3)
+- [Check if Array is Heap](https://www.geeksforgeeks.org/problems/does-array-represent-heap4345/1?selectedLang=python3)
+- [Heap Sort](https://www.geeksforgeeks.org/problems/heap-sort/1?selectedLang=python3)
+- [K Largest Elements](https://www.geeksforgeeks.org/problems/k-largest-elements4206/1?selectedLang=python3)
+- [Sort Nearly Sorted Array](https://www.geeksforgeeks.org/problems/nearly-sorted-1587115620/1?selectedLang=python3)
+## 13. Graphs
+
+
+A Graph consists of nodes (vertices) connected by edges. In C++, it can be represented using an [adjacency list](https://www.geeksforgeeks.org/cpp/cpp-program-to-implement-adjacency-list/) with vector or list.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+// Function to add an edge between two vertices
+void addEdge(vector&lt;vector&lt;int&gt;&gt; &amp;adj, int i, int j)
+{
+    adj[i].push_back(j);
+    adj[j].push_back(i);
+}
+
+// Function to display the adjacency list
+void displayAdjList(const vector&lt;vector&lt;int&gt;&gt; &amp;adj)
+{
+    for (int i = 0; i &lt; adj.size(); i++)
+    {
+        cout &lt;&lt; i &lt;&lt; &quot;: &quot;;
+        for (int j : adj[i])
+        {
+            cout &lt;&lt; j &lt;&lt; &quot; &quot;;
+        }
+        cout &lt;&lt; endl;
+    }
+}
+
+int main()
+{
+    int V = 4;
+
+    // Create an adjacency list with V empty lists
+    vector&lt;vector&lt;int&gt;&gt; adj(V);
+
+    // Add edges
+    addEdge(adj, 0, 1);
+    addEdge(adj, 0, 2);
+    addEdge(adj, 1, 2);
+    addEdge(adj, 2, 3);
+
+    cout &lt;&lt; &quot;Adjacency List Representation:&quot; &lt;&lt; endl;
+    displayAdjList(adj);
+
+    return 0;
+}
+
+
+**Output**Adjacency List Representation:
+0: 1 2 
+1: 0 2 
+2: 0 1 3 
+3: 2 
+
+### Related Posts: 
+
+- [Graph Algorithms Guide](https://www.geeksforgeeks.org/dsa/graph-data-structure-and-algorithms/)
+- [Quiz on Graphs](https://www.geeksforgeeks.org/quizzes/graph-12715/)
+### ****Recommended DSA Problems:****
+
+- [BFS of Graph](https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1?selectedLang=python3)
+- [DFS of Graph](https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1?selectedLang=python3)
+- [Topological Sort](https://www.geeksforgeeks.org/problems/topological-sort/1)
+- [Number of Islands](https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1?selectedLang=python3)
+- [Check for Bipartite](https://www.geeksforgeeks.org/problems/bipartite-graph/1?selectedLang=python3)
+## 14. Dynamic Programming (DP)
+
+
+DP is used when problems have overlapping subproblems and optimal substructure. Example: Fibonacci series using DP.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int fib(int n, vector&lt;int&gt; &amp;dp)
+{
+    if (n &lt;= 1)
+        return n;
+    if (dp[n] != -1)
+        return dp[n];
+    return dp[n] = fib(n - 1, dp) + fib(n - 2, dp);
+}
+
+int main()
+{
+    int n = 10;
+    vector&lt;int&gt; dp(n + 1, -1);
+
+    cout &lt;&lt; &quot;Fibonacci(&quot; &lt;&lt; n &lt;&lt; &quot;): &quot; &lt;&lt; fib(n, dp) &lt;&lt; endl;
+
+    return 0;
+}
+
+
+**Output**Fibonacci(10): 55
+
+### Related Posts: 
+
+- [Dynamic Programming in C++ ](https://www.geeksforgeeks.org/competitive-programming/dynamic-programming/)
+- [Quiz on DP](https://www.geeksforgeeks.org/quizzes/top-mcqs-on-dynamic-programming-with-answers/)
+### ****Recommended DSA Problems:****
+
+- [Nth Fibonacci Number](https://www.geeksforgeeks.org/problems/nth-fibonacci-number1335/1?selectedLang=python3)
+- [Nth Tribonacci Number](https://www.geeksforgeeks.org/problems/tribonacci-number/1?selectedLang=python3)
+- [Climbing Stairs](https://www.geeksforgeeks.org/problems/count-ways-to-reach-the-nth-stair-1587115620/1?selectedLang=python3)
+- [Weighted Climbing Stairs](https://www.geeksforgeeks.org/problems/min-cost-climbing-stairs/1?selectedLang=python3)
+- [Nth Catalan Number](https://www.geeksforgeeks.org/problems/nth-catalan-number0817/1?selectedLang=python3)
+CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[Tutorials](https://www.geeksforgeeks.org/tag/tutorials/)[CPP-DSA](https://www.geeksforgeeks.org/tag/cpp-dsa/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

@@ -1,0 +1,322 @@
+Structures, Unions and Enumerations in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Structures, Unions and Enumerations in C++
+Last Updated : 23 Jul, 2025
+- 
+- 
+- 
+
+Structures, unions and enumerations (enums) are 3 user defined data types in C++. User defined data types allow us to create a data type specifically tailored for a particular purpose. It is generally created from the built-in or derived data types. Let's take a look at each of them one by one.
+
+## Structure
+
+
+In C++, [****structure ****](https://www.geeksforgeeks.org/cpp/structures-in-cpp/)is a user-defined data type that is used to combine data of different types. It is similar to an array but unlike an array, which stores elements of the same type, a structure can store elements of different data types. C++ structures can also have member functions to manipulate its data.
+
+### Create Structure
+
+
+A structure has to be defined before being usable in the program. It is defined using ****struct**** keyword.
+
+            C++
+
+    struct structure_name{
+    type1 member1;
+    type2 member2;
+    .
+    .
+    typeN memberN;
+};
+
+
+
+This definition does not allocate any memory to the structure. We have to create structure variables separately to use it.
+
+            C++
+
+    structure_name var_name;
+
+
+
+We can also assign some values to the members:
+
+            C++
+
+    struct structure_name = {val1, val2, ..., valN};
+
+
+### Access and Update
+
+
+Structure members can be accessed using the [****dot operator (.)****](https://www.geeksforgeeks.org/cpp/dot-operator-in-cpp/)
+
+            C++
+
+    struct structure_name;
+
+// Accessing first member
+structure_name.member1;
+
+// Accessing second member
+structure_name.member2;
+
+// Accessing third member
+structure_name.member3;
+
+
+### ****Example****
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+// Define structure
+struct GFG {
+    int G1;
+    char G2;
+    float G3;
+};
+
+int main() {
+    
+    // Create object of structure
+    GFG Geek = {85, &#39;G&#39;, 989.45};
+    
+    // Accessing structure members values
+    cout &lt;&lt; Geek.G1 &lt;&lt; endl;
+    cout &lt;&lt; Geek.G2 &lt;&lt; endl;
+    cout &lt;&lt; Geek.G3;
+
+    return 0;
+}
+
+
+**Output**85
+G
+989.45
+
+****Explanation:**** In the above code, values: ****(85, 'G', 989.45)**** are assigned to the G1, G2, and G3 member variables of the structure GFG, and these values are printed at the end using dot (.) operator. 
+
+## Union
+
+
+In C++, [****union****](https://www.geeksforgeeks.org/cpp/cpp-unions/) is a user-defined datatype in which we can define members of different types of data types just like structures but unlike a structure, where each member has its own memory, a union member shares the same memory location.
+
+### Create Union
+
+
+Union is first defined using ****union ****keyword:
+
+            C++
+
+    union union_name{
+    type1 member1;
+    type2 member2;
+    .
+    .
+    typeN memberN;
+};
+
+
+
+Then we can create union variables:
+
+            C++
+
+    union_name var_name;
+
+
+### Access and Update
+
+
+Only one member of a union stores memory at one time.
+
+            C++
+
+    var_name.member1 = val
+
+
+### ****Example****
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+// Defining a Union
+union GFG {
+    int G1;
+    char G2;
+    float G3;
+};
+
+int main() {
+    
+    // Create an object of GFG union
+    GFG Geek;
+    
+    // Assign union&#39;s member variables
+    Geek.G1 = 85;
+    
+    // Accessing union members values
+    cout &lt;&lt; Geek.G1 &lt;&lt; endl;
+    
+    Geek.G2 = &#39;G&#39;;
+    cout &lt;&lt; Geek.G2 &lt;&lt; endl;
+    
+    Geek.G3 = 989.45;
+    cout &lt;&lt;  Geek.G3;
+    
+    return 0;
+}
+
+
+**Output**85
+G
+989.45
+## Enumeration
+
+
+In C++, [****enumeration ****](https://www.geeksforgeeks.org/cpp/enumeration-in-cpp/)(enum) is a user-defined type that consists of a set of named integral constants. Enumerations help make the code more readable and easier to maintain by assigning meaningful names to constants.
+
+### Create Enums
+
+
+Just like all other user defined data types, ****enums ****also needs to be defined before we can use it.
+
+            C++
+
+    enum enum_name {
+    value1, value2, value3…..valueN
+};
+
+
+
+Once defined, it can be used in the C++ program.
+
+            C++
+
+    enum_name var_name = value
+
+
+
+This value should be taken from the defined value.
+
+### ****Example****
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt; 
+using namespace std; 
+
+int main()  { 
+    
+	// Defining enum Gender 
+	enum GFG { Male, Female }; 
+
+	// Creating GFG type variable and assigning
+	// value 
+	GFG Geek = Male;
+
+	switch (Geek) {
+	case Male: 
+		cout &lt;&lt; &quot;Who is he?&quot;; 
+		break; 
+	case Female: 
+		cout &lt;&lt; &quot;Who is she?&quot;; 
+		break; 
+	default: 
+		cout &lt;&lt; &quot;Who is they?&quot;; 
+	}
+	
+	return 0; 
+}
+
+
+**Output**Who is he?CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[Structure &amp;amp; Union](https://www.geeksforgeeks.org/tag/structure-union/)[cpp-struct](https://www.geeksforgeeks.org/tag/cpp-struct/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

@@ -1,0 +1,263 @@
+Functions in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Functions in C++
+Last Updated : 25 Apr, 2026
+- 
+- 
+- 
+
+A function is a reusable block of code that performs a specific task. It divides a program into smaller logical units, improves readability, and makes code easier to maintain. A function can accept parameters, execute statements, and optionally return a value.
+
+- A function allows you to write a piece of logic once and reuse it wherever needed in the program. 
+- This helps keep your code clean, organized, easier to understand and manage.
+
+****Note:**** C++ also supports advanced features like function overloading, default arguments, and inline functions, which give more flexibility compared to C.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+// function definition
+int square(int x) {
+    return x * x;
+}
+
+int main() {
+
+    // Calling the function
+    int result = square(5);
+    
+    cout &lt;&lt; &quot;Square of 5 is: &quot; &lt;&lt; result &lt;&lt; endl;
+
+    return 0;
+}
+
+**Output**Square of 5 is: 25
+
+
+
+![why_use_functions_](https://media.geeksforgeeks.org/wp-content/uploads/20260109115849475633/why_use_functions_.webp)Function Usage
+## Function Syntax
+
+
+To work with functions in C++, it is important to understand how they are written, declared, and called. This section covers function syntax, declaration vs definition, and how to call a function in a program.
+
+### Function Syntax in C++
+
+
+A function in C++ follows this general format:
+![keyword](https://media.geeksforgeeks.org/wp-content/uploads/20260113104235019468/keyword.webp)Basic structure of a C++ function.
+
+Each part has a specific role:
+
+- [****Return type****](https://www.geeksforgeeks.org/cpp/return-statement-in-cpp-with-examples/): Specifies what type of value the function returns. Use void if there is no return value.
+- ****Function name****: The name you will use to call the function.
+- ****Parameter list****: Inputs that the function accepts. It can be empty if no inputs are needed.
+- ****Function body****: The block of code that runs when the function is called.
+### Function Declaration vs Definition
+
+
+A function declaration introduces a function to the compiler by specifying its return type, name, and parameters without the body, and is used when the function is defined later or in another file.
+
+
+// Declarationint add(int, int); 
+
+
+Function definition contains the actual code that specifies what the function does when it is called.
+
+
+//Definitionint add(int a, int b) {return a + b;}
+
+### Purpose of Function Declaration in C++
+
+- A function must be declared before it is used so the compiler knows its name, return type, and parameters. This can be done either by defining the function before main() or by declaring it using a function prototype if the definition appears later.
+- This allows the compiler to correctly recognize and validate function calls in larger or multi-file programs.
+## Calling a Function
+
+
+A function is used by calling its name followed by parentheses, passing required arguments if any, which executes the code inside the function.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+void greet() {
+    cout &lt;&lt; &quot;Welcome to C++ Programming!&quot; &lt;&lt; endl;
+}
+int multiply(int a, int b) {
+    return a * b;
+}
+
+int main() {
+    
+    greet();
+    int result = multiply(4, 5);
+    cout &lt;&lt; &quot;Multiplication result: &quot; &lt;&lt; result &lt;&lt; endl;
+    return 0;
+}
+
+**Output**Welcome to C++ Programming!
+Multiplication result: 20
+
+
+****Explanation:****
+
+- greet() function: A parameterless void function that prints a welcome message and is called in main() using greet();.
+- multiply(int a, int b) function: Takes two integers, returns their product, and is called in main() with 4 and 5, storing the result in result which is then printed.
+
+****Note:**** Function calls allow you to reuse code easily. You can call the same function multiple times with different inputs to perform repeated tasks in a structured and clean way.
+
+## Parameters or Arguments
+
+
+A function can accept input values called arguments, which are passed during the function call and received through typed parameters defined inside the function’s parentheses.
+
+
+****Syntax:**** 
+
+
+return_type name(type1 name1, type2 name2...) {    // Function body    return val;}
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+void printNum(int n){
+    cout &lt;&lt; n &lt;&lt; endl;
+}
+
+int main() {
+    int num1 = 10;
+    int num2 = 99;
+    
+    printNum(num1);
+    printNum(num2);
+    return 0;
+}
+
+**Output**10
+99
+
+
+****Explanation: ****
+
+- printNum() is defined with one integer parameter n, so it can accept and print only one integer value at a time.
+- The function is called twice , once with num1 and once with num2 , and prints each value separately.
+- Inside the function, the passed value is accessed using the parameter name n, not num1 or num2, due to variable scope.
+- We cannot pass both numbers in a single call because the function is defined to accept only one parameter.
+
+****Note: ****A function can only take as many arguments as specified in the function definition and it is compulsory to pass them while calling it. Also, they should be of same type as in the function definition.
+
+## Types of Functions in C++
+
+
+In C++, functions can be broadly categorized based on two criteria:
+
+### ****1. Based on origin****
+
+- ****Library Functions****: These are built-in functions provided by C++ standard libraries, such as [sqrt()](https://www.geeksforgeeks.org/cpp/sqrt-sqrtl-sqrtf-cpp/), [abs()](https://www.geeksforgeeks.org/cpp/abs-labs-llabs-functions-cc/), and [getline()](https://www.geeksforgeeks.org/cpp/getline-string-c/). You can use them by including appropriate [headers](https://www.geeksforgeeks.org/cpp/header-files-in-c-c-with-examples/) like &lt;iostream&gt;, &lt;cmath&gt;, or &lt;string&gt;.
+- ****User-Defined Functions****: These are functions created by the programmer to perform specific tasks in the program.
+### ****2. Based on input and return type****
+
+
+User-defined functions can be further classified based on whether they accept parameters or return a value:
+
+- ****No parameters, no return value: ****The function performs a task but does not take input or return anything.
+- ****Parameters, no return value:**** The function takes input but does not return a result.
+- ****No parameters, return value: ****The function returns a result but does not take any input.
+- ****Parameters and return value:**** The function takes input and returns a result.
+
+****Note: ****These types help you design functions according to the task they need to perform. Choosing the right form improves code flexibility and clarity.
+
+### Related Article: 
+
+- [lamda function in cpp](https://www.geeksforgeeks.org/cpp/lambda-expression-in-c/)
+- [Function pass by reference in cpp](https://www.geeksforgeeks.org/cpp/cpp-functions-pass-by-reference/)CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[CPP-Functions](https://www.geeksforgeeks.org/tag/cpp-functions/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

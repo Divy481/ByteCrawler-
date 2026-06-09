@@ -1,0 +1,281 @@
+Constructors in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Constructors in C++
+Last Updated : 23 May, 2026
+- 
+- 
+- 
+
+Constructors are special methods that are automatically called whenever an object of a class is created. A constructor is different from normal functions in following ways: 
+
+- A constructor has same name as the class itself
+- Don't have return type
+- If we do not specify a constructor, C++ compiler generates a default constructor for us (expects no parameters and has an empty body).
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+class A {
+public:
+  
+    // Constructor without any parameters
+    A() {
+        cout &lt;&lt; &quot;Constructor called&quot; &lt;&lt; endl;
+    }
+};
+
+int main() {
+    A obj1;
+    return 0;
+}
+
+**Output**Constructor called
+
+
+****Explanation:**** In the above program, we have defined a constructor for class A. In the main function, when we create an object of that class, this constructor is called, which prints "Constructor called".
+
+## Types of Constructors in C++
+
+
+Constructors can be classified based on the situations they are being used in. There are 4 types of constructors in C++:
+![123212](https://media.geeksforgeeks.org/wp-content/uploads/20260523105825029055/123212.webp)Types of Constructors
+### 1. Default Constructor
+
+
+A default constructor is automatically created by the compiler if no constructor is defined. It takes no arguments and initializes members with default values, and it is not generated if the programmer defines any constructor.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+// Class with no explicity defined constructors
+class A {
+public:
+};
+
+int main() {
+  
+  	// Creating object
+    A a;
+    return 0;
+}
+
+
+
+****Explanation:**** The class A does not contain any explicitly defined constructor, so its object is created without passing any parameters. In this case, the compiler automatically provides and uses the default constructor.
+
+### 2. Parameterized Constructor
+
+
+A parameterized constructor lets us pass arguments to initialize an object's members. It is created by adding parameters to the constructor and using them to set the values of the data members.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+class A {
+public:
+    int val;
+  
+  	// Parameterized Constructor
+    A(int x) {
+        val = x;
+    }
+};
+
+int main() {
+  
+  	// Creating object with a parameter
+    A a(10);
+    cout &lt;&lt; a.val;
+    return 0;
+}
+
+**Output**10
+
+****Explanation:**** The parameterized constructor is called when we create object a with integer argument 10 . As defined, it initializes the member variable val with the value 10.
+
+
+****Note****: If a parameterized constructor is defined, the non-parameterized constructor should also be defined as compiler does not create the default constructor.
+
+### 3. Copy Constructor
+
+
+A [copy constructor](https://www.geeksforgeeks.org/cpp/copy-constructor-in-cpp/) is a member function that initializes an object using another object of the same class. Copy constructor takes a reference to an object of the same class as an argument.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+class A {
+public:
+    int val;
+    
+    // Parameterized constructor
+    A(int x) {
+        val = x;
+    }
+    
+    // Copy constructor
+    A(A&amp; a) {
+        val = a.val;
+    }
+};
+
+int main() {
+    A a1(20);
+    
+    // Creating another object from a1
+    A a2(a1);
+    
+  	cout &lt;&lt; a2.val;
+    return 0;
+}
+
+**Output**20
+
+****Explanation:**** The copy constructor is used to create a new object a2 as a copy of the object a1. It is called automatically when the object of class A is passed as constructor argument.
+
+
+Just like the default constructor, the C++ compiler also provides an implicit copy constructor if the explicit copy constructor definition is not present.
+
+
+****Note:**** If no copy or move constructor is defined, the compiler automatically creates an implicit copy constructor, unlike the default constructor which is removed when any constructor is defined.
+
+### 4. Move Constructor
+
+
+A move constructor in C++ transfers resources from one object to another instead of copying them. It uses move semantics to avoid unnecessary copies and improve performance, especially with temporary objects.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std; 
+
+class MyClass {
+private:
+    int b;
+
+public:
+    // Constructor
+    MyClass(int &amp;&amp;a) : b(move(a)) {
+        cout &lt;&lt; &quot;Move constructor called!&quot; &lt;&lt; endl;
+    }
+
+    void display() {
+            cout &lt;&lt; b &lt;&lt;endl;
+    }
+};
+
+int main() {
+    int a = 4;
+    MyClass obj1(move(a));  // Move constructor is called
+
+    obj1.display();
+    return 0;
+}
+
+**Output**Move constructor called!
+4
+
+
+****Explanation: ****In the above program, MyClass uses a constructor with an rvalue reference (int&amp;&amp;) to move a value into its member using std::move. When an object is created with std::move, the move constructor transfers ownership of resources instead of copying them. If you don’t define one, the compiler automatically generates a move constructor (just like it does for copy constructors).
+
+## Characteristics of Constructors
+
+- The name of the constructor is the same as its class name.
+- Constructors are mostly declared as public member of the class though they can be declared as private.
+- Constructors do not return values, hence they do not have a return type.
+- A constructor gets called automatically when we create the object of the class.
+- Multiple constructors can be declared in a single class (it is even recommended - [Rule Of Three](https://www.geeksforgeeks.org/cpp/rule-of-three-in-cpp/), [The Rule of Five](https://www.geeksforgeeks.org/cpp/rule-of-five-in-cpp/)).
+- In case of multiple constructors, the one with matching function signature will be called.CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-class](https://www.geeksforgeeks.org/tag/cpp-class/)[cpp-constructor](https://www.geeksforgeeks.org/tag/cpp-constructor/)[CPP-OOPs](https://www.geeksforgeeks.org/tag/cpp-oops/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

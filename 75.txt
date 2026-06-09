@@ -1,0 +1,350 @@
+Queue in C++ STL - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Queue in C++ STL
+Last Updated : 11 May, 2026
+- 
+- 
+- 
+
+A queue is a [container adapter](https://www.geeksforgeeks.org/cpp/container-adapter-in-cpp/) that stores elements in FIFO (First In, First Out) order. It allows elements to be inserted from the back and removed from the front, ensuring the first inserted element is removed first.
+
+- Supports efficient insertion and deletion operations 
+- Widely used in scheduling, buffering, and task management systems![dequeue_operation_in_queue_1](https://media.geeksforgeeks.org/wp-content/uploads/20250930145226252614/dequeue_operation_in_queue_1.webp)Queue in C++
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main()
+{
+    queue&lt;int&gt; q;
+    q.push(10);
+    q.push(5);
+
+    // Accessing the front and back elements
+    cout &lt;&lt; &quot;Front element: &quot; &lt;&lt; q.front() &lt;&lt; endl;
+    cout &lt;&lt; &quot;Back element: &quot; &lt;&lt; q.back() &lt;&lt; endl;
+
+    // Removing an element from the front
+    q.pop();
+
+    cout &lt;&lt; &quot;Front element after pop: &quot; &lt;&lt; q.front() &lt;&lt; endl;
+    return 0;
+}
+
+**Output**Front element: 10
+Back element: 5
+Front element after pop: 5
+
+## Syntax
+
+
+Queue is defined as the std::queue class template inside &lt;queue&gt; header file.
+
+
+queue&lt;T&gt; q;
+
+
+where,
+
+- ****T:**** DataType of elements in the queue.
+- ****q:**** Name assigned to the queue.
+## Basic Operations
+
+
+Here are the basic operations that can be performed on a queue:
+
+### Inserting Elements
+
+- New elements can only be inserted at the back of the queue using [push()](https://www.geeksforgeeks.org/cpp/queue-push-and-queue-pop-in-cpp-stl/) function. 
+- The process of inserting elements in a queue is also called enqueue.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main(){
+    queue&lt;int&gt; q;
+
+    // Pushing elements into the queue
+    q.push(3);
+    q.push(4);
+    q.push(5);
+
+    return 0;
+}
+
+
+### Accessing Elements
+
+
+Only the front and back elements of the queue can be accessed by using [front()](https://www.geeksforgeeks.org/cpp/queuefront-queueback-c-stl/) and [back()](https://www.geeksforgeeks.org/cpp/queuefront-queueback-c-stl/) functions respectively. 
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main()
+{
+    queue&lt;int&gt; q;
+    q.push(3);
+    q.push(4);
+    q.push(5);
+
+    // Accessing the front and back elements
+    cout &lt;&lt; q.front() &lt;&lt; endl;
+    cout &lt;&lt; q.back();
+    
+    return 0;
+}
+
+**Output**3
+5
+### Deleting Elements
+
+- Elements can only be deleted from the front of the queue using the [pop()](https://www.geeksforgeeks.org/cpp/queue-push-and-queue-pop-in-cpp-stl/) function. 
+- The process of deleting elements from a queue is also called dequeue.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main(){
+    queue&lt;int&gt; q;
+    q.push(3);
+    q.push(4);
+    q.push(5);
+
+    // Deleting elements from the front of the queue
+    q.pop();
+
+    while (!q.empty()){
+        cout &lt;&lt; q.front() &lt;&lt; &quot; &quot;;
+        q.pop();
+    }
+    return 0;
+}
+
+**Output**4 5 
+
+****Note:**** In a queue, elements can only be inserted at the back and removed from the front. It does not provide access to middle elements, so deleting an element from the middle is not directly possible.
+
+### empty()
+
+- This checks whether the queue is empty.
+-  It returns true if the queue has no elements; otherwise, it returns false.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main(){
+
+    queue&lt;int&gt; q;
+    if (q.empty()){
+        cout &lt;&lt; &quot;Queue is empty &quot; &lt;&lt; endl;
+    }
+    q.push(100);
+    if (!q.empty()){
+        cout &lt;&lt; &quot;Queue is not empty. Front element: &quot; &lt;&lt; q.front() &lt;&lt; endl;
+    }
+    return 0;
+}
+
+**Output**Queue is empty 
+Queue is not empty. Front element: 100
+
+### Size of queue
+
+- The size() function in a queue returns the number of elements currently in the queue.
+- It helps to determine how many items are stored without modifying the queue.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main()
+{
+
+    queue&lt;int&gt; q;
+    q.push(10);
+    q.push(5);
+    cout &lt;&lt; &quot;Size of queue: &quot; &lt;&lt; q.size() &lt;&lt; endl;
+    q.pop();
+    cout &lt;&lt; &quot;Size of queue: &quot; &lt;&lt; q.size() &lt;&lt; endl;
+    return 0;
+}
+
+**Output**Size of queue: 2
+Size of queue: 1
+
+## Pseudo Traversal
+
+- Since only the front and back element can be accessed in a queue, we cannot directly traverse it. 
+- On the other hand, we can create a copy of the queue, access the front element, and then delete it, and continue this process until the copied queue is empty. This way, we can effectively traverse all the elements of the queue.
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main(){
+    queue&lt;int&gt; q;
+    q.push(3);
+    q.push(4);
+    q.push(5);
+
+    // Create a copy
+    queue&lt;int&gt; temp(q);
+
+    while (!temp.empty())
+    {
+        cout &lt;&lt; temp.front() &lt;&lt; &quot; &quot;;
+        temp.pop();
+    }
+    return 0;
+}
+
+[Try It Yourself![redirect icon](https://media.geeksforgeeks.org/auth-dashboard-uploads/Group-arrow.svg)](https://www.geeksforgeeks.org/problems/c-stl-set-5-queue/1)**Output**3 4 5 
+## All Member Functions
+
+
+Following is the list of all member functions of std::queue class in C++:
+
+
+****Functions****
+
+
+****Description****
+
+
+[front()](https://www.geeksforgeeks.org/cpp/queuefront-queueback-c-stl/)
+Access the front element of the queue.
+
+[back()](https://www.geeksforgeeks.org/cpp/queuefront-queueback-c-stl/)
+
+
+Access the end element of the queue.
+
+
+[empty()](https://www.geeksforgeeks.org/cpp/queueempty-queuesize-c-stl/)
+Check whether a queue is empty or not.
+
+[size()](https://www.geeksforgeeks.org/cpp/queueempty-queuesize-c-stl/)
+Returns the number of elements in the queue.
+
+[push()](https://www.geeksforgeeks.org/cpp/queue-push-and-queue-pop-in-cpp-stl/)
+Adding an element at the back of the queue.
+
+****push_range()****
+
+
+Adding multiple elements at the end of queue.
+
+
+[****emplace()****](https://www.geeksforgeeks.org/cpp/queueemplace-c-stl/)
+
+
+Constructs and inserts an element at the back of the queue.
+
+
+[pop()](https://www.geeksforgeeks.org/cpp/queue-push-and-queue-pop-in-cpp-stl/)
+
+
+Delete the front element of the queue.
+
+
+[swap()](https://www.geeksforgeeks.org/cpp/queue-swap-cpp-stl/)
+Swap two queues.CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[STL](https://www.geeksforgeeks.org/tag/stl/)[cpp-containers-library](https://www.geeksforgeeks.org/tag/cpp-containers-library/)[cpp-queue](https://www.geeksforgeeks.org/tag/cpp-queue/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

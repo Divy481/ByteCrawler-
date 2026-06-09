@@ -31,6 +31,6 @@ namespace crawler {
             std::mutex printMutex;
             std::mutex tempMutex;
             std::mutex fileMutex;
-                        
+            int counter;            
     };
 }

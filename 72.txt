@@ -1,0 +1,345 @@
+Quiz about Object Oriented Programming in C++[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Practice Problems](https://www.geeksforgeeks.org/explore)
+- [C ](https://www.geeksforgeeks.org/c/c-programming-language/)
+- [C++](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Java](https://www.geeksforgeeks.org/java/java/)
+- [Python](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/)
+- [JavaScript](https://www.geeksforgeeks.org/javascript/javascript-tutorial/)
+- [Data Science](https://www.geeksforgeeks.org/data-science/data-science-for-beginners/)
+- [Machine Learning](https://www.geeksforgeeks.org/machine-learning/machine-learning/)
+- [Courses](https://www.geeksforgeeks.org/courses)
+- [Linux](https://www.geeksforgeeks.org/linux-unix/linux-tutorial/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Object Oriented Programming in C++
+Last Updated : DiscussComments
+
+Question 1
+
+
+Which of the following best describes a constructor in C++?
+
+- 
+
+A function that is called when an object is destroyed
+
+- 
+
+A function that is called when an object is accessed
+
+- 
+
+A function that is called when an object is created
+
+- 
+
+A function that is called when an object is inherited
+
+
+Question 2
+
+
+Which OOP concept in C# is used to restrict direct access to data and allow it only through methods?
+
+- 
+
+Encapsulation
+
+- 
+
+Abstraction
+
+- 
+
+Data hiding
+
+- 
+
+Data binding
+
+
+Question 3
+
+
+What is the main benefit of encapsulation in C++?
+
+- 
+
+Faster execution
+
+- 
+
+&nbsp;Better UI design
+
+- 
+
+Data security and abstraction
+
+- 
+
+Simplified syntax
+
+
+Question 4
+
+
+Which of the following best describes abstraction?
+
+
+
+
+
+- 
+
+Hiding implementation details and showing only relevant information to the users.
+
+- 
+
+Binding both data members and member functions into a single unit.
+
+- 
+
+Accessing data members and member functions of one class by other
+
+- 
+
+All of the above
+
+
+Question 5
+
+
+Which access specifier provides the highest level of protection?
+
+- 
+
+private
+
+- 
+
+&nbsp;protected
+
+- 
+
+public
+
+- 
+
+None of the above
+
+
+Question 6
+
+
+Which of the following correctly defines function overloading and function overriding in C++?
+
+- 
+
+Overloading occurs when two or more methods in the same class have the same name but different parameters overriding occurs when a derived class has a definition for one of the member functions of the base class.
+
+- 
+
+Overloading occurs in the same class, overriding occurs between a base class and a derived class
+
+- 
+
+Overloading requires the use of the 'virtual' keyword, overriding does not.
+
+- 
+
+Overloading and overriding are the same in C++.
+
+
+Question 7
+
+
+What will be the output of the following program?
+
+        C++
+        
+        #include&lt;iostream&gt;
+using namespace std;
+
+class Base {
+public:
+    virtual void show() {
+        std::cout &lt;&lt; &quot;Base\n&quot;;
+    }
+};
+class Derived : public Base {
+public:
+    void show() override {
+        std::cout &lt;&lt; &quot;Derived\n&quot;;
+    }
+};
+int main() {
+    Base* b;
+    Derived d;
+    b = &amp;d;
+    b-&gt;show();
+    return 0;
+}
+
+        
+    
+- 
+
+Base
+
+- 
+
+Derived
+
+- 
+
+Compilation error
+
+- 
+
+Runtime error
+
+
+Question 8
+
+        C
+        
+        #include &lt;iostream&gt;
+using namespace std;
+
+class Player
+{
+private:
+    int id;
+    static int next_id;
+public:
+    int getID() { return id; }
+    Player()  {  id = next_id++; }
+};
+int Player::next_id = 1;
+
+int main()
+{
+  Player p1;
+  Player p2;
+  Player p3;
+  cout &lt;&lt; p1.getID() &lt;&lt; &quot; &quot;;
+  cout &lt;&lt; p2.getID() &lt;&lt; &quot; &quot;;
+  cout &lt;&lt; p3.getID();
+  return 0;
+}
+
+        
+    
+- Compiler Error
+- 1 2 3
+- 1 1 1
+- 3 3 3
+- 0 0 0
+
+Question 9
+
+
+Which access specifier is commonly used to hide data in abstraction?
+
+- 
+
+Public
+
+- 
+
+Private
+
+- 
+
+Protected
+
+- 
+
+Any of these
+
+
+Question 10
+Which of the following operators should be preferred to overload as a global function rather than a member method?
+- Postfix ++
+- Comparison Operator
+- Insertion Operator 
+- Prefix++Tags:[C++](https://www.geeksforgeeks.org/quizzes/?category=cpp)[C++ Quiz](https://www.geeksforgeeks.org/quizzes/?category=cpp-gq)
+
+There are 11 questions to complete.
+Take a part in the ongoing discussionView All Discussion[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

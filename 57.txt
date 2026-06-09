@@ -1,0 +1,482 @@
+C++ Pointers - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# C++ Pointers
+Last Updated : 21 May, 2026
+- 
+- 
+- 
+
+A pointer is a special variable that holds the memory address of another variable, rather than storing a direct value itself. Pointers allow programs to access and manipulate data in memory efficiently, making them a key feature for system-level programming and dynamic memory management. When we access a pointer directly, we get the address it holds not the actual data stored at that location.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int var = 10;
+
+    // declare pointer and store address of var
+    int* ptr = &amp;var;
+
+    // print value and address
+    cout &lt;&lt; &quot;Value of var: &quot; &lt;&lt; var &lt;&lt; endl;
+    cout &lt;&lt; &quot;Address of var: &quot; &lt;&lt; &amp;var &lt;&lt; endl;
+    cout &lt;&lt; &quot;Value stored in pointer ptr: &quot; &lt;&lt; ptr &lt;&lt; endl;
+    cout &lt;&lt; &quot;Value pointed to by ptr: &quot; &lt;&lt; *ptr &lt;&lt; endl;
+
+    return 0;
+}
+
+
+
+****Output****
+Value of x: 10Address of x: 0x7fffa0757dd4Value stored in pointer ptr: 0x7fffa0757dd4Value pointed to by ptr: 10
+
+In the code above:
+![](https://media.geeksforgeeks.org/wp-content/uploads/20241210113214643291/pointer-in-c.png)
+- ****int* ptr; ****declares a pointer to an integer.
+- ****ptr = &amp;x;**** stores the address of variable x in the pointer ptr.
+- *****ptr ****is called the dereference operator. It gives access to the value stored at the memory address ptr is pointing to.
+
+So, ptr holds the address of x, and *ptr gives the value of x by accessing that address.
+
+## Create Pointer
+
+
+A pointer can be declared in the same way as any other variable but with an ****asterisk symbol (*)**** as shown:
+
+            C++
+
+    data_type* name
+
+
+
+Here, data_type**** ****is the type of data that the pointer is pointing to, and name is the name assigned to the pointer. The ***** ****symbol is also called ****dereference operator.****
+
+
+****Example:****
+
+            C++
+
+    int* ptr;
+
+
+
+In the above statement, we create a pointer ****ptr ****that can store the address of an integer data. It is pronounced as ****"Pointer to Integer"**** or ****"Integer Pointer"****
+
+## Assign Address
+
+
+The ****addressof operator (&amp;)**** determines the address of any variable in C++. This address can be assigned to the pointer variable to initialize it.
+
+
+****Example****:
+
+            C++
+
+    int val = 22;
+int* ptr = &amp;val;
+
+
+
+In the above statement, pointer ****ptr ****store the address of variable ****val ****using address-of operator ****(&amp;). ****The pointer and the variable should be of same type, Otherwise type mismatch error occurs.
+
+## Dereferencing
+
+
+The process of accessing the value present at the memory address pointed by the pointer is called [dereferencing.](https://www.geeksforgeeks.org/cpp/cpp-dereferencing/) This is done with the help of dereferencing operator as shown:
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int var = 10;
+    
+    // Store the address of 
+    // var variable
+    int* ptr = &amp;var;
+    
+    // Access value using (*)
+    // operator
+    cout &lt;&lt; *ptr;
+    return 0;
+}
+
+**Output**10
+
+
+Directly accessing the pointer will just give us the address that is stored in the pointer.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int var = 10;
+    
+    // Store the address of 
+    // var variable
+    int* ptr = &amp;var;
+    
+    // Access the address value
+    cout &lt;&lt; ptr;
+    return 0;
+}
+
+
+
+****Output****
+0x7fffa0757dd4
+## Modify Address
+
+
+The pointer can be modified to point to another memory address if its is of the same type.
+
+
+****Example****:
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 10;
+    int b = 99;
+
+    int *ptr = &amp;a;
+    cout &lt;&lt; *ptr &lt;&lt; endl;
+    
+    // Changing the address stored
+    ptr = &amp;b;
+    cout &lt;&lt; *ptr;
+    
+    return 0;
+}
+
+**Output**10
+99
+## Size of Pointers
+
+
+The size of pointer in a system is equal for every pointer no matter what type of data it is pointing to. It does not depend on the type, but on operating system and CPU architecture. The size of pointers in C++ is 
+
+- ****8 bytes ****for a ****64-bit System****
+- ****4 bytes**** for a**** 32-bit System****
+
+The logic is simple: pointers store the addresses of the memory and in a computer, the maximum width of a memory address is determined by the CPU architecture. For example, for a 64-bit CPU, the address will always be 64-bit wide. This can be verified using [sizeof operator.](https://www.geeksforgeeks.org/cpp/cpp-sizeof-operator/)
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int *ptr1;
+    char *ptr2;
+    
+    // Finding size using sizeof()
+    cout &lt;&lt; sizeof(ptr1) &lt;&lt; endl;
+    cout &lt;&lt; sizeof(ptr2);
+    
+    return 0;
+}
+
+**Output**8
+8
+
+As we can see, both the pointers have same size. It's a 64-bit system, so the size is 8 bytes.
+
+## Special Types of Pointers
+
+
+There are 4 special types of pointers that used or referred to in different contexts:
+
+### Wild Pointer
+
+
+When a pointer is created, it just contains a random address that may or may not be valid. This type of pointer is called ****wild pointer****.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+    // Wild pointer
+    int *ptr;
+    return 0;
+}
+
+
+
+Dereferencing this pointer may lead to errors such as segmentation faults. So, it is always recommended to initialize a pointer.
+
+### NULL Pointer (nullptr)
+
+
+A [****nullptr****](https://www.geeksforgeeks.org/cpp/null-pointer-in-cpp/) is a pointer that does not point to any valid memory location. It is often used to initialize a pointer when you do not want it to point to any object.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    
+    // nullptr pointer
+    int *ptr = nullptr;
+    
+    return 0;
+}
+
+
+### Void Pointers
+
+
+A [****void pointer****](https://www.geeksforgeeks.org/cpp/cpp-void-pointer/) (void*) is a special type of pointer in C++ that has no associated data type. It can hold the address of any data type, making it useful for generic programming. However, since the type is unknown, the compiler doesn't know how many bytes to read or how to interpret the data. Therefore, ****a void pointer cannot be directly dereferenced****. It must first be explicitly typecast to the appropriate pointer type.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int x = 42;
+    
+    // void pointer holding address of an int
+    void* ptr = &amp;x; 
+
+    // Error: cannot dereference void pointer
+    // cout &lt;&lt; *ptr; 
+
+    // Typecast before dereferencing
+    cout &lt;&lt; &quot;Value pointed by void pointer: &quot; &lt;&lt; *(static_cast&lt;int*&gt;(ptr)) &lt;&lt; endl;
+
+    return 0;
+}
+
+**Output**Value pointed by void pointer: 42
+
+### Dangling Pointer
+
+
+A ****dangling pointer**** is a pointer that refers to memory which has already been freed or is no longer valid. This typically happens when:
+
+- A pointer points to a local variable that has gone out of scope
+- Dynamically allocated memory is deallocated using delete, but the pointer still holds the old address
+
+Dereferencing a dangling pointer leads to ****undefined behavior****, and is a common source of hard-to-find bugs.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int* getPointer() {
+    int x = 10;
+    
+    // returning address of local variable
+    return &amp;x; 
+}
+
+int main() {
+    
+    // ptr becomes dangling here
+    int* ptr = getPointer(); 
+    
+    // Undefined behavior
+    // cout &lt;&lt; *ptr; 
+    return 0;
+}
+
+
+## Pointer Arithmetic
+
+
+[****Pointer arithmetic****](https://www.geeksforgeeks.org/cpp/cpp-pointer-arithmetic/) refers to the operations that C++ allows on the pointers. They include:
+
+- Incrementing and Decrementing
+- Addition of Integer
+- Subtraction of Integer
+- Subtraction of Two Pointers of the Same Type
+- Comparison of Pointers and NULL
+## Pointer To Pointer (Double Pointer)
+
+
+We can also have pointers that point to other pointers. This is called a [double pointer](https://www.geeksforgeeks.org/cpp/cpp-pointer-to-pointer-double-pointer/), and it is useful when working with multi-level data structures like arrays of pointers or dynamic memory management.
+
+
+****Example****:
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int var = 10;
+    
+    // Store the address of 
+    // var variable
+    int* ptr1 = &amp;var;
+    int** ptr2 = &amp;ptr1;
+    
+    // Access values using (*)
+    // operator
+    cout &lt;&lt; *ptr1 &lt;&lt; endl;
+    cout &lt;&lt; **ptr2;
+    return 0;
+}
+
+[Try It Yourself![redirect icon](https://media.geeksforgeeks.org/auth-dashboard-uploads/Group-arrow.svg)](https://www.geeksforgeeks.org/problems/increment-a-variable/1)**Output**10
+10
+## Pointer to Functions
+
+
+In C++, a [function pointer](https://www.geeksforgeeks.org/cpp/function-pointer-in-cpp/) is used to point to functions, similar to how pointers are used to point to variables. It allows you to save the address of a function. Function pointers can be used to call a function indirectly, or they can be passed as arguments to another function, enabling dynamic function invocation and flexibility in function handling.
+
+## Smart Pointers
+
+
+A [smart pointer](https://www.geeksforgeeks.org/cpp/smart-pointers-cpp/) is a wrapper class around a pointer that overloads operators like * and -&gt;. Smart pointer objects resemble normal pointers, they have the added functionality of automatically deallocating and freeing the memory of the object when it is no longer needed, unlike regular pointers.
+
+## Pointer vs Reference
+
+
+Understanding the [differences between pointers and references in C++](https://www.geeksforgeeks.org/cpp/pointers-vs-references-cpp/). Both are used to refer to other variables, but they operate in different ways and have different behavior.
+
+
+Aspect
+
+
+Pointer
+
+
+Reference
+
+
+Initialization
+
+
+A pointer can be initialized after declaration.
+
+
+A reference must be initialized at the time of declaration.
+
+
+Nullability
+
+
+A pointer can be assigned NULL or nullptr.
+
+
+A reference cannot be null, it must always refer to a valid object.
+
+
+Reassignment
+
+
+A pointer can be reassigned to point to different objects.
+
+
+A reference cannot be reassigned once it is bound to an object.
+
+## Uses of Pointers
+
+
+Pointers are a useful concept in C++ that allow direct access to memory addresses, providing greater control over memory and data manipulation. Below are some primary[ uses of pointers in C++](https://www.geeksforgeeks.org/cpp/features-and-use-of-pointers-in-c-c/):
+
+- [****Dynamic Memory Allocation****](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)****:**** Pointers allow memory to be allocated dynamically at runtime using operators like new and delete. This enables the creation of objects or arrays whose sizes are determined during execution.
+- ****Implementing Data Structures:**** Pointers are used to implementing complex data structures such as linked lists, trees, and graphs, where elements are dynamically allocated and linked together.
+- [****Pass Arguments by Pointer****](https://www.geeksforgeeks.org/cpp/passing-pointers-to-functions-in-cpp/)****: ****Pass the argument with their address and make changes in their value using pointer. So that the values get changed into the original argument.CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-pointer](https://www.geeksforgeeks.org/tag/cpp-pointer/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

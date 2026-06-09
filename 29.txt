@@ -1,0 +1,375 @@
+Namespace in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Namespace in C++
+Last Updated : 22 May, 2026
+- 
+- 
+- 
+
+A namespace in C++ is a container used to organize identifiers like variables, functions, and classes. It helps prevent naming conflicts when the same names are used in different parts of a program.
+
+- Groups related code under a unique name. 
+- Prevents collisions between identifiers having the same name.
+- Improves code organization and readability.
+            C++
+
+    #include &lt;iostream&gt;  
+namespace Room1 {
+    // Function greet inside namespace Room1
+    void greet() {
+        std::cout &lt;&lt; &quot;Hello from Room 1!&quot; &lt;&lt; std::endl;
+    }
+}
+
+namespace Room2 {
+    // Function greet inside namespace Room2
+    void greet() {
+        std::cout &lt;&lt; &quot;Hello from Room 2!&quot; &lt;&lt; std::endl;
+    }
+}
+
+int main() {
+    // Use the scope resolution operator (::) to access greet() function inside namespace Room1
+    Room1::greet();  
+    Room2::greet(); 
+    
+    return 0;  
+}
+
+**Output**Hello from Room 1!
+Hello from Room 2!
+
+### Namespace with using Directive
+
+
+We can also avoid prepending of namespaces with the [using ](https://www.geeksforgeeks.org/cpp/using-keyword-in-cpp-stl/)namespace directive. This directive tells the compiler that the subsequent code is making use of names in the specified namespace.
+
+
+****Syntax:****
+
+
+using namespace namespace_name;
+
+            C++
+
+    #include &lt;iostream&gt;
+
+namespace first_space {
+    void func() {
+        std::cout &lt;&lt; &quot;Inside first_space&quot;
+            &lt;&lt; std::endl;
+    }
+}
+
+// Using first_space
+using namespace first_space;
+
+int main() {
+    
+    // Call the method of first_space
+    func();  
+    return 0;
+}
+
+**Output**Inside first_space
+
+
+Names introduced in a using directive obey normal scope rules. The name is visible from the point of the using directive to the end of the scope in which the directive is found. Entities with the same name defined in an outer scope are hidden.
+
+### Using Declaration in C++
+
+
+Instead of importing the entire namespace, C++ also allows importing only specific members using a using declaration. This approach is generally preferred because it avoids unnecessary namespace pollution.
+
+
+****Syntax:****
+
+
+using namespace_name::member_name;
+
+            C++
+
+    #include &lt;iostream&gt;
+
+namespace first_space {
+    void func() {
+        std::cout &lt;&lt; &quot;Inside first_space&quot; &lt;&lt; std::endl;
+    }
+}
+
+// Using first_space
+using first_space::func;
+
+int main() {
+    
+    // Call the method of first_space
+    func();  
+    return 0;
+}
+
+**Output**Inside first_space
+
+## Nested Namespace
+
+
+We can nest one namespace into another. Such namespaces are called nested namespaces.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+// Outer namespace
+namespace outer {
+    void fun(){
+        cout &lt;&lt; &quot;Inside outer namespace&quot; &lt;&lt; endl;
+    }
+    
+    // Inner namespace
+    namespace inner {
+        void func() {
+            cout &lt;&lt; &quot;Inside inner namespace&quot;;
+        }
+    }
+}
+
+int main() {
+    
+    // Accessing member of inner 
+    // namespace
+    outer::inner::func();  
+    return 0;
+}
+
+**Output**Inside inner namespace
+## In-built Namespaces
+
+
+C++ already uses some inbuilt namespaces that we are already familiar with. Let's look at some of the common ones:
+
+### std Namespace
+
+
+In C++, [std namespace](https://www.geeksforgeeks.org/cpp/why-it-is-important-to-write-using-namespace-std-in-cpp-program/) is the part of standard library, which contains most of the standard functions, objects, and classes like cin, cout, vector, etc. It also avoids conflicts between user-defined and library-defined functions or variables.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 3, b = 7;
+    
+    // &#39;cout&#39; and &#39;endl&#39; are part of the std namespace
+    cout &lt;&lt; &quot;Sum: &quot; &lt;&lt; a + b ;  
+    return 0;
+}
+
+**Output**Sum: 10
+### Global Namespace
+
+
+The global namespace is the default namespace where all the functions, variables, and classes that are not explicitly declared inside any namespace. Everything outside of any namespace is considered to belong to the global namespace.
+
+
+We can access the global namespace using scope resolution operator(::) followed by global namespace name.
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int n = 3;
+
+int main() {
+    int n = 7;
+    
+    // Accessing global namespace
+    cout &lt;&lt; ::n &lt;&lt; endl;
+    cout &lt;&lt; n;
+
+    return 0;
+}
+
+**Output**3
+7
+## Extending Namespace
+
+
+In C++, extending a namespace means adding more features (like functions, variables, or classes) to an existing namespace, even if that namespace was defined somewhere else (like in a library or another file).
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+namespace nmsp{
+    void func(){
+        cout &lt;&lt; &quot;You can extend me&quot; &lt;&lt; endl;
+    }
+}
+
+// Extending the same namespace
+namespace nmsp{
+    void func2(){
+        cout &lt;&lt; &quot;Adding new feature&quot;;
+    }
+}
+
+int main() {
+    nmsp::func();
+    nmsp::func2();
+
+    return 0;
+}
+
+**Output**You can extend me
+Adding new feature
+## Creating an Alias for Namespace
+
+
+We can also create an alias of existing namespace using namespace.
+
+
+namespace namespace_name{    // Members of namespace}
+
+
+// Creating a alias of namespace_namenamespace nn = namespace_name;
+
+## Inline Namespace
+
+
+An [inline namespace](https://www.geeksforgeeks.org/cpp/cpp-inline-namespaces-and-usage-of-the-using-directive-inside-namespaces/) is a type of namespace where its members are accessible directly without using the namespace name.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+inline namespace inline_space {
+    void display() {
+        cout &lt;&lt; &quot;Inside inline namespace&quot;;
+    }
+}
+
+int main() {
+    
+    // Direct access due to inline namespace
+    display();  
+    return 0;
+}
+
+**Output**Inside inline namespace
+## Anonymous Namespace
+
+
+A namespace without a name is called an anonymous namespace. It ensures that the entities in the unnamed namespace are limited to that file.
+
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+// Anonymous namespace
+namespace {
+    int value = 10;
+}
+
+int main() {
+    
+    // Accessing anonymous namespace variable
+    cout &lt;&lt; value;  
+    return 0;
+}
+
+**Output**10
+## Namespace vs Class
+
+
+Namespaces and classes may look similar, but they are completely different. The [differences between namespaces and classes](https://www.geeksforgeeks.org/cpp/difference-namespace-class/) are shown below:
+****Namespace********Class****It is used to organize code and prevent name collisions in large projects.Used to define and create objects that encapsulate data and behavior.Does not encapsulate data or behavior; it only provides scope.Encapsulates both data members and methods into objects.Does not have access modifiers (public, private, protected).Has access modifiers (public, private, protected) to control the visibility of members.Cannot be inherited.Can be inherited to create subclasses.A namespace is not instantiated; it is used to group entities.A class is instantiated to create objects.Does not directly consume memory; it only provides scope for identifiers.Consumes memory as objects are created from a class.No constructors or destructors.Has constructors and destructors to initialize and destroy objects.CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-namespaces](https://www.geeksforgeeks.org/tag/cpp-namespaces/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

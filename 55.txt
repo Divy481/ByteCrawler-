@@ -1,0 +1,256 @@
+Lambda Expression in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Lambda Expression in C++
+Last Updated : 26 Apr, 2026
+- 
+- 
+- 
+
+Lambda expressions are anonymous and inline functions introduced in C++11 that allow writing small pieces of logic directly at the place of use. They improve code readability by keeping behavior close to where it is applied and remove the need for separate named functions.
+
+- Used to assign custom logic to algorithms like sort, for_each, and find_if in C++ STL.
+- Used in Callbacks and Event Handling for asynchronous tasks and events.
+            C++
+
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    
+    // Defining a lambda
+    auto res = [](int x) {
+        return x + x;
+    };
+    
+    // Using the lambda
+    cout &lt;&lt; res(5);
+    
+    return 0;
+}
+
+**Output**10
+
+****Explanation:**** The lambda expression in the above program takes an integer x as input and returns the sum of x with itself. 
+
+## Syntax
+![lambda_expression_in_c_](https://media.geeksforgeeks.org/wp-content/uploads/20260123115647200091/lambda_expression_in_c_.webp)Syntax of lambda Function
+- ****Parameters: ****These parameters are similar to the function parameters in every way.
+- ****Return Type: ****Generally, the return-type in lambda expressions is evaluated by the compiler itself and we don’t need to specify it explicitly. However, in some complex cases e.g. conditional statements, the compiler can’t determine the return type and explicit specification is required.
+### Capture Clause
+
+
+A lambda expression can access variables from the enclosing scope, which regular functions cannot do directly. We can capture external variables from the enclosing scope in three ways using [capture clause](https://www.geeksforgeeks.org/cpp/lambda-capture-clause-in-cpp/):
+
+- ****[&amp;]:**** capture all external variables by reference.
+- ****[=]:**** capture all external variables by value.
+- ****[a, &amp;b]:**** capture 'a' by value and 'b' by reference.
+
+****Note:**** A lambda with an empty capture clause [] cannot access variables from the enclosing scope, it can only use its own parameters or global/static variables.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+void print(const vector&lt;int&gt;&amp; v)
+{
+    for (auto x : v)
+        cout &lt;&lt; x &lt;&lt; &quot; &quot;;
+    cout &lt;&lt; endl;
+}
+
+int main()
+{
+    vector&lt;int&gt; v1, v2;
+
+    //  Capture all by reference
+    auto byRef = [&amp;](int m) {
+        v1.push_back(m);
+        v2.push_back(m);
+    };
+
+    //  Capture all by value
+    auto byVal = [=](int m) mutable {
+        v1.push_back(m);
+        v2.push_back(m);
+    };
+
+    //  Capture v1 by reference and v2 by value
+    auto mixed = [&amp;v1, v2](int m) mutable {
+        v1.push_back(m);
+        v2.push_back(m);
+    };
+
+    // Case 1: byRef — modifies both v1 and v2
+    byRef(20);
+
+    // Case 2: byVal — modifies only copies (originals unchanged)
+    byVal(234);
+
+    // Case 3: mixed — modifies only v1 (since v2 is captured by value)
+    mixed(10);
+
+    print(v1);
+    print(v2);
+
+    return 0;
+}
+
+**Output**20 10 
+20 
+
+
+****Explanation:**** 
+
+- byRef captures all by reference. So pushing 20 will push it into original v1 and v2.
+- byVal captures all by value. So pushing 234 modifies only the copies, leaving the original vectors unchanged.
+- mixed captures v1 by reference and v2 by value. So pushing 10 will only push it into v1.
+
+The mutable keyword here is used in capture by value lambdas only because, by default, value captured objects are const.
+
+## Lambda Expressions with STL:
+
+### 1. Sort Vector in Descending Order
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+using namespace std;
+
+int main() {
+	vector&lt;int&gt; v = {5, 1, 8, 3, 9, 2};
+
+	// Sort in descending order
+	sort(v.begin(), v.end(), [] (const int&amp; a, const int&amp;b) {
+		return a &gt; b;
+	});
+
+	for (int x : v)
+		cout &lt;&lt; x &lt;&lt; &quot; &quot;;
+	return 0;
+}
+
+**Output**9 8 5 3 2 1 
+
+****Explanation: ****
+
+- The program stores numbers in a vector and uses sort() to arrange them in order.
+- A lambda function "[](const int&amp; a, const int&amp; b){ return a &gt; b; }" is passed to sort() to compare elements and sort them in descending order.
+- Finally, the sorted values are printed using a range-based for loop.
+### 2. Find First Number Divisible by 3
+
+            CPP
+
+    #include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+using namespace std;
+
+int main() {
+	vector&lt;int&gt; v = {5, 1, 8, 3, 9, 2};
+
+    // Find first element divisible by 3
+	auto it = find_if(v.begin(), v.end(), [] (const int&amp; a) {
+		return a % 3 == 0;
+	});
+
+    if (it != v.end()) cout &lt;&lt; *it;
+	else cout &lt;&lt; &quot;No such element&quot;;
+	return 0;
+}
+
+**Output**3
+
+****Explanation: ****
+
+- The program stores integers in a vector and searches for a specific value using find_if().
+- A lambda function "[](const int&amp; a){ return a % 3 == 0; }" is used as a condition to find the first element divisible by 3.
+- If such an element is found, it is printed, otherwise, the program prints "No such element".CommentArticle Tags:Article Tags:[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-advanced](https://www.geeksforgeeks.org/tag/cpp-advanced/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

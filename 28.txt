@@ -1,0 +1,509 @@
+File Handling in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# File Handling in C++
+Last Updated : 28 Oct, 2025
+- 
+- 
+- 
+
+File handling means reading from and writing to files (like .txt, .csv, etc.) using classes provided by the C++ standard library.
+
+- Programs run in RAM, meaning data exists only while the program is running, when a program ends, all data in RAM is lost automatically.
+- File handling allows storing data in secondary memory (like HDD or SSD), so it can be preserved permanently and can be saved and accessed even after the program terminates.
+- For file operations, C++ provides file stream classes in the &lt;fstream&gt; header such as ofstream, ifstream, fstream.
+## Opening a File
+
+
+Before reading from or writing to a file, we first need to open it. Opening a file loads that file in the RAM. In C++, we open a file by creating a stream to it using the ****fstream ****class that represent the file stream i.e. stream for input and output to the file.
+
+            C++
+
+    fstream str(&quot;filename.ext&quot;, mode);
+
+
+
+where,
+
+- ****str: ****Name given to the stream
+- ****filename: ****Name of the file
+- ****mode****: Represents the way in which we are going to interact with the file.
+### File Opening Modes
+
+
+File opening mode indicate file is opened for reading, writing, or appending. Below is the list of all file modes in C++:
+****Mode********Description****ios::inFile open for reading. If file does not exists, the open operation fails.ios::outFile open for writing: the internal stream buffer supports output operations.ios::binaryOperations are performed in binary mode rather than text.ios::ateThe output position starts at the end of the file.ios::appAll output operations happen at the end of the file, appending to its existing contents.ios::truncAny contents that existed in the file before it is open are discarded.
+
+****For Example****, if we want to open the file for reading, we use the following opening mode:
+
+            C++
+
+    fstream filein(&quot;file.txt&quot;, ios::in);
+
+
+
+Similarly, if we want to open the file for writing, we use the following:
+
+            C++
+
+    fstream fileout(&quot;file.txt&quot;, ios::out);
+
+
+
+These modes can also be combined using OR operator (|). For example, you can open the file stream in both read and write mode as shown:
+
+            C++
+
+    fstream str(&quot;file.txt&quot;, ios::in | ios::out);
+
+
+
+If the file opened in write mode does not exists, a new file is created. But if the file opened in read mode doesn't exists, then no new file is created, and an exception is thrown
+
+### Other File Streams
+
+
+****fstream ****is not the only file stream provided by C++. There are two more specialized streams:
+
+- ****ifstream****: Stands for input file stream. It is equivalent to open fstream in**** ios::in**** mode.
+- ****ofstream****: Stands for output file stream. It is equivalent to opening fstream in ****ios::out**** mode.
+
+The above modes are default modes for these streams. These modes cannot be changed but can be clubbed together with other modes. Now for input, we can also use ifstream as shown:
+
+            C++
+
+    ifstream filein(&quot;file.txt&quot;);
+
+
+
+Similarly, for output:
+
+            C++
+
+    ofstream fileout(&quot;file.txt&quot;);
+
+
+## Write Data to File
+
+
+Once the file is opened in the write mode using either ****fstream ****or ****ofstream****, we can perform the write operation in similar way as with cout using ****&lt;&lt; operator.****
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main() {
+
+    // Open a file
+    ofstream file(&quot;GFG.txt&quot;);
+    
+    // Write the string to the file
+    file &lt;&lt; &quot;Welcome to GeeksforGeeks.&quot;;
+
+    return 0;
+}
+
+![write](https://media.geeksforgeeks.org/wp-content/uploads/20250411215401680786/write.png)GFG.text
+## Read Data from File
+
+
+Once the file is opened in the read mode using either fstream or ifstream, we can perform the write operation in similar way as with cin using ****&gt;&gt; operator.****
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main()
+{
+
+    // Open a file in read mode
+    ifstream file(&quot;GFG.txt&quot;);
+    string s;
+
+    // Read string from the file
+    file &gt;&gt; s;
+
+    cout &lt;&lt; &quot;Read String: &quot; &lt;&lt; s;
+
+    return 0;
+}
+
+
+
+
+****Output****
+Read String: Welcome
+
+This has same problem as cin. The input is only taken until the first whitespace character. To avoid this, we can use the ****getline()**** function as shown:
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main()
+{
+
+    // Open a file in read mode
+    ifstream file(&quot;GFG.txt&quot;);
+    string s;
+
+    // Read string from the file
+    getline(file, s);
+
+    cout &lt;&lt; &quot;Read String: &quot; &lt;&lt; s;
+
+    return 0;
+}
+
+
+
+
+****Output****
+Read String: Welcome to GeeksforGeeks.
+## Closing the File
+
+
+Closing the file means closing the associated stream and free the resources that we being used. It is important to close the file after you are done with it, especially in the long running programs to avoid memory leaks, data loss, etc.
+
+
+In C++, the files are closed using the ****close()**** member function that is present in all file streams.
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main()
+{
+
+    // Open a file in read mode
+    ifstream file(&quot;GFG.txt&quot;);
+    string s;
+
+    // Read string from the file
+    getline(file, s);
+
+    cout &lt;&lt; &quot;Read String: &quot; &lt;&lt; s;
+
+    // Close the file
+    file.close();
+
+    return 0;
+}
+
+
+
+
+****Output****
+Read String: Welcome to GeeksforGeeks.
+## Errors in File Handling
+
+
+Many different types of errors can occur in file handling such as file not found, disk full, etc. Our programs should expect common errors and should be able to handle them properly. Following are some common errors that can occur during file handling:
+
+### File Open Failure
+
+
+There can be cases in which the file is not opened due to various reasons such as it doesn't exists, or the program does not have permission to open it, etc. In this case, we can use the ****is_open()**** member function of the file stream classes to check whether the file is opened sucessfullly or not.
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main() {
+    fstream file(&quot;nonexistent_file.txt&quot;, ios::in);
+
+    // Check if the file is opened
+    if (!file.is_open()) {
+        cerr &lt;&lt; &quot;Error: Unable to open file!&quot; &lt;&lt; endl;
+        return 1;
+    }
+
+    file.close();
+    return 0;
+}
+
+
+
+
+****Output****
+Error: Unable to open file!
+### Failure to Read/Write Data
+
+
+Another common error is failure to read or write data for reasons such as incorrect mode, etc. In this case, we can validate operations after each read/write attempt. For example, reading using getline() can be validated as shows:
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main() {
+    fstream file(&quot;GFG.txt&quot;, ios::out);
+
+    if (!file.is_open()) {
+        cerr &lt;&lt; &quot;Error: Unable to open file!&quot; &lt;&lt; endl;
+        return 1;
+    }
+    string line;
+    
+    // Checking if getline() read successfully or not
+    if (!getline(file, line))
+        cerr &lt;&lt; &quot;Error: Failed to read data&quot; &lt;&lt; endl;
+
+    file.close();
+    return 0;
+}
+
+
+
+
+****Output****
+Error: Failed to read data
+### End-of-File (EOF) Error
+
+
+Trying to read beyond the end of the file can cause an EOF error. This can happen when you don't check for the end of the file before reading. We can check for EOF using ****eof()**** member function.
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main()
+{
+    ifstream file(&quot;GFG.txt&quot;);
+
+    if (!file.is_open())
+    {
+        cerr &lt;&lt; &quot;Error: Unable to open file!&quot; &lt;&lt; endl;
+        return 1;
+    }
+    string line;
+    while (getline(file, line))
+        cout &lt;&lt; line &lt;&lt; endl;
+
+    // Check for eof
+    if (file.eof())
+        cout &lt;&lt; &quot;Reached end of file.&quot; &lt;&lt; endl;
+    else
+        cerr &lt;&lt; &quot;Error: File reading failed!&quot; &lt;&lt; endl;
+
+    file.close();
+    return 0;
+}
+
+
+
+
+****Output****
+Reached end of file.
+
+Notice that we have also validated the read operation before checking EOF as ****getline() ****will only return ****nullptr ****even if the read fails due to any reason.
+
+## Handling Binary Files
+
+
+In C++, we can also handle ****binary files****, which store data in raw format. To read and write binary data, must use the ****ios::binary**** flag when creating/opening a binary file.
+
+### Write into Binary File
+
+
+To write data to a binary file, we first need to open or create the file in ****ios::binary ****mode.
+
+            C++
+
+    #include &lt;cstring&gt;
+#include &lt;fstream&gt;
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    string str = &quot;Welcome to GeeksForGeeks&quot;;
+
+    // Open a binary file for writing
+    ofstream file(&quot;fileBin.bin&quot;, ios::binary);
+
+    // Check if the file is open
+    if (!file)
+    {
+        cerr &lt;&lt; &quot;Error opening the file for writing.&quot;;
+        return 1;
+    }
+
+    // Write the length of the string (size) to file first
+    size_t strLength = str.length();
+    file.write(reinterpret_cast&lt;const char *&gt;(&amp;strLength), sizeof(strLength));
+
+    // Write the string to the binary file
+    file.write(str.c_str(), strLength);
+
+    // Close the file
+    file.close();
+
+    return 0;
+}
+
+
+
+
+****Output****
+![writeBinary](https://media.geeksforgeeks.org/wp-content/uploads/20250410224000370295/writeBinary.png)Binary File
+### Reading from Binary File
+
+
+Just as we open a file in binary mode to write data, to read data from a binary file, we must open the file in read mode using ****ios::in****.
+
+
+****Syntax:****
+
+            C++
+
+    fstream fileInstance(&quot;fileName.bin&quot;, ios::in| ios::binary);
+
+
+            C++
+
+    #include &lt;cstring&gt;
+#include &lt;fstream&gt;
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    string str;
+
+    // Open the binary file for reading
+    fstream file(&quot;fileBin.bin&quot;, ios::in | ios::binary);
+
+    // Check if the file is open
+    if (!file)
+    {
+        cerr &lt;&lt; &quot;Error opening the file for reading.&quot;;
+        return 1;
+    }
+
+    // Read the length of the string (size) from the file
+    size_t strLength;
+    file.read(reinterpret_cast&lt;char *&gt;(&amp;strLength), sizeof(strLength));
+
+    // Allocate memory for the string and read the data
+    char *buffer = new char[strLength + 1]; // +1 for the null-terminator
+    file.read(buffer, strLength);
+
+    // Null-terminate the string
+    buffer[strLength] = &#39;\0&#39;;
+
+    // Convert the buffer to a string
+    str = buffer;
+
+    // Print file data
+    cout &lt;&lt; &quot;File Data: &quot; &lt;&lt; str;
+    delete[] buffer;
+    file.close();
+
+    return 0;
+}
+
+
+
+
+****Output****
+File Data: Welcome to GeeksForGeeks
+## Other File Operations
+
+
+We can also do more operations to manipulate a file from our C++ program. some of the common file operations are:
+
+- [****C++ Program to Delete a File****](https://www.geeksforgeeks.org/cpp/how-to-delete-a-file-in-cpp/)
+- [****Append a String in an Existing File****](https://www.geeksforgeeks.org/cpp/cpp-program-to-append-a-string-in-an-existing-file/)
+- [****Copy One File into Another File****](https://www.geeksforgeeks.org/cpp/cpp-program-to-copy-one-file-into-another-file/)CommentArticle Tags:Article Tags:[Misc](https://www.geeksforgeeks.org/category/misc/)[Technical Scripter](https://www.geeksforgeeks.org/category/technical-scripter/)[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-file-handling](https://www.geeksforgeeks.org/tag/cpp-file-handling/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

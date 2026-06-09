@@ -1,0 +1,301 @@
+Stack in C++ STL - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# Stack in C++ STL
+Last Updated : 9 Apr, 2026
+- 
+- 
+- 
+
+Stack container follows LIFO (Last In First Out) order of insertion and deletion. It means that most recently inserted element is removed first and the first inserted element will be removed last. This is done by inserting and deleting elements at only one end of the stack which is generally called the top of the stack.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;stack&gt;
+using namespace std;
+int main(){
+    stack&lt;int&gt; st;
+    st.push(10);
+    st.push(5);
+    
+    // Accessing top element
+    cout &lt;&lt; &quot;Top element: &quot; &lt;&lt; st.top() &lt;&lt; endl;
+    
+    // Popping an element
+    st.pop();
+    cout &lt;&lt; &quot;Top element after pop: &quot; &lt;&lt; st.top() &lt;&lt; endl;
+    return 0;
+}
+
+**Output**Top element: 5
+Top element after pop: 10
+
+## Syntax
+
+
+Stack is defined as std::stack class template inside the &lt;stack&gt; header file.
+
+
+stack&lt;T&gt; st;
+
+
+where,
+
+- ****T:**** DataType (int, char etc.) of elements in the stack.
+- ****st:**** Name assigned to the stack.
+## Basic Operations
+
+
+Here are the basic operations that can be performed on a stack:
+
+### 1. Inserting Elements
+
+
+In stack, new elements can only be inserted at the top of the stack by using [push()](https://www.geeksforgeeks.org/cpp/stack-push-and-pop-in-c-stl/) method. 
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;stack&gt;
+using namespace std;
+
+int main(){
+    stack&lt;int&gt; st;
+
+    // Inserting element top of the stack
+    st.push(10);
+    st.push(20);
+    st.push(30);
+    st.push(40);
+    return 0;
+}
+
+![Push-Operation-in-Stack-(1)](https://media.geeksforgeeks.org/wp-content/uploads/20240606180844/Push-Operation-in-Stack-(1).webp)Push operation in Stack
+### 2. Accessing Elements
+
+
+Only the top element of the stack can be accessed using [top()](https://www.geeksforgeeks.org/cpp/stack-top-c-stl/) method. 
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;stack&gt;
+using namespace std;
+
+int main(){
+    stack&lt;int&gt; st;
+    st.push(10);
+    st.push(20);
+    st.push(30);
+    st.push(40);
+
+    // Accessing the top element
+    cout &lt;&lt; st.top();
+    return 0;
+}
+
+**Output**40![top_operation_in_stack](https://media.geeksforgeeks.org/wp-content/uploads/20260409123016862724/top_operation_in_stack.webp)Top operation in stack
+
+****Note:**** top() is used to only view the topmost element of the stack not print it.
+
+### 3. Deleting Elements
+
+
+In stack, only the top element of the stack can be deleted by using [pop()](https://www.geeksforgeeks.org/cpp/stack-push-and-pop-in-c-stl/) method in one operation.  
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;stack&gt;
+using namespace std;
+
+int main() {
+    stack&lt;int&gt; st;
+    st.push(10);
+    st.push(20);
+    st.push(30);
+    st.push(40);
+    
+    // Deleting top element
+    st.pop();
+    
+    while(!st.empty()) {
+        cout &lt;&lt; st.top() &lt;&lt; &quot; &quot;;
+        st.pop();
+    }
+    return 0;
+}
+
+**Output**30 20 10 ![Pop-Operation-in-Stack-(1)](https://media.geeksforgeeks.org/wp-content/uploads/20240606180943/Pop-Operation-in-Stack-(1).webp)Pop Operation in Stack
+### 4. empty()
+
+
+This checks whether the stack is empty. It returns true if the stack has no elements, otherwise, it returns false.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;stack&gt;
+using namespace std;
+
+int main() {
+
+    stack&lt;int&gt;st;
+    if(st.empty()){
+        cout&lt;&lt;&quot;Stack is empty &quot;&lt;&lt;endl;
+    }
+    st.push(100);
+    if(!st.empty()){
+        cout&lt;&lt;&quot;Stack is not empty. Top element: &quot;&lt;&lt;st.top()&lt;&lt;endl;
+    }
+    return 0;
+}
+
+**Output**Stack is empty 
+Stack is not empty. Top element: 100
+
+### 5. Size of stack
+
+
+The size() function in a stack returns the number of elements currently in the stack. It helps to determine how many items are stored without modifying the stack.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;stack&gt;
+using namespace std;
+
+int main()
+{
+
+    stack&lt;int&gt; st;
+    st.push(10);
+    st.push(5);
+    cout &lt;&lt; &quot;Size of stack: &quot; &lt;&lt; st.size() &lt;&lt; endl;
+    st.pop();
+    cout &lt;&lt; &quot;Size of stack:&quot; &lt;&lt; st.size() &lt;&lt; endl;
+    return 0;
+}
+
+**Output**Size of stack: 2
+Size of stack:1
+
+## Pseudo Traversal
+
+
+A stack cannot be directly traversed, but by creating a copy and repeatedly accessing and popping the top element, we can traverse it without modifying the original stack.
+
+            C++
+
+    #include &lt;iostream&gt;
+#include &lt;stack&gt;
+using namespace std;
+
+int main()
+{
+    stack&lt;int&gt; st;
+    st.push(10);
+    st.push(20);
+    st.push(30);
+    st.push(40);
+
+    // Create a copy
+    stack&lt;int&gt; temp(st);
+
+    while (!temp.empty())
+    {
+        cout &lt;&lt; temp.top() &lt;&lt; &quot; &quot;;
+        temp.pop();
+    }
+    return 0;
+}
+
+[Try It Yourself![redirect icon](https://media.geeksforgeeks.org/auth-dashboard-uploads/Group-arrow.svg)](https://www.geeksforgeeks.org/problems/pairwise-consecutive-elements/1)**Output**40 30 20 10 
+
+****Explanation****: Pseudo-traversal is done by creating a copy of the "st" to avoid modifying the original stack. The while loop prints and removes elements from temp using "top()" and "pop()" until the stack becomes empty.
+CommentArticle Tags:Article Tags:[Stack](https://www.geeksforgeeks.org/category/dsa/data-structures/stack/)[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[STL](https://www.geeksforgeeks.org/tag/stl/)[cpp-containers-library](https://www.geeksforgeeks.org/tag/cpp-containers-library/)[cpp-stack](https://www.geeksforgeeks.org/tag/cpp-stack/)[cpp-stack-functions](https://www.geeksforgeeks.org/tag/cpp-stack-functions/)[+2 More]()[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)

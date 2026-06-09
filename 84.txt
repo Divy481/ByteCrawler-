@@ -1,0 +1,270 @@
+I/O Redirection in C++ - GeeksforGeeks[![geeksforgeeks](https://media.geeksforgeeks.org/gfg-gg-logo.svg)](https://www.geeksforgeeks.org/)**
+- Courses**
+- Tutorials**
+- Practice**
+- Jobs****
+- [C++ Tutorial](https://www.geeksforgeeks.org/cpp/c-plus-plus/)
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)
+- [Quizzes](https://www.geeksforgeeks.org/cpp/c-programming-multiple-choice-questions/)
+- [Projects](https://www.geeksforgeeks.org/cpp/top-50-cpp-project-ideas-for-beginners-advanced/)
+- [Cheatsheet](https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/)
+- [OOP](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [DSA C++](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/)
+- [Share Your Experiences](https://write.geeksforgeeks.org/#experiences)C++ Basics**
+- [Introduction](https://www.geeksforgeeks.org/cpp/cpp-programming-intro/)
+- [Data Types](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+- [Variables](https://www.geeksforgeeks.org/cpp/cpp-variables/)
+- [Operators](https://www.geeksforgeeks.org/cpp/operators-in-cpp/)
+- [Basic Input / Output](https://www.geeksforgeeks.org/cpp/basic-input-output-c/)
+- [Control Flow Statements](https://www.geeksforgeeks.org/computer-science-fundamentals/control-flow-statements-in-programming/)
+- [Loops](https://www.geeksforgeeks.org/cpp/cpp-loops/)
+- [Functions](https://www.geeksforgeeks.org/cpp/functions-in-cpp/)
+- [Arrays](https://www.geeksforgeeks.org/cpp/cpp-arrays/)Core Concepts**
+- [Pointers and References](https://www.geeksforgeeks.org/cpp/pointers-and-references-in-c/)
+- [new and delete Operators](https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Templates in C++](https://www.geeksforgeeks.org/cpp/templates-cpp/)
+- [Struct Union Enum](https://www.geeksforgeeks.org/cpp/structures-unions-and-enumerations-in-cpp/)
+- [Exception Handling](https://www.geeksforgeeks.org/cpp/exception-handling-c/)
+- [File Handling](https://www.geeksforgeeks.org/cpp/file-handling-c-classes/)
+- [Multithreading](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+- [Namespace](https://www.geeksforgeeks.org/cpp/namespace-in-c/)OOP**
+- [OOP Concepts](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/)
+- [Inheritance](https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
+- [Polymorphism](https://www.geeksforgeeks.org/cpp/cpp-polymorphism/)
+- [Encapsulation](https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/)
+- [Abstraction](https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)Standard Template Library(STL)**
+- [STL](https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/)
+- [Container Library](https://www.geeksforgeeks.org/cpp/containers-cpp-stl/)
+- [Iterators](https://www.geeksforgeeks.org/cpp/iterators-c-stl/)
+- [Algorithm Library](https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/)Practice &amp; Problems**
+- [Interview Questions](https://www.geeksforgeeks.org/cpp/cpp-interview-questions/)
+- [Programming Examples](https://www.geeksforgeeks.org/cpp/cpp-programming-examples/)Courses**
+- [C++ Self Paced](https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced)
+- [DSA Self Paced](https://www.geeksforgeeks.org/courses/dsa-self-paced)
+- [DSA and System Design Course](https://www.geeksforgeeks.org/courses/dsa-system-design-live-sde-interview-course)
+- [Summer SkillUpExplore](https://www.geeksforgeeks.org/summer-skill-up/)
+# I/O Redirection in C++
+Last Updated : 16 May, 2026
+- 
+- 
+- 
+
+In C++, input and output are performed using streams, which are sequences of bytes, Common stream objects are cin ( reads input from the keyboard) , cout : (displays output on the screen) .
+
+- Each stream has a buffer, which temporarily stores data to make input/output faster.
+- I/O redirection means changing where the program gets input from or sends output to. For example, sending cout output to a file instead of the screen.
+- The function ios::rdbuf() is used to redirect streams to different sources or destinations.
+
+Example: Program read from or write to files instead of the default keyboard and screen.
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main()
+{
+
+    // Create an output stream to a file
+    ofstream file;
+    file.open(&quot;writeFile.txt&quot;);
+
+    // Store default cout&#39;s buffer
+    streambuf *cout_buf = cout.rdbuf();
+
+    // Get the streambuf of the file
+    streambuf *file_buf = file.rdbuf();
+
+    // Redirect cout to the file by setting cout&#39;s buffer to the file&#39;s buffer
+    cout.rdbuf(file_buf);
+
+    cout &lt;&lt; &quot;This line will be written to &quot;
+         &lt;&lt; &quot;&#39;writeFile.txt&#39;&quot;;
+
+    // Flush to ensure all the data is written
+    cout.flush();
+
+    // Redirect cout back to its default buffer
+    cout.rdbuf(cout_buf);
+
+    cout &lt;&lt; &quot;This line will be written to console&quot;;
+
+    // Close the file stream
+    file.close();
+    
+    return 0;
+}
+
+**Output**This line will be written to console![data-flow-in-cin-and-cout](https://media.geeksforgeeks.org/wp-content/uploads/20250424131458034013/data-flow-in-cin-and-cout.webp) 
+
+
+![rdbuf](https://media.geeksforgeeks.org/wp-content/uploads/20250407151116168547/rdbuf.png)Write File
+### Internal Working of ios::rdbuf()
+
+
+The rdbuf() function manipulates the internal buffer of the stream object (cout, cin, etc.). Below points shows, how ios::rdbuf() change the internal buffer of the stream:
+
+- A backup of the original stream buffer (e.g., cout_buffer) is created.
+- The stream buffer of the desired output (e.g., file) is assigned to the stream (e.g., cout).
+- After the redirection is done, the output is written to the file instead of the console.
+- After the task is completed, the stream buffer is reset back to the original buffer, and output will return to the console.
+### Redirecting cin to a File
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main()
+{
+    fstream file;
+
+    // Open file for reading
+    file.open(&quot;writeFile.txt&quot;, ios::in);
+    string line;
+
+    // Backup the original streambuf of cin
+    streambuf *cin_buffer = cin.rdbuf();
+
+    // Get the streambuf of the file
+    streambuf *file_buffer = file.rdbuf();
+
+    // Redirect cin to the file
+    cin.rdbuf(file_buffer);
+
+    // Now cin will read from &quot;wFile.txt&quot; instead of keyboard
+    getline(cin, line);
+
+    // Print the file string
+    cout &lt;&lt; line;
+
+    // Set cin&#39;s buffer back to the original console buffer
+    cin.rdbuf(cin_buffer);
+    file.close();
+    return 0;
+}
+
+
+
+****Output****
+This line will be written to 'writeFile.txt'
+## Redirection with freopen()
+
+
+It's a method to achieve I/O redirection in C++, but this method is inherited from the C language.
+
+
+****Syntax:****
+
+
+freopen (fileName, mode, stream);
+
+
+where,
+
+- ****fileName: ****Representing the path to the file you want to redirect to or from.
+- ****mode: ****Specifying the file access mode like read mode (r).
+- ****stream: ****A pointer to an existing standard C++ file stream that you want to redirect.
+
+****Return Value: freopen()**** returns a pointer to the newly reopened file stream if successful otherwise return NULL.
+
+            C++
+
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+int main()
+{
+
+    // Redirect standard output (stdout) to &quot;output_freopen.txt&quot; in write mode (&quot;w&quot;)
+    if (freopen(&quot;output_freopen.txt&quot;, &quot;w&quot;, stdout) == NULL)
+    {
+        cerr &lt;&lt; &quot;Error redirecting stdout!&quot; &lt;&lt; endl;
+    }
+
+    // Output write in the output_freopen.text file
+    cout &lt;&lt; &quot;This output will be written to &#39;output_freopen.txt&#39;&quot; &lt;&lt; endl;
+    cout &lt;&lt; &quot;Another line to the file.&quot;;
+
+    return 0;
+}
+
+
+
+****Output****
+This output will be written to 'output_freopen.txt'
+Another line to the file.
+
+****Explanation: ****In the example above, instead of displaying output on the console or screen using ****cout****, we write output to the file "****output_freopen.txt****". When ****cout**** is used, it writes output to the "****output_freopen.txt****" file.
+![freopen](https://media.geeksforgeeks.org/wp-content/uploads/20250407160213761360/freopen.png)Text File
+## Need of I/O Redirection
+
+
+There are following points to enhance the program if we change the standard I/O working: 
+
+- ****Automation:**** Run programs repeatedly with the same input data without manually typing it each time. This is essential for testing and batch processing.
+- ****Data Pipelines:**** Connect the output of one program as the input of another program, creating powerful processing workflows in scripting and command-line environments.
+- ****Testing and Debugging:**** Easily test your program with various input scenarios by simply changing the input file. Capture program output to files for detailed analysis and comparison with expected results.
+- ****Logging and Monitoring:**** Redirect program output, especially error streams, to log files. This creates a record of program activity, useful for debugging, auditing, and system monitoring.
+- ****Clean Console Output:**** Keep your console clear of program output when you want to examine the results later in a file, or when you are running programs in the background.
+## Differences between ios::rdbuf() and freopen()
+
+
+We can achieve I/O redirection with both methods, but there are some key differences between them, which are mentioned below:
+****ios::rdbuf()********freopen()****Changes the internal buffer of C++ streams(cin, cout)Redirects standard streams(stdin, stdout, stderr) to a file.C++ stream-level(high-level control)
+
+C-style file-level redirection
+
+
+Allows fine control over stream buffering
+
+
+Does not provide buffering control
+
+
+Used when working with C++ streams and file streams
+
+
+Used for simple redirection, often in competitive programming
+CommentArticle Tags:Article Tags:[Misc](https://www.geeksforgeeks.org/category/misc/)[C++](https://www.geeksforgeeks.org/category/programming-language/cpp/)[cpp-input-output](https://www.geeksforgeeks.org/tag/cpp-input-output/)[cpp-file-handling](https://www.geeksforgeeks.org/tag/cpp-file-handling/)[![GeeksforGeeks](https://media.geeksforgeeks.org/auth-dashboard-uploads/gfgFooterLogo.png)](https://www.geeksforgeeks.org/)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Corporate &amp; Communications Address:A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)![location](https://media.geeksforgeeks.org/img-practice/Location-1685004904.svg)Registered Address:K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305[](https://in.linkedin.com/company/geeksforgeeks)[](https://www.instagram.com/geeks_for_geeks/)[](https://twitter.com/geeksforgeeks)[](https://www.facebook.com/geeksforgeeks.org/)[](https://www.youtube.com/geeksforgeeksvideos)[![GFG App on Play Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/googleplay-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)[![GFG App on App Store](https://media.geeksforgeeks.org/auth-dashboard-uploads/appstore-%281%29.png)](https://geeksforgeeksapp.page.link/gfg-app)
+- Company
+- [About Us](https://www.geeksforgeeks.org/about/)
+- [Legal](https://www.geeksforgeeks.org/legal/)
+- [Privacy Policy](https://www.geeksforgeeks.org/legal/privacy-policy/)
+- [Careers](https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&amp;tab_type=featured)
+- [Contact Us](https://www.geeksforgeeks.org/about/contact-us/)
+- [Corporate Solution](https://www.geeksforgeeks.org/gfg-corporate-solution/)
+- [Campus Training Program](https://www.geeksforgeeks.org/campus-training-program/)
+- Explore
+- [POTD](https://www.geeksforgeeks.org/problem-of-the-day)
+- [Practice Problems](https://www.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions)
+- [Connect](https://www.geeksforgeeks.org/connect/home)
+- [Blogs](https://www.geeksforgeeks.org/category/blogs/?type=recent)
+- [Upskill Courses](https://www.geeksforgeeks.org/courses)
+- Tutorials
+- [Programming Languages](https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/)
+- [DSA](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
+- [Web Technology](https://www.geeksforgeeks.org/web-tech/web-technology/)
+- [AI, ML &amp; Data Science](https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/)
+- [DevOps](https://www.geeksforgeeks.org/devops/devops-tutorial/)
+- [CS Core Subjects](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [GATE](https://www.geeksforgeeks.org/gate/gate-exam-tutorial/)
+- [School Subjects](https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/)
+- [Software and Tools](https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/)
+- Courses
+- [ML and Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [DSA and Placements](https://www.geeksforgeeks.org/courses/category/dsa-placements)
+- [Web Development](https://www.geeksforgeeks.org/courses/category/development-testing)
+- [Data Science](https://www.geeksforgeeks.org/courses/category/machine-learning-data-science)
+- [Programming Languages](https://www.geeksforgeeks.org/courses/category/programming-languages)
+- [DevOps &amp; Cloud](https://www.geeksforgeeks.org/courses/category/cloud-devops)
+- [GATE](https://www.geeksforgeeks.org/courses/category/gate)
+- [MongoDB Certifications](https://www.geeksforgeeks.org/courses/category/mongodb)
+- Preparation Corner
+- [Interview Corner](https://www.geeksforgeeks.org/interview-prep/interview-corner/)
+- [Aptitude](https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/)
+- [Puzzles](https://www.geeksforgeeks.org/aptitude/puzzles/)
+- [GfG 160](https://www.geeksforgeeks.org/courses/gfg-160-series)
+- [System Design](https://www.geeksforgeeks.org/system-design/system-design-tutorial/)[@GeeksforGeeks, Sanchhaya Education Private Limited](https://www.geeksforgeeks.org/), [All rights reserved](https://www.geeksforgeeks.org/copyright-information/)
